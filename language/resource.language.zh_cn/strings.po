@@ -2525,3 +2525,384 @@ msgstr "光碟封面"
 msgctxt "#31999"
 msgid "VHS Art"
 msgstr "录像带复古封面"
+
+msgctxt "#32000"
+msgid "Display output mode"
+msgstr "显示输出模式"
+
+msgctxt "#32001"
+msgid "Video resolution"
+msgstr "视频分辨率"
+
+msgctxt "#32002"
+msgid "Color space"
+msgstr "色彩空间"
+
+msgctxt "#32003"
+msgid "Mb/s"
+msgstr "Mb/s"
+
+msgctxt "#32004"
+msgid "Audio bitrate"
+msgstr "音频比特率"
+
+msgctxt "#32005"
+msgid "Video decoder"
+msgstr "视频解码器"
+
+msgctxt "#32006"
+msgid "Dolby VS10 engine"
+msgstr "杜比 VS10 引擎"
+
+msgctxt "#32007"
+msgid "More"
+msgstr "更多"
+
+msgctxt "#32008"
+msgid "Video queue"
+msgstr "视频队列"
+
+msgctxt "#32009"
+msgid "Video queue data"
+msgstr "视频队列数据"
+
+msgctxt "#32010"
+msgid "Audio queue"
+msgstr "音频队列"
+
+msgctxt "#32011"
+msgid "Audio queue data"
+msgstr "音频队列数据"
+
+msgctxt "#32012"
+msgid "Kb/s"
+msgstr "Kb/s"
+
+msgctxt "#32013"
+msgid "DV metadata"
+msgstr "DV 元数据"
+
+msgctxt "#32014"
+msgid "CPU temp & usage"
+msgstr "CPU 温度和使用率"
+
+msgctxt "#32015"
+msgid "Version"
+msgstr "版本"
+
+msgctxt "#32016"
+msgid "Dolby Vision profile"
+msgstr "杜比视界配置文件"
+
+msgctxt "#32017"
+msgid "Level"
+msgstr "级别"
+
+msgctxt "#32018"
+msgid "RPU"
+msgstr "RPU"
+
+msgctxt "#32019"
+msgid "Base Layer"
+msgstr "基础层"
+
+msgctxt "#32020"
+msgid "Enhancement Layer"
+msgstr "增强层"
+
+msgctxt "#32021"
+msgid "Enhancement Layer Type"
+msgstr "增强层类型"
+
+msgctxt "#32022"
+msgid "Metadata"
+msgstr "元数据"
+
+msgctxt "#32023"
+msgid "Video output"
+msgstr "视频输出"
+
+msgctxt "#32024"
+msgid "Aspect ratio"
+msgstr "宽高比"
+
+msgctxt "#32025"
+msgid "HDR10 MDL"
+msgstr "HDR10 MDL"
+
+msgctxt "#32026"
+msgid "HDR10 MaxCLL/FALL"
+msgstr "HDR10 MaxCLL/FALL"
+
+msgctxt "#32027"
+msgid "Media source"
+msgstr "媒体来源"
+
+msgctxt "#32028"
+msgid "Unknown"
+msgstr "未知"
+
+msgctxt "#32029"
+msgid "On"
+msgstr "开"
+
+msgctxt "#32030"
+msgid "Off"
+msgstr "关"
+
+msgctxt "#32031"
+msgid "Deinterlacing"
+msgstr "去隔行"
+
+msgctxt "#32032"
+msgid "Videoplayer cache"
+msgstr "视频播放器缓存"
+
+msgctxt "#32033"
+msgid "N/A"
+msgstr "不适用"
+
+msgctxt "#32034"
+msgid "Memory usage"
+msgstr "内存使用量"
+
+msgctxt "#32035"
+msgid "Video color depth"
+msgstr "视频色深"
+
+msgctxt "#32036"
+msgid "System / AML fps"
+msgstr "系统 / AML 帧率"
+
+msgctxt "#32037"
+msgid "DV Configuration"
+msgstr "DV 配置"
+
+msgctxt "#32038"
+msgid "DV Levels Metadata"
+msgstr "DV 级别元数据"
+
+msgctxt "#32039"
+msgid "HDR Static Metadata"
+msgstr "HDR 静态元数据"
+
+msgctxt "#32040"
+msgid "nits"
+msgstr "尼特"
+
+msgctxt "#32041"
+msgid "RPU MDL"
+msgstr "RPU MDL"
+
+msgctxt "#32042"
+msgid "RPU MaxCLL/FALL"
+msgstr "RPU MaxCLL/FALL"
+
+msgctxt "#32043"
+msgid "FLL MIN / MAX / AVG"
+msgstr "FLL 最小 / 最大 / 平均"
+
+msgctxt "#32044"
+msgid "PQ  MIN / MAX / AVG"
+msgstr "PQ 最小 / 最大 / 平均"
+
+msgctxt "#32045"
+msgid "12-bit"
+msgstr "12 位"
+
+msgctxt "#32046"
+msgid "Audio codec"
+msgstr "音频编解码器"
+
+msgctxt "#32047"
+msgid "Video bitrate"
+msgstr "视频比特率"
+
+msgctxt "#32048"
+msgid "VS10 status"
+msgstr "VS10 状态"
+
+msgctxt "#32049"
+msgid "Audio sample rate"
+msgstr "音频采样率"
+
+msgctxt "#32050"
+msgid "CPU temperature"
+msgstr "CPU 温度"
+
+msgctxt "#32051"
+msgid "Video sample rate"
+msgstr "视频采样率"
+
+msgctxt "#32052"
+msgid "Audio language"
+msgstr "音频语言"
+
+msgctxt "#32053"
+msgid "Subtitle language"
+msgstr "字幕语言"
+
+msgctxt "#32054"
+msgid "Video"
+msgstr "视频"
+
+msgctxt "#32055"
+msgid "System"
+msgstr "系统"
+
+msgctxt "#32056"
+msgid "Audio"
+msgstr "音频"
+
+msgctxt "#32057"
+msgid "Top left"
+msgstr "左上"
+
+msgctxt "#32058"
+msgid "Top center"
+msgstr "顶部居中"
+
+msgctxt "#32059"
+msgid "Top right"
+msgstr "右上"
+
+msgctxt "#32060"
+msgid "Position of the codec logos in the OSD"
+msgstr "OSD 中编解码器标志的位置"
+
+msgctxt "#32061"
+msgid "Position of the codec logos in the PlayerProcessInfo"
+msgstr "PlayerProcessInfo 中编解码器标志的位置"
+
+msgctxt "#32062"
+msgid "Show codec logos at bottom when video starts"
+msgstr "视频开始时在底部显示编解码器标志"
+
+msgctxt "#32063"
+msgid "Codec logos"
+msgstr "编解码器标志"
+
+msgctxt "#32064"
+msgid "Original"
+msgstr "原始"
+
+msgctxt "#32065"
+msgid "Dolby VS10 mode"
+msgstr "杜比 VS10 模式"
+
+msgctxt "#32066"
+msgid "Audio codec"
+msgstr "音频编解码器"
+
+msgctxt "#32067"
+msgid "L5 Active Offsets Top-Bottom"
+msgstr "L5 有效偏移 上-下"
+
+msgctxt "#32068"
+msgid "L5 Active Offsets Left-Right"
+msgstr "L5 有效偏移 左-右"
+
+msgctxt "#32069"
+msgid "channels"
+msgstr "声道"
+
+msgctxt "#32070"
+msgid "5 sec"
+msgstr "5 秒"
+
+msgctxt "#32071"
+msgid "7 sec"
+msgstr "7 秒"
+
+msgctxt "#32072"
+msgid "10 sec"
+msgstr "10 秒"
+
+msgctxt "#32073"
+msgid "Show codec logos at top when video starts"
+msgstr "视频开始时在顶部显示编解码器标志"
+
+msgctxt "#32074"
+msgid "Video OSD extras"
+msgstr "视频 OSD 附加内容"
+
+msgctxt "#32075"
+msgid "Network Connected"
+msgstr "网络已连接"
+
+msgctxt "#32076"
+msgid "Network not connected"
+msgstr "网络未连接"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#32077"
+msgid "Network connection under the clock"
+msgstr "时钟下方的网络连接"
+
+msgctxt "#32078"
+msgid "Clearlogo"
+msgstr "Clearlogo"
+
+msgctxt "#32079"
+msgid "Coloured"
+msgstr "彩色"
+
+msgctxt "#32080"
+msgid "Show Image codec logos"
+msgstr "显示图像编解码器标志"
+
+msgctxt "#32081"
+msgid "Clock + Date"
+msgstr "时钟 + 日期"
+
+msgctxt "#32082"
+msgid "Weather icon colour"
+msgstr "天气图标颜色"
+
+msgctxt "#32083"
+msgid "White"
+msgstr "白色"
+
+msgctxt "#32084"
+msgid "Low"
+msgstr "低"
+
+msgctxt "#32085"
+msgid "High"
+msgstr "高"
+
+msgctxt "#32086"
+msgid "Current"
+msgstr "当前"
+
+msgctxt "#32087"
+msgid "Show Text codec logos"
+msgstr "显示文本编解码器标志"
+
+msgctxt "#32088"
+msgid "Hide filename and path"
+msgstr "隐藏文件名和路径"
+
+msgctxt "#32089"
+msgid "Clock + Date and Weather"
+msgstr "时钟 + 日期和天气"
+
+msgctxt "#32090"
+msgid "CPU usage"
+msgstr "CPU 使用率"
+
+msgctxt "#32091"
+msgid "Sound output"
+msgstr "声音输出"
+
+msgctxt "#32092"
+msgid "Playtime"
+msgstr "播放时间"
+
+msgctxt "#32093"
+msgid "Center theater splash at movie begin, or when audio changes during movie play"
+msgstr "电影开始时，或播放电影期间音频发生变化时，居中显示影院开场画面"
+
+msgctxt "#32094"
+msgid "Show theater splash when play begin or when audio changes"
+msgstr "播放开始或音频发生变化时，显示影院开场画面"
