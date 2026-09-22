@@ -808,6 +808,85 @@
         </definition>
     </include>
 
+    <include name="OSD_VS10_Original">
+        <control type="group">
+            <centertop>70%</centertop>
+            <height>120</height>
+            <include content="Object_InfoCircle_VS10">
+                <param name="label">$LOCALIZE[32064]</param>
+                <param name="icon">special://skin/extras/icons/angles-right.png</param>
+                <param name="font">font_main_bold</param>
+            </include>
+        </control>
+    </include>
+    <include name="OSD_VS10_SDR">
+        <control type="group">
+         <visible>!String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
+            <centertop>70%</centertop>
+            <height>120</height>
+            <include content="Object_InfoCircle_VS10">
+                <param name="label">$INFO[Player.Process(video.source.hdr.type)] -&gt; SDR</param>
+                <param name="icon">special://skin/extras/icons/sdr.png</param>
+                <param name="font">font_main_bold</param>
+            </include>
+        </control>
+        <control type="group">
+         <visible>String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
+            <centertop>70%</centertop>
+            <height>120</height>
+            <include content="Object_InfoCircle_VS10">
+                <param name="label">$VAR[HDRcodectypeVar] -&gt; SDR</param>
+                <param name="icon">special://skin/extras/icons/sdr.png</param>
+                <param name="font">font_main_bold</param>
+            </include>
+        </control>
+    </include>
+	
+    <include name="OSD_VS10_HDR">
+        <control type="group">
+         <visible>!String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
+            <centertop>70%</centertop>
+            <height>120</height>
+            <include content="Object_InfoCircle_VS10">
+                <param name="label">$INFO[Player.Process(video.source.hdr.type)] -&gt; HDR10</param>
+                <param name="icon">special://skin/extras/icons/hdr100.png</param>
+                <param name="font">font_main_bold</param>
+            </include>
+        </control>
+        <control type="group">
+         <visible>String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
+            <centertop>70%</centertop>
+            <height>120</height>
+            <include content="Object_InfoCircle_VS10">
+                <param name="label">$VAR[HDRcodectypeVar] -&gt; HDR10</param>
+                <param name="icon">special://skin/extras/icons/hdr100.png</param>
+                <param name="font">font_main_bold</param>
+            </include>
+        </control>
+    </include>
+    <include name="OSD_VS10_DV">
+        <control type="group">
+         <visible>!String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
+            <centertop>70%</centertop>
+            <height>120</height>
+            <include content="Object_InfoCircle_VS10">
+                <param name="label">$INFO[Player.Process(video.source.hdr.type)] -&gt; Dolby Vision</param>
+                <param name="icon">special://skin/extras/icons/dolbyvision.png</param>
+                <param name="font">font_main_bold</param>
+            </include>
+        </control>
+        <control type="group">
+         <visible>String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
+            <centertop>70%</centertop>
+            <height>120</height>
+            <include content="Object_InfoCircle_VS10">
+                <param name="label">$VAR[HDRcodectypeVar] -&gt; Dolby Vision</param>
+                <param name="icon">special://skin/extras/icons/dolbyvision.png</param>
+                <param name="font">font_main_bold</param>
+            </include>
+        </control>
+    </include>
+
     <include name="OSD_TempoControl_FFRW_Steps">
         <control type="grouplist">
             <left>-9</left>
@@ -1268,5 +1347,3 @@
         </definition>
     </include>
 </includes>
-
-

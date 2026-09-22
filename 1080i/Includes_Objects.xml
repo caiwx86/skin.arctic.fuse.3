@@ -715,6 +715,55 @@
         </definition>
     </include>
 
+    <include name="Object_InfoCircle_VS10">
+        <param name="bordersize">1</param>
+        <param name="aspectratio">scale</param>
+        <param name="colorbacking">main_fg_100</param>
+        <param name="colordiffuse">main_bg_90</param>
+        <param name="textcolor">main_fg_70</param>
+        <param name="font_top">font_main_bold</param>
+        <param name="include_labels">true</param>
+        <param name="backing_visible">true</param>
+        <param name="shadow_colordiffuse">shadow_soft</param>
+        <definition>
+        	<control type="group">
+                <height>90</height>
+                <control type="group">
+                	<centertop>50%</centertop>
+                	<height>50</height>
+                	<width>50</width>
+                	<control type="image">
+                        <include content="Dimension_Padding">
+                        	<param name="pad">-40</param>
+                        </include>
+                        <bordersize>40</bordersize>
+                        <bordertexture colordiffuse="$PARAM[shadow_colordiffuse]"></bordertexture>
+                        <texture colordiffuse="main_fg_70"></texture>
+                        <visible>$PARAM[backing_visible]</visible>
+                	</control>
+                	<include content="Object_InfoCircle_Image">
+                        <param name="bordersize">$PARAM[bordersize]</param>
+                        <param name="aspectratio">$PARAM[aspectratio]</param>
+                        <param name="colordiffuse"></param>
+                        <param name="icon">$PARAM[icon]</param>
+                        <param name="diffuse"></param>
+                	</include>
+                </control>
+                <nested />
+                <left>40</left>
+                <include content="Object_InfoCircle_Text_Top" condition="$PARAM[include_labels]">
+                	<left>90</left>
+                	<height>50</height>
+                	<top>38</top>
+                	<textcolor>FFc4ddf0</textcolor>
+                	<selectedcolor>$PARAM[textcolor]</selectedcolor>
+                	<label>$PARAM[label]</label>
+                	<font>font_mini_bold</font>
+                </include>
+        	</control>
+        </definition>
+    </include>
+
     <include name="Object_StartUp_Logo">
         <control type="grouplist">
             <height>128</height>
