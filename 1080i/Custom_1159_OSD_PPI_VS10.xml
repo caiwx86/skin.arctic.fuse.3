@@ -47,7 +47,7 @@
                         <include content="Settings_Button">
                             <param name="id">8490</param>
                             <param name="control">button</param>
-                            <onclick>RunScript(script.tinyppi,run_mode,dv)</onclick>
+                            <onclick>RunScript(script.signde.tinyppi,run_mode,dv)</onclick>
                             <onclick>Dialog.Close(all)</onclick>
                         </include>
                         <control type="group" id="6894">
@@ -75,7 +75,7 @@
                         <include content="Settings_Button">
                             <param name="id">8491</param>
                             <param name="control">button</param>
-                            <onclick>RunScript(script.tinyppi,run_mode,hdr10)</onclick>
+                            <onclick>RunScript(script.signde.tinyppi,run_mode,hdr10)</onclick>
                             <onclick>Dialog.Close(all)</onclick>
                         </include>
                         <control type="group" id="6895">
@@ -103,7 +103,7 @@
                         <include content="Settings_Button">
                             <param name="id">8493</param>
                             <param name="control">button</param>
-                            <onclick>RunScript(script.tinyppi,run_mode,original_sdr)</onclick>
+                            <onclick>RunScript(script.signde.tinyppi,run_mode,original_sdr)</onclick>
                             <onclick>Dialog.Close(all)</onclick>
                         </include>
                         <control type="group" id="6897">
@@ -166,7 +166,7 @@
                         <include content="Settings_Button">
                             <param name="id">8490</param>
                             <param name="control">button</param>
-                            <onclick>RunScript(script.tinyppi,run_mode,dv)</onclick>
+                            <onclick>RunScript(script.signde.tinyppi,run_mode,dv)</onclick>
                             <onclick>Dialog.Close(all)</onclick>
                         </include>
                         <control type="group" id="6894">
@@ -194,7 +194,7 @@
                         <include content="Settings_Button">
                             <param name="id">8492</param>
                             <param name="control">button</param>
-                            <onclick>RunScript(script.tinyppi,run_mode,sdr8)</onclick>
+                            <onclick>RunScript(script.signde.tinyppi,run_mode,sdr8)</onclick>
                             <onclick>Dialog.Close(all)</onclick>
                         </include>
                         <control type="group" id="6896">
@@ -222,7 +222,7 @@
                         <include content="Settings_Button">
                             <param name="id">8493</param>
                             <param name="control">button</param>
-                            <onclick>RunScript(script.tinyppi,run_mode,original_hdr)</onclick>
+                            <onclick>RunScript(script.signde.tinyppi,run_mode,original_hdr)</onclick>
                             <onclick>Dialog.Close(all)</onclick>
                         </include>
                         <control type="group" id="6897">
@@ -285,7 +285,7 @@
                         <include content="Settings_Button">
                             <param name="id">8492</param>
                             <param name="control">button</param>
-                            <onclick>RunScript(script.tinyppi,run_mode,sdr8)</onclick>
+                            <onclick>RunScript(script.signde.tinyppi,run_mode,sdr8)</onclick>
                             <onclick>Dialog.Close(all)</onclick>
                         </include>
                         <control type="group" id="6896">
@@ -313,7 +313,7 @@
                         <include content="Settings_Button">
                             <param name="id">8493</param>
                             <param name="control">button</param>
-                            <onclick>RunScript(script.tinyppi,run_mode,original_dv)</onclick>
+                            <onclick>RunScript(script.signde.tinyppi,run_mode,original_dv)</onclick>
                             <onclick>Dialog.Close(all)</onclick>
                         </include>
                         <control type="group" id="6897">
@@ -339,7 +339,7 @@
             </control>
 
             <include content="OSD_CustomDialog_GroupList">
-                <param name="onclick">RunScript(script.tinyppi)</param>
+                <param name="onclick">RunScript(script.signde.tinyppi)</param>
                 <param name="onup">SetFocus(8493)</param>
                 <param name="icon">special://skin/extras/icons/ppi.png</param>
                 <param name="button_9">true</param>
