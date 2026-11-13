@@ -391,7 +391,7 @@
         <param name="listitem">ListItem</param>
         <param name="service">ListItem</param>
         <param name="wrapmultiline">true</param>
-        <param name="croplogo">Window.Property(TMDbHelper.ListItem.CropImage)</param>
+        <param name="croplogo"></param>
         <definition>
             <control type="group">
                 <left>$PARAM[left]</left>
