@@ -261,11 +261,18 @@
     </include>
 
     <include name="Furniture_Busy_Spinner">
-        <control type="image">
-            <bordersize>-4</bordersize>
-            <include content="Defs_BusySpinner_Image">
-                <param name="spinspinner">$PARAM[spinspinner]</param>
-            </include>
+        <!-- Frame based spinner: does not depend on the Conditional/loop
+             animation engine, so it keeps turning on every Kodi build. -->
+        <control type="multiimage">
+            <width>100</width>
+            <height>100</height>
+            <imagepath>special://skin/media/spinner/</imagepath>
+            <timeperimage>80</timeperimage>
+            <fadetime>0</fadetime>
+            <randomize>false</randomize>
+            <aspectratio>keep</aspectratio>
+            <colordiffuse>$VAR[ColorHighlight]</colordiffuse>
+            <visible>$PARAM[spinspinner]</visible>
         </control>
     </include>
 

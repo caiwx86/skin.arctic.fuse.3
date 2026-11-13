@@ -397,7 +397,7 @@
                         </control>
                         <control type="image">
                             <aspectratio>scale</aspectratio>
-                            <texture border="4">$INFO[Container(10811).ListItem.Art(screenshot)]</texture>
+                            <texture background="true" border="4">$INFO[Container(10811).ListItem.Art(screenshot)]</texture>
                             <bordertexture colordiffuse="black" border="20">common/dialog.png</bordertexture>
                             <bordersize>20</bordersize>
                         </control>

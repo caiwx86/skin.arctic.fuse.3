@@ -15,10 +15,10 @@
 			<width>2000</width>
 			<height>600</height>
 			<control type="image">
-				<texture colordiffuse="FA000000">ppicodecs/ppinf.png</texture>
+				<texture colordiffuse="73000000">ppicodecs/ppinf.png</texture>
 			</control>
 			<control type="image">
-				<texture colordiffuse="66000000">ppicodecs/ppinf.png</texture>
+				<texture colordiffuse="1A000000">ppicodecs/ppinf.png</texture>
 			</control>
 		</control>
 		<!-- Codec logos -->

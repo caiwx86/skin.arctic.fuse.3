@@ -404,7 +404,7 @@
                     </control>
                     <control type="image">
                         <aspectratio>scale</aspectratio>
-                        <texture border="4">$INFO[ListItem.Art(screenshot)]</texture>
+                        <texture background="true" border="4">$INFO[ListItem.Art(screenshot)]</texture>
                         <bordertexture colordiffuse="black">common/white.png</bordertexture>
                         <bordersize>4</bordersize>
                     </control>

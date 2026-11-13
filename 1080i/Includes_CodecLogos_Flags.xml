@@ -16,29 +16,6 @@
 
     <include name="CodecStartupLogos">
         <definition>
-            <include content="Video_Audio_Background_Flag">
-                <param name="groupId">48</param>
-                <param name="imageId">49</param>
-                <param name="visible">!String.IsEmpty(VideoPlayer.VideoCodec) + !String.IsEmpty(VideoPlayer.AudioCodec)</param>
-                <param name="texture">u3k/corner.png</param>
-                <param name="colordiffuse">80FFFFFF</param>
-            </include>
-			
-            <include content="Video_Background_Flag">
-                <param name="groupId">50</param>
-                <param name="imageId">51</param>
-                <param name="visible">!String.IsEmpty(VideoPlayer.VideoCodec) + String.IsEmpty(VideoPlayer.AudioCodec)</param>
-                <param name="texture">u3k/corner_small.png</param>
-                <param name="colordiffuse">80FFFFFF</param>
-            </include>
-			
-            <include content="Audio_Background_Flag">
-                <param name="groupId">52</param>
-                <param name="imageId">53</param>
-                <param name="visible">String.IsEmpty(VideoPlayer.VideoCodec) + !String.IsEmpty(VideoPlayer.AudioCodec)</param>
-                <param name="texture">u3k/corner_small.png</param>
-                <param name="colordiffuse">80FFFFFF</param>
-            </include>
 			
             <include content="VS10_Indicator_Flag">
                 <param name="groupId">54</param>
@@ -242,60 +219,6 @@
         </definition>
     </include>
 
-    <include name="Video_Audio_Background_Flag">
-        <param name="groupId"/>
-        <param name="imageId"/>
-        <param name="visible">true</param>
-        <param name="texture"/>
-        <param name="colordiffuse">FFFFFFFF</param>
-        <definition>
-        <control type="group" id="$PARAM[groupId]">
-            <visible>$PARAM[visible]</visible>
-            <control type="image" id="$PARAM[imageId]">
-                <width>210</width>
-                <height>170</height>
-                <texture colordiffuse="$PARAM[colordiffuse]">$PARAM[texture]</texture>
-                <animation effect="fade" start="0" end="100" time="300">Visible</animation>
-            </control>
-        </control>
-        </definition>
-    </include>
-    <include name="Video_Background_Flag">
-        <param name="groupId"/>
-        <param name="imageId"/>
-        <param name="visible">true</param>
-        <param name="texture"/>
-        <param name="colordiffuse">FFFFFFFF</param>
-        <definition>
-        <control type="group" id="$PARAM[groupId]">
-            <visible>$PARAM[visible]</visible>
-            <control type="image" id="$PARAM[imageId]">
-                <width>210</width>
-                <height>90</height>
-                <texture colordiffuse="$PARAM[colordiffuse]">$PARAM[texture]</texture>
-                <animation effect="fade" start="0" end="100" time="300">Visible</animation>
-            </control>
-        </control>
-        </definition>
-    </include>
-    <include name="Audio_Background_Flag">
-        <param name="groupId"/>
-        <param name="imageId"/>
-        <param name="visible">true</param>
-        <param name="texture"/>
-        <param name="colordiffuse">FFFFFFFF</param>
-        <definition>
-        <control type="group" id="$PARAM[groupId]">
-            <visible>$PARAM[visible]</visible>
-            <control type="image" id="$PARAM[imageId]">
-                <width>210</width>
-                <height>90</height>
-                <texture colordiffuse="$PARAM[colordiffuse]">$PARAM[texture]</texture>
-                <animation effect="fade" start="0" end="100" time="300">Visible</animation>
-            </control>
-        </control>
-        </definition>
-    </include>
     <include name="VS10_Indicator_Flag">
         <param name="groupId"/>
         <param name="imageId"/>
