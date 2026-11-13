@@ -2905,3 +2905,7 @@ msgstr ""
 msgctxt "#32094"
 msgid "Show theater splash when play begin or when audio changes"
 msgstr ""
+
+msgctxt "#32095"
+msgid "Restarting, please wait..."
+msgstr ""

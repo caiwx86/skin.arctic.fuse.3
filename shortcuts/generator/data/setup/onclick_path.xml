@@ -9,11 +9,22 @@
             </value>
         </rule>
         <rule>
+            <condition>{item_path}==Reboot</condition>
+            <value>
+                <![CDATA[
+                <onclick>ActivateWindow(1197)</onclick>
+                <onclick>AlarmClock(RebootNow,Reboot,00:02,silent)</onclick>
+                ]]>
+            </value>
+        </rule>
+        <rule>
             <condition>{item_path}==RebootToAndroid</condition>
             <value>
                 <![CDATA[
-                <onclick>System.ExecWait("/usr/sbin/rebootfromnand")</onclick>
-                <onclick>Reboot()</onclick>
+                <onclick>ActivateWindow(1197)</onclick>
+                <onclick condition="System.HasAddon(script.reboottoandroid)">RunScript(script.reboottoandroid)</onclick>
+                <onclick condition="!System.HasAddon(script.reboottoandroid)">System.Exec("/usr/sbin/rebootfromnand")</onclick>
+                <onclick condition="!System.HasAddon(script.reboottoandroid)">AlarmClock(RebootNow,Reboot,00:03,silent)</onclick>
                 ]]>
             </value>
         </rule>

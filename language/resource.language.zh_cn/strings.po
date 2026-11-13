@@ -2906,3 +2906,7 @@ msgstr "电影开始时，或播放电影期间音频发生变化时，居中显
 msgctxt "#32094"
 msgid "Show theater splash when play begin or when audio changes"
 msgstr "播放开始或音频发生变化时，显示影院开场画面"
+
+msgctxt "#32095"
+msgid "Restarting, please wait..."
+msgstr "正在重启，请稍候…"

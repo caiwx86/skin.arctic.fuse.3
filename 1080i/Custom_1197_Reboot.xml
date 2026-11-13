@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1197">
+    <!-- Full screen "restarting" screen: shown before Reboot / RebootToAndroid
+         so the box does not appear frozen on the last menu frame while Kodi
+         and systemd shut down. -->
+    <zorder>1200</zorder>
+    <controls>
+        <control type="group">
+            <control type="image">
+                <width>100%</width>
+                <height>100%</height>
+                <texture colordiffuse="E6000000">common/white.png</texture>
+            </control>
+            <control type="label">
+                <label>$LOCALIZE[32095]</label>
+                <font>font_title_midi</font>
+                <textcolor>main_fg_90</textcolor>
+                <align>center</align>
+                <aligny>center</aligny>
+                <width>100%</width>
+                <height>100%</height>
+            </control>
+        </control>
+    </controls>
+</window>
