@@ -715,55 +715,6 @@
         </definition>
     </include>
 
-    <include name="Object_InfoCircle_VS10">
-        <param name="bordersize">1</param>
-        <param name="aspectratio">scale</param>
-        <param name="colorbacking">main_fg_100</param>
-        <param name="colordiffuse">main_bg_90</param>
-        <param name="textcolor">main_fg_70</param>
-        <param name="font_top">font_main_bold</param>
-        <param name="include_labels">true</param>
-        <param name="backing_visible">true</param>
-        <param name="shadow_colordiffuse">shadow_soft</param>
-        <definition>
-        	<control type="group">
-                <height>90</height>
-                <control type="group">
-                	<centertop>50%</centertop>
-                	<height>50</height>
-                	<width>50</width>
-                	<control type="image">
-                        <include content="Dimension_Padding">
-                        	<param name="pad">-40</param>
-                        </include>
-                        <bordersize>40</bordersize>
-                        <bordertexture colordiffuse="$PARAM[shadow_colordiffuse]"></bordertexture>
-                        <texture colordiffuse="main_fg_70"></texture>
-                        <visible>$PARAM[backing_visible]</visible>
-                	</control>
-                	<include content="Object_InfoCircle_Image">
-                        <param name="bordersize">$PARAM[bordersize]</param>
-                        <param name="aspectratio">$PARAM[aspectratio]</param>
-                        <param name="colordiffuse"></param>
-                        <param name="icon">$PARAM[icon]</param>
-                        <param name="diffuse"></param>
-                	</include>
-                </control>
-                <nested />
-                <left>40</left>
-                <include content="Object_InfoCircle_Text_Top" condition="$PARAM[include_labels]">
-                	<left>90</left>
-                	<height>50</height>
-                	<top>38</top>
-                	<textcolor>FFc4ddf0</textcolor>
-                	<selectedcolor>$PARAM[textcolor]</selectedcolor>
-                	<label>$PARAM[label]</label>
-                	<font>font_mini_bold</font>
-                </include>
-        	</control>
-        </definition>
-    </include>
-
     <include name="Object_StartUp_Logo">
         <control type="grouplist">
             <height>128</height>
@@ -2129,6 +2080,62 @@
 
     <include name="Object_Null_OnFocus">
         <description>Empty include to pass to params</description>
+    </include>
+
+    <include name="Object_Statistics_Panel">
+        <param name="limit">10</param>
+        <param name="width">295</param>
+        <definition>
+            <control type="group">
+                <width>$PARAM[width]</width>
+                <control type="image">
+                    <texture colordiffuse="main_fg_06" border="20">common/box.png</texture>
+                </control>
+                <control type="label">
+                    <height>60</height>
+                    <font>font_mini_bold</font>
+                    <textcolor>main_fg_90</textcolor>
+                    <label>$PARAM[label]</label>
+                    <align>center</align>
+                </control>
+                <control type="group">
+                    <left>-20</left>
+                    <right>-20</right>
+                    <height>60</height>
+                    <include>Part_Line</include>
+                </control>
+                <control type="list">
+                    <top>60</top>
+                    <content sortby="year" sortorder="descending">plugin://script.skinvariables/?info=get_quick_stats&amp;containers=$PARAM[containers]&amp;infolabel=$PARAM[infolabel]&amp;limit=$PARAM[limit]$PARAM[affix]</content>
+                    <itemlayout width="$PARAM[width]" height="60"><include>Layout_StatisticMeta</include></itemlayout>
+                    <focusedlayout width="$PARAM[width]" height="60"><include>Layout_StatisticMeta</include></focusedlayout>
+                </control>
+            </control>
+        </definition>
+    </include>
+
+    <include name="Object_StatisticsDots_Month">
+        <control type="group">
+            <width>130</width>
+            <animation effect="fade" start="100" end="0" condition="!Integer.IsEqual(Container($PARAM[id]).ListItemAbsolute($PARAM[pos]).Property(week_number),1)">Conditional</animation>
+            <control type="label">
+                <align>left</align>
+                <font>font_hint_bold</font>
+                <textcolor>main_fg_90</textcolor>
+                <label>$INFO[Container($PARAM[id]).ListItemAbsolute($PARAM[pos]).Property(month_short),| ,]</label>
+                <height>40</height>
+                <!-- <animation effect="fade" start="100" end="0" condition="!Integer.IsEqual(Container($PARAM[id]).ListItemAbsolute($PARAM[pos]).Property(week_number),1)">Conditional</animation> -->
+            </control>
+            <control type="label">
+                <top>250</top>
+                <align>left</align>
+                <font>font_hint_bold</font>
+                <textcolor>main_fg_90</textcolor>
+                <label>$INFO[Container($PARAM[id]).ListItemAbsolute($PARAM[pos]).Property(month_count),| ,]</label>
+                <!-- <label>$INFO[Container($PARAM[id]).ListItemAbsolute($PARAM[pos]).Property(week_count)]</label> -->
+                <height>40</height>
+            </control>
+        </control>
     </include>
 
 </includes>

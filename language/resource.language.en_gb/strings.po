@@ -16,14 +16,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 3.4.1\n"
 
-msgctxt "#31994"
-msgid "Information bar"
-msgstr ""
-
-msgctxt "#31995"
-msgid "Two-line information bar"
-msgstr ""
-
 msgctxt "#31000"
 msgid "Live TV / PVR"
 msgstr ""
@@ -419,7 +411,7 @@ msgstr ""
 
 #: /1080i/Includes_Labels.xml
 msgctxt "#31083"
-msgid "Combined"
+msgid "Combined Row"
 msgstr ""
 
 #: /1080i/Includes_SkinSettings.xml
@@ -785,9 +777,24 @@ msgctxt "#31160"
 msgid "REC"
 msgstr ""
 
+#: /1080i/Includes_Actions.xml
+msgctxt "#31161"
+msgid "Flyer"
+msgstr ""
+
 #: /1080i/Includes_Labels.xml
 msgctxt "#31162"
 msgid "Hide"
+msgstr ""
+
+#: /shortcuts/skinviewtypes.json
+msgctxt "#31163"
+msgid "Combined Flyer"
+msgstr ""
+
+#: /1080i/Includes_Views_Row.xml
+msgctxt "#31164"
+msgid "Row Placard"
 msgstr ""
 
 #: /1080i/SkinSettings.xml
@@ -825,6 +832,11 @@ msgctxt "#31171"
 msgid "On-screen keyboard size"
 msgstr ""
 
+#: /1080i/Includes_Actions.xml
+msgctxt "#31172"
+msgid "Placard"
+msgstr ""
+
 #: /1080i/SkinSettings.xml
 msgctxt "#31173"
 msgid "Scroll"
@@ -834,8 +846,23 @@ msgctxt "#31174"
 msgid "Navigation"
 msgstr ""
 
+#: /1080i/Dialog_Lists.xml
+msgctxt "#31175"
+msgid "Player"
+msgstr ""
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31176"
+msgid "Create a new save"
+msgstr ""
+
 msgctxt "#31177"
 msgid "Menus"
+msgstr ""
+
+#: /1080i/Dialog_DialogGameControllers.xml
+msgctxt "#31178"
+msgid "Cheats available"
 msgstr ""
 
 #: /1080i/Includes_Search.xml
@@ -843,9 +870,19 @@ msgctxt "#31179"
 msgid "Keyword"
 msgstr ""
 
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31180"
+msgid "Garbage"
+msgstr ""
+
 #: /1080i/Includes_DialogInfo.xml
 msgctxt "#31181"
 msgid "Scheduled"
+msgstr ""
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31182"
+msgid "Bad"
 msgstr ""
 
 #: /1080i/Includes_Info.xml
@@ -876,6 +913,26 @@ msgstr ""
 
 msgctxt "#31189"
 msgid "Autoclose OSD after X seconds"
+msgstr ""
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31190"
+msgid "Average"
+msgstr ""
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31191"
+msgid "Good"
+msgstr ""
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31192"
+msgid "Great"
+msgstr ""
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31193"
+msgid "Amazing"
 msgstr ""
 
 #: /1080i/Includes_Info.xml
@@ -910,6 +967,11 @@ msgstr ""
 #: /1080i/Includes_Info.xml
 msgctxt "#31200"
 msgid "Added on"
+msgstr ""
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31201"
+msgid "Excellent"
 msgstr ""
 
 msgctxt "#31202"
@@ -990,6 +1052,11 @@ msgstr ""
 #: /1080i/Includes_Labels.xml
 msgctxt "#31218"
 msgid "Mid-Season Finale"
+msgstr ""
+
+#: /1080i/Settings.xml
+msgctxt "#31219"
+msgid "Recently Watched"
 msgstr ""
 
 #: /1080i/Includes_Items.xml
@@ -1117,6 +1184,16 @@ msgctxt "#31246"
 msgid "Autoscroll textboxes"
 msgstr ""
 
+#: /1080i/Includes_Settings.xml
+msgctxt "#31247"
+msgid "Networks"
+msgstr ""
+
+#: /1080i/Includes_Settings.xml
+msgctxt "#31248"
+msgid "Certifications"
+msgstr ""
+
 msgctxt "#31249"
 msgid "Waiting for PVR"
 msgstr ""
@@ -1126,8 +1203,18 @@ msgctxt "#31250"
 msgid "Highlight"
 msgstr ""
 
+#: /1080i/Settings.xml
+msgctxt "#31251"
+msgid "Statistics"
+msgstr ""
+
 msgctxt "#31252"
 msgid "Catch-up"
+msgstr ""
+
+#: /1080i/Settings.xml
+msgctxt "#31253"
+msgid "Daily"
 msgstr ""
 
 #: /1080i/Includes_Labels.xml
@@ -1177,6 +1264,21 @@ msgstr ""
 
 msgctxt "#31265"
 msgid "Budget"
+msgstr ""
+
+#: /1080i/Settings.xml
+msgctxt "#31266"
+msgid "Monthly"
+msgstr ""
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31267"
+msgid "Title fallback"
+msgstr ""
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31268"
+msgid "Background fallback"
 msgstr ""
 
 msgctxt "#31270"
@@ -2462,6 +2564,51 @@ msgctxt "#31625"
 msgid "High"
 msgstr ""
 
+#: /shortcuts/skinviewtypes.json
+msgctxt "#31626"
+msgid "Combined Wall"
+msgstr ""
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31627"
+msgid "Combined Wall Square"
+msgstr ""
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31628"
+msgid "Combined Wall Landscape"
+msgstr ""
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31629"
+msgid "Combined Wall Poster"
+msgstr ""
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31630"
+msgid "Combined Wall Circle"
+msgstr ""
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31631"
+msgid "Combined Wall Board"
+msgstr ""
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31632"
+msgid "Combined Wall Flyer"
+msgstr ""
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31633"
+msgid "Fallback style"
+msgstr ""
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31634"
+msgid "Stylised"
+msgstr ""
+
 msgctxt "#31980"
 msgid "Reticulating Splines"
 msgstr ""
@@ -2526,386 +2673,29 @@ msgctxt "#31999"
 msgid "VHS Art"
 msgstr ""
 
-msgctxt "#32000"
-msgid "Display output mode"
-msgstr ""
-
-msgctxt "#32001"
-msgid "Video resolution"
-msgstr ""
-
-msgctxt "#32002"
-msgid "Color space"
-msgstr ""
-
-msgctxt "#32003"
-msgid "Mb/s"
-msgstr ""
-
-msgctxt "#32004"
-msgid "Audio bitrate"
-msgstr ""
-
-msgctxt "#32005"
-msgid "Video decoder"
-msgstr ""
-
-msgctxt "#32006"
-msgid "Dolby VS10 engine"
-msgstr ""
-
-msgctxt "#32007"
-msgid "More"
-msgstr ""
-
-msgctxt "#32008"
-msgid "Video queue"
-msgstr ""
-
-msgctxt "#32009"
-msgid "Video queue data"
-msgstr ""
-
-msgctxt "#32010"
-msgid "Audio queue"
-msgstr ""
-
-msgctxt "#32011"
-msgid "Audio queue data"
-msgstr ""
-
-msgctxt "#32012"
-msgid "Kb/s"
-msgstr ""
-
-msgctxt "#32013"
-msgid "DV metadata"
-msgstr ""
-
-msgctxt "#32014"
-msgid "CPU temp & usage"
-msgstr ""
-
-msgctxt "#32015"
-msgid "Version"
-msgstr ""
-
-msgctxt "#32016"
-msgid "Dolby Vision profile"
-msgstr ""
-
-msgctxt "#32017"
-msgid "Level"
-msgstr ""
-
-msgctxt "#32018"
-msgid "RPU"
-msgstr ""
-
-msgctxt "#32019"
-msgid "Base Layer"
-msgstr ""
-
-msgctxt "#32020"
-msgid "Enhancement Layer"
-msgstr ""
-
-msgctxt "#32021"
-msgid "Enhancement Layer Type"
-msgstr ""
-
-msgctxt "#32022"
-msgid "Metadata"
-msgstr ""
-
-msgctxt "#32023"
-msgid "Video output"
-msgstr ""
-
-msgctxt "#32024"
-msgid "Aspect ratio"
-msgstr ""
-
-msgctxt "#32025"
-msgid "HDR10 MDL"
-msgstr ""
-
-msgctxt "#32026"
-msgid "HDR10 MaxCLL/FALL"
-msgstr ""
-
-msgctxt "#32027"
-msgid "Media source"
-msgstr ""
-
-msgctxt "#32028"
-msgid "Unknown"
-msgstr ""
-
-msgctxt "#32029"
-msgid "On"
-msgstr ""
-
-msgctxt "#32030"
-msgid "Off"
-msgstr ""
-
-msgctxt "#32031"
-msgid "Deinterlacing"
-msgstr ""
-
-msgctxt "#32032"
-msgid "Videoplayer cache"
-msgstr ""
-
-msgctxt "#32033"
-msgid "N/A"
-msgstr ""
-
-msgctxt "#32034"
-msgid "Memory usage"
-msgstr ""
-
-msgctxt "#32035"
-msgid "Video color depth"
-msgstr ""
-
-msgctxt "#32036"
-msgid "System / AML fps"
-msgstr ""
-
-msgctxt "#32037"
-msgid "DV Configuration"
-msgstr ""
-
-msgctxt "#32038"
-msgid "DV Levels Metadata"
-msgstr ""
-
-msgctxt "#32039"
-msgid "HDR Static Metadata"
-msgstr ""
-
-msgctxt "#32040"
-msgid "nits"
-msgstr ""
-
-msgctxt "#32041"
-msgid "RPU MDL"
-msgstr ""
-
-msgctxt "#32042"
-msgid "RPU MaxCLL/FALL"
-msgstr ""
-
-msgctxt "#32043"
-msgid "FLL MIN / MAX / AVG"
-msgstr ""
-
-msgctxt "#32044"
-msgid "PQ  MIN / MAX / AVG"
-msgstr ""
-
-msgctxt "#32045"
-msgid "12-bit"
-msgstr ""
-
-msgctxt "#32046"
+msgctxt "#21446"
 msgid "Audio codec"
 msgstr ""
 
-msgctxt "#32047"
-msgid "Video bitrate"
+msgctxt "#35227"
+msgid "Rotating disc art"
 msgstr ""
 
-msgctxt "#32048"
-msgid "VS10 status"
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31635"
+msgid "List Poster"
 msgstr ""
 
-msgctxt "#32049"
-msgid "Audio sample rate"
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31636"
+msgid "List Square"
 msgstr ""
 
-msgctxt "#32050"
-msgid "CPU temperature"
-msgstr ""
-
-msgctxt "#32051"
-msgid "Video sample rate"
-msgstr ""
-
-msgctxt "#32052"
-msgid "Audio language"
-msgstr ""
-
-msgctxt "#32053"
-msgid "Subtitle language"
-msgstr ""
-
-msgctxt "#32054"
-msgid "Video"
-msgstr ""
-
-msgctxt "#32055"
-msgid "System"
-msgstr ""
-
-msgctxt "#32056"
-msgid "Audio"
-msgstr ""
-
-msgctxt "#32057"
-msgid "Top left"
-msgstr ""
-
-msgctxt "#32058"
-msgid "Top center"
-msgstr ""
-
-msgctxt "#32059"
-msgid "Top right"
-msgstr ""
-
-msgctxt "#32060"
-msgid "Position of the codec logos in the OSD"
-msgstr ""
-
-msgctxt "#32061"
-msgid "Position of the codec logos in the PlayerProcessInfo"
-msgstr ""
-
-msgctxt "#32062"
-msgid "Show codec logos at bottom when video starts"
-msgstr ""
-
-msgctxt "#32063"
-msgid "Codec logos"
-msgstr ""
-
-msgctxt "#32064"
-msgid "Original"
-msgstr ""
-
-msgctxt "#32065"
-msgid "Dolby VS10 mode"
-msgstr ""
-
-msgctxt "#32066"
-msgid "Audio codec"
-msgstr ""
-
-msgctxt "#32067"
-msgid "L5 Active Offsets Top-Bottom"
-
-msgctxt "#32068"
-msgid "L5 Active Offsets Left-Right"
-msgstr ""
-
-msgctxt "#32069"
-msgid "channels"
-msgstr ""
-
-msgctxt "#32070"
-msgid "5 sec"
-msgstr ""
-
-msgctxt "#32071"
-msgid "7 sec"
-msgstr ""
-
-msgctxt "#32072"
-msgid "10 sec"
-msgstr ""
-
-msgctxt "#32073"
-msgid "Show codec logos at top when video starts"
-msgstr ""
-
-msgctxt "#32074"
-msgid "Video OSD extras"
-msgstr ""
-
-msgctxt "#32075"
-msgid "Network Connected"
-msgstr ""
-
-msgctxt "#32076"
-msgid "Network not connected"
-msgstr ""
-
-#: /1080i/Includes_Labels.xml
-msgctxt "#32077"
-msgid "Network connection under the clock"
-msgstr ""
-
-msgctxt "#32078"
-msgid "Clearlogo"
-msgstr ""
-
-msgctxt "#32079"
-msgid "Coloured"
-msgstr ""
-
-msgctxt "#32080"
-msgid "Show Image codec logos"
-msgstr ""
-
-msgctxt "#32081"
-msgid "Clock + Date"
-msgstr ""
-
-msgctxt "#32082"
-msgid "Weather icon colour"
-msgstr ""
-
-msgctxt "#32083"
-msgid "White"
-msgstr ""
-
-msgctxt "#32084"
-msgid "Low"
-msgstr ""
-
-msgctxt "#32085"
-msgid "High"
-msgstr ""
-
-msgctxt "#32086"
-msgid "Current"
-msgstr ""
-
-msgctxt "#32087"
-msgid "Show Text codec logos"
-msgstr ""
-
-msgctxt "#32088"
-msgid "Hide filename and path"
-msgstr ""
-
-msgctxt "#32089"
-msgid "Clock + Date and Weather"
-msgstr ""
-
-msgctxt "#32090"
-msgid "CPU usage"
-msgstr ""
-
-msgctxt "#32091"
-msgid "Sound output"
-msgstr ""
-
-msgctxt "#32092"
-msgid "Playtime"
-msgstr ""
-
-msgctxt "#32093"
-msgid "Center theater splash at movie begin, or when audio changes during movie play"
-msgstr ""
-
-msgctxt "#32094"
-msgid "Show theater splash when play begin or when audio changes"
+#: /1080i/Dialog_DialogCustom.xml
+msgctxt "#31637"
+msgid "Trailer source"
 msgstr ""
 
 msgctxt "#32095"
 msgid "Restarting, please wait..."
-msgstr ""
+msgstr "Restarting, please wait..."

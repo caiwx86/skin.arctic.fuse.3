@@ -116,20 +116,49 @@
 
     <include name="DialogCustom_Trailers">
         <include content="DialogCustom_Favourites">
-            <param name="header">$LOCALIZE[10025]</param>
+            <param name="header">$LOCALIZE[31637]</param>
+            <param name="include_list">DialogCustom_Trailers_List</param>
             <param name="include_content">DialogCustom_Trailers_Content</param>
         </include>
     </include>
 
+    <include name="DialogCustom_Trailers_List">
+        <param name="scrollbarid">61</param>
+        <definition>
+            <include content="List_Dialog">
+                <param name="id">$PARAM[id]</param>
+                <param name="item_height">128</param>
+                <param name="itemlayout_include">List_Layout_Dialog_DetailedCheckmark</param>
+                <pagecontrol>$PARAM[scrollbarid]</pagecontrol>
+                <onright>$PARAM[scrollbarid]</onright>
+                <include>Size_Grouplist_Pad</include>
+                <include>$PARAM[include_content]</include>
+            </include>
+        </definition>
+    </include>
+
     <include name="DialogCustom_Trailers_Content">
-        <onclick>Close</onclick>
+        <onclick condition="String.IsEqual(Container(450).ListItem.Property(TrailerSource),Default)">SetProperty(PlayTrailer,$ESCINFO[Window(Home).Property(TrailerSource.Default)],Home)</onclick>
+        <onclick condition="String.IsEqual(Container(450).ListItem.Property(TrailerSource),IMDb)">SetProperty(PlayTrailer,$ESCINFO[Window(Home).Property(TrailerSource.IMDb)],Home)</onclick>
+        <onclick condition="String.IsEmpty(Container(450).ListItem.Property(TrailerSource))">SetProperty(PlayTrailer,$ESCINFO[Container(450).ListItem.FileNameAndPath],Home)</onclick>
+        <onclick condition="String.IsEmpty(Container(450).ListItem.Property(TrailerSource))">SetProperty(PlayTrailerTitle,$ESCINFO[Container(450).ListItem.Label],Home)</onclick>
         <onclick>Dialog.Close(1123,true)</onclick>
-        <include content="Action_PlayTrailer_OnClick">
-            <param name="trailer">Container(450).ListItem.FileNameAndPath</param>
-            <param name="trailer_fallback" />
-            <param name="title">$INFO[Container(450).ListItem.Label]</param>
-            <param name="items">$INFO[Window(Home).Property(PlayTrailerItems)]</param>
-        </include>
+        <onclick>Dialog.Close(1122,true)</onclick>
+        <onclick>ActivateWindow(1123)</onclick>
+        <content>
+            <item>
+                <label>$LOCALIZE[571]</label>
+                <icon>special://skin/extras/icons/kodi.png</icon>
+                <property name="TrailerSource">Default</property>
+                <visible>!String.IsEmpty(Window(Home).Property(TrailerSource.Default))</visible>
+            </item>
+            <item>
+                <label>IMDb Trailers</label>
+                <icon>special://home/addons/plugin.video.imdb.trailers/icon.png</icon>
+                <property name="TrailerSource">IMDb</property>
+                <visible>!String.IsEmpty(Window(Home).Property(TrailerSource.IMDb))</visible>
+            </item>
+        </content>
         <content>$INFO[Window(Home).Property(PlayTrailerItems)]</content>
     </include>
 
@@ -977,16 +1006,16 @@
             <param name="content">$PARAM[content]</param>
         </include>
         <include content="DialogCustom_Ratings_Items_Template">
-            <param name="id">8011</param>
-            <param name="groupid">8111</param>
+            <param name="id">8010</param>
+            <param name="groupid">8110</param>
             <param name="label">Douban</param>
             <param name="type">Douban</param>
             <param name="item">$PARAM[item]</param>
             <param name="content">$PARAM[content]</param>
         </include>
         <include content="DialogCustom_Ratings_Items_Template">
-            <param name="id">8010</param>
-            <param name="groupid">8110</param>
+            <param name="id">8019</param>
+            <param name="groupid">8119</param>
             <param name="label">MyAnimeList</param>
             <param name="type">MyAnimeList</param>
             <param name="item">$PARAM[item]</param>
@@ -1814,6 +1843,15 @@
             <param name="id">8007</param>
             <param name="groupid">8107</param>
             <param name="dialog">true</param>
+            <param name="icon">special://skin/extras/icons/people-group.png</param>
+            <description>Player assignment</description>
+            <label>$LOCALIZE[35172]</label>
+            <onclick>ActivateWindow(GameAgents)</onclick>
+        </include>
+        <include content="Settings_ButtonImage">
+            <param name="id">8099</param>
+            <param name="groupid">8199</param>
+            <param name="dialog">true</param>
             <param name="icon">special://skin/extras/icons/screwdriver-wrench.png</param>
             <description>Advanced settings</description>
             <label>$LOCALIZE[35226]</label>
@@ -1839,6 +1877,44 @@
             <param name="icon">special://skin/extras/icons/floppy-disk.png</param>
             <onclick>ActivateWindow(InGameSaves)</onclick>
         </include>
+        <include content="Settings_ButtonImage">
+            <param name="id">8010</param>
+            <param name="groupid">8110</param>
+            <param name="dialog">true</param>
+            <param name="icon">special://skin/extras/icons/compact-disc.png</param>
+            <label>$LOCALIZE[35272]</label>
+            <onclick>ActivateWindow(GameDiscManager)</onclick>
+            <visible>RetroPlayer.SupportsEject</visible>
+        </include>
+        <include content="Settings_ButtonImage">
+            <param name="id">8008</param>
+            <param name="groupid">8108</param>
+            <param name="dialog">true</param>
+            <param name="icon">special://skin/extras/icons/award.png</param>
+            <label>$LOCALIZE[35287]</label>
+            <param name="label2">$INFO[RetroPlayer.AchievementsProgress]</param>
+            <param name="has_label2">true</param>
+            <onclick>ActivateWindow(GameAchievements)</onclick>
+        </include>
+        <include content="Settings_ButtonImage">
+            <param name="id">8009</param>
+            <param name="groupid">8109</param>
+            <param name="dialog">true</param>
+            <param name="icon">special://skin/extras/icons/trophy.png</param>
+            <label>$LOCALIZE[35331]</label>
+            <onclick>ActivateWindow(gameleaderboards)</onclick>
+            <visible>RetroPlayer.AchievementsLoggedIn</visible>
+        </include>
+        <include content="Settings_ButtonImage">
+            <param name="id">8011</param>
+            <param name="groupid">8111</param>
+            <param name="dialog">true</param>
+            <param name="icon">special://skin/extras/icons/wand-magic-sparkles.png</param>
+            <label>$LOCALIZE[35320]</label>
+            <onclick>ActivateWindow(GameCheats)</onclick>
+            <visible>RetroPlayer.SupportsCheats</visible>
+        </include>
+
         <include content="Settings_ButtonImage">
             <param name="id">8003</param>
             <param name="groupid">8103</param>

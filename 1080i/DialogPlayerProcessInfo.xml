@@ -22,9 +22,7 @@
 			</control>
 		</control>
 		<!-- Codec logos -->
-		<include condition="Skin.HasSetting(ppi.useleftCodecLogos)">CodecLogosLeftPPI</include>
-		<include condition="Skin.HasSetting(ppi.usecenterCodecLogos)">CodecLogosCenterPPI</include>
-		<include condition="Skin.HasSetting(ppi.userightCodecLogos)">CodecLogosRightPPI</include>
+<!-- Codec logo strip not shipped in this build -->
 		<!-- Group: left Bottom-->
 		<control type="group">
 			<top>580</top>

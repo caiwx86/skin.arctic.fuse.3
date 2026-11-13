@@ -330,7 +330,7 @@
             <texture colordiffuse="panel_bg_70" border="4,0,4,0">common/gradient-v.png</texture>
             <include>Animation_OSD_Fullscreen_Change</include>
             <visible>Window.IsActive(DialogSeekBar.xml) | Window.IsVisible(1152)</visible>
-            <visible>Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(1140) | Window.IsActive(1141) | Window.IsActive(1142) | Window.IsActive(1143) | Window.IsActive(1144) | Window.IsActive(1145) | Window.IsActive(1146) | Window.IsActive(1147) | Window.IsActive(1148) | Window.IsActive(1149) | Window.IsActive(1159) | Window.IsVisible(videobookmarks) | Window.IsVisible(pvrosdguide) | Window.IsVisible(pvrosdchannels) | Window.IsVisible(1152) | Window.IsActive(script-upnext-stillwatching.xml) | Window.IsActive(script-upnext-upnext.xml)</visible>
+            <visible>Window.IsActive(videoosd) | Window.IsActive(musicosd) | Window.IsActive(1140) | Window.IsActive(1141) | Window.IsActive(1142) | Window.IsActive(1143) | Window.IsActive(1144) | Window.IsActive(1145) | Window.IsActive(1146) | Window.IsActive(1147) | Window.IsActive(1148) | Window.IsActive(1149) | Window.IsVisible(videobookmarks) | Window.IsVisible(pvrosdguide) | Window.IsVisible(pvrosdchannels) | Window.IsVisible(1152) | Window.IsActive(script-upnext-stillwatching.xml) | Window.IsActive(script-upnext-upnext.xml)</visible>
         </control>
     </include>
 
@@ -808,85 +808,6 @@
         </definition>
     </include>
 
-    <include name="OSD_VS10_Original">
-        <control type="group">
-            <centertop>70%</centertop>
-            <height>120</height>
-            <include content="Object_InfoCircle_VS10">
-                <param name="label">$LOCALIZE[32064]</param>
-                <param name="icon">special://skin/extras/icons/angles-right.png</param>
-                <param name="font">font_main_bold</param>
-            </include>
-        </control>
-    </include>
-    <include name="OSD_VS10_SDR">
-        <control type="group">
-         <visible>!String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
-            <centertop>70%</centertop>
-            <height>120</height>
-            <include content="Object_InfoCircle_VS10">
-                <param name="label">$INFO[Player.Process(video.source.hdr.type)] -&gt; SDR</param>
-                <param name="icon">special://skin/extras/icons/sdr.png</param>
-                <param name="font">font_main_bold</param>
-            </include>
-        </control>
-        <control type="group">
-         <visible>String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
-            <centertop>70%</centertop>
-            <height>120</height>
-            <include content="Object_InfoCircle_VS10">
-                <param name="label">$VAR[HDRcodectypeVar] -&gt; SDR</param>
-                <param name="icon">special://skin/extras/icons/sdr.png</param>
-                <param name="font">font_main_bold</param>
-            </include>
-        </control>
-    </include>
-	
-    <include name="OSD_VS10_HDR">
-        <control type="group">
-         <visible>!String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
-            <centertop>70%</centertop>
-            <height>120</height>
-            <include content="Object_InfoCircle_VS10">
-                <param name="label">$INFO[Player.Process(video.source.hdr.type)] -&gt; HDR10</param>
-                <param name="icon">special://skin/extras/icons/hdr100.png</param>
-                <param name="font">font_main_bold</param>
-            </include>
-        </control>
-        <control type="group">
-         <visible>String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
-            <centertop>70%</centertop>
-            <height>120</height>
-            <include content="Object_InfoCircle_VS10">
-                <param name="label">$VAR[HDRcodectypeVar] -&gt; HDR10</param>
-                <param name="icon">special://skin/extras/icons/hdr100.png</param>
-                <param name="font">font_main_bold</param>
-            </include>
-        </control>
-    </include>
-    <include name="OSD_VS10_DV">
-        <control type="group">
-         <visible>!String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
-            <centertop>70%</centertop>
-            <height>120</height>
-            <include content="Object_InfoCircle_VS10">
-                <param name="label">$INFO[Player.Process(video.source.hdr.type)] -&gt; Dolby Vision</param>
-                <param name="icon">special://skin/extras/icons/dolbyvision.png</param>
-                <param name="font">font_main_bold</param>
-            </include>
-        </control>
-        <control type="group">
-         <visible>String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
-            <centertop>70%</centertop>
-            <height>120</height>
-            <include content="Object_InfoCircle_VS10">
-                <param name="label">$VAR[HDRcodectypeVar] -&gt; Dolby Vision</param>
-                <param name="icon">special://skin/extras/icons/dolbyvision.png</param>
-                <param name="font">font_main_bold</param>
-            </include>
-        </control>
-    </include>
-
     <include name="OSD_TempoControl_FFRW_Steps">
         <control type="grouplist">
             <left>-9</left>
@@ -1330,7 +1251,7 @@
                     <param name="iconoffset_condition">$PARAM[iconoffset_condition]</param>
                 </include>
 
-                <include content="OSD_CustomDialog_FakeButton" condition="![$PARAM[button_9]]">
+                <include content="OSD_CustomDialog_FakeButton" condition="![$PARAM[button_9]] + System.AddonIsEnabled(script.tinyppi)">
                     <param name="id">9</param>
                 </include>
                 <include content="OSD_CustomDialog_RealButton" condition="$PARAM[button_9]">
@@ -1347,3 +1268,5 @@
         </definition>
     </include>
 </includes>
+
+
