@@ -16,7 +16,7 @@
             <control type="image">
                 <width>100%</width>
                 <height>100%</height>
-                <texture colordiffuse="E6000000">common/white.png</texture>
+                <texture colordiffuse="FF000000">common/white.png</texture>
             </control>
             <control type="label">
                 <top>44%</top>
