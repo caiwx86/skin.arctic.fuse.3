@@ -52,11 +52,16 @@
         </definition>
     </include>
 
+    <variable name="Action_SearchEntry">
+        <value condition="System.HasAddon(plugin.video.filteredmovies)">RunScript(plugin.video.filteredmovies, 0, ?mode=launch_t9)</value>
+        <value>ReplaceWindow(1105)</value>
+    </variable>
+
     <include name="Home_ControlList_Item_1105">
         <include content="Home_ControlList_Item">
             <param name="label">Search</param>
             <param name="icon">special://skin/extras/icons/search.png</param>
-            <param name="action">ReplaceWindow(1105)</param>
+            <param name="action">$VAR[Action_SearchEntry]</param>
             <param name="enabled">[!Skin.HasSetting(HomeSwitcher.DisableSearch)]</param>
             <param name="visible">Window.IsVisible(1105)</param>
             <param name="mod">$PARAM[mod]</param>

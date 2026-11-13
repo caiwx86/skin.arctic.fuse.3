@@ -3,10 +3,6 @@
     <onload condition="String.IsEmpty(Window(Home).Property(TMDbHelper.UserDiscover.FolderPath))">SetProperty(TMDbHelper.UserDiscover.FolderPath,plugin://plugin.video.themoviedb.helper/?info=discover&amp;with_id=True&amp;tmdb_type=movie,Home)</onload>
     <onload condition="String.IsEmpty(Window(Home).Property(TMDbHelper.UserDiscover.FolderPath))">SetProperty(TMDbHelper.UserDiscover.FolderPath.Name,$LOCALIZE[467] $LOCALIZE[342],Home)</onload>
 
-    <!-- Merge the filteredmovies T9 search page into the Search entry:
-         pressing Search opens the plugin overlay when it is installed. -->
-    <onload condition="System.HasAddon(plugin.video.filteredmovies)">RunScript(plugin.video.filteredmovies, 0, ?mode=launch_t9)</onload>
-
     <onload condition="!String.IsEqual(Skin.String(HomeSwitcher.Search.Mode),Wall)">ClearProperty(Background.ShowOverlay,Home)</onload>
     <onload condition="String.IsEqual(Skin.String(HomeSwitcher.Search.Mode),Wall)">SetProperty(Background.ShowOverlay,True,Home)</onload>
 
