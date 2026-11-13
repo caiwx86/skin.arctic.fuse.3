@@ -989,7 +989,7 @@
             <property name="guid">settings</property>
             <property name="widget_id">$NUMBER[503]</property>
             <property name="show_overlay">true</property>
-            <onclick>ActivateWindow(settings)</onclick>
+            <onclick>ReplaceWindow(settings)</onclick>
             <visible>!Integer.IsEqual(Container(503).NumItems,0) | Container(503).IsUpdating</visible>
         </item>
     </include>
