@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <fonts>
 
-    <fontset id="Default" unicode="false">
-        <include>Font_Default</include>
+    <!-- The Default fontset now uses the Unicode (CJK-capable) fonts so that
+         Chinese/latin UI text never falls back to a Latin-only font. -->
+    <fontset id="Default" unicode="true">
+        <include content="Font_Default">
+            <param name="font_bold">resource://resource.font.robotocjksc/Inter-Unicode-Bold.ttf</param>
+            <param name="font_regular">resource://resource.font.robotocjksc/Inter-Unicode-Regular.ttf</param>
+            <param name="font_light">resource://resource.font.robotocjksc/Inter-Unicode-Regular.ttf</param>
+            <param name="style_light">light</param>
+
+            <param name="plot_linespacing_head">1.03</param>
+            <param name="plot_linespacing_midi">1.45</param>
+            <param name="plot_linespacing_main">1.13</param>
+            <param name="plot_linespacing_mini">1.20</param>
+            <param name="plot_linespacing_tiny">1.11</param>
+        </include>
         <font>
             <name>font23_narrow</name>
             <filename>special://xbmc/media/Fonts/arial.ttf</filename>
@@ -12,14 +25,10 @@
             <name>font32</name>
             <filename>special://xbmc/media/Fonts/arial.ttf</filename>
             <size>32</size>
-        </font>        <font>
-            <name>font32</name>
-            <filename>special://xbmc/media/Fonts/arial.ttf</filename>
-            <size>32</size>
         </font>
         <font>
             <name>font12_title</name>
-            <filename>special://xbmc/media/Fonts/arial.ttf</filename>
+            <filename>resource://resource.font.robotocjksc/Inter-Unicode-Bold.ttf</filename>
             <size>24</size>
         </font>
     </fontset>
@@ -43,10 +52,6 @@
             <size>21</size>
         </font>
         <font>
-            <name>font32</name>
-            <filename>special://xbmc/media/Fonts/arial.ttf</filename>
-            <size>32</size>
-        </font>        <font>
             <name>font32</name>
             <filename>special://xbmc/media/Fonts/arial.ttf</filename>
             <size>32</size>
