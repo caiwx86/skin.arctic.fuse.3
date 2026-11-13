@@ -96,7 +96,7 @@
                     <param name="control">panel</param>
                     <param name="orientation">vertical</param>
                     <param name="offset_y">40</param>
-                    <preloaditems>0</preloaditems>
+                    <preloaditems>2</preloaditems>
                     <top>290</top>
                     <bottom>-40</bottom>
                     <onup>601</onup>

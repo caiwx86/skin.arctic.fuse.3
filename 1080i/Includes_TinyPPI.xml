@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+
+    <!--
+        Variables used by the native TinyPPI player-process overlay
+        (1080i/DialogPlayerProcessInfo.xml) and by the codec-logo includes
+        (1080i/Includes_CodecLogos.xml).
+
+        They were referenced by the overlay but never defined, so every
+        field that depends on them rendered empty.  All labels are read
+        through Player.Process / VideoPlayer, which CoreELEC fills in.
+    -->
+
+    <!-- HDR type shown for AV1, where Player.Process(video.source.hdr.type) is empty -->
+    <variable name="HDRcodectypeVar">
+        <value condition="String.Contains(VideoPlayer.HdrType,dolbyvision)">Dolby Vision</value>
+        <value condition="String.Contains(VideoPlayer.HdrType,dv)">Dolby Vision</value>
+        <value condition="String.Contains(VideoPlayer.HdrType,hdr10plus)">HDR10+</value>
+        <value condition="String.Contains(VideoPlayer.HdrType,hdr10)">HDR10</value>
+        <value condition="String.Contains(VideoPlayer.HdrType,hlg)">HLG</value>
+        <value condition="String.Contains(VideoPlayer.HdrType,hdr)">HDR</value>
+        <value>SDR</value>
+    </variable>
+
+    <!-- Dynamic metadata marker appended to the media source line -->
+    <variable name="SecondHDRVar">
+        <value condition="String.Contains(Player.Process(video.hdr.type),hdr10plus)">[COLOR dialog_fg_70](HDR10+)[/COLOR]</value>
+    </variable>
+
+    <!-- Format the stream arrives in, before the VS10 engine converts it -->
+    <variable name="NonConvertedcodectypeVar">
+        <value condition="!String.IsEqual(VideoPlayer.VideoCodec,av1) + !String.IsEmpty(Player.Process(video.source.hdr.type))">$INFO[Player.Process(video.source.hdr.type)]</value>
+        <value>$VAR[HDRcodectypeVar]</value>
+    </variable>
+
+    <!-- Dolby Vision profile, e.g. " P8.1" -->
+    <variable name="DVProfileVar">
+        <value condition="String.Contains(Player.Process(video.hdr.type),dolby vision) + !String.IsEmpty(Player.Process(video.dovi.profile))"> [COLOR dialog_fg_70]P$INFO[Player.Process(video.dovi.profile)]$INFO[Player.Process(video.dovi.level),.]$INFO[Player.Process(video.dovi.bl.signal.compatibility), ][/COLOR]</value>
+    </variable>
+
+    <!-- Dolby Vision enhancement layer (FEL / MEL) -->
+    <variable name="DVELVar">
+        <value condition="!String.IsEmpty(Player.Process(video.dovi.el.type))"> [COLOR palegreen]$INFO[Player.Process(video.dovi.el.type)][/COLOR]</value>
+    </variable>
+
+    <!-- Same tag, used by the codec-logo overlay -->
+    <variable name="DVEL1Var">
+        <value condition="!String.IsEmpty(Player.Process(video.dovi.el.type))">[COLOR palegreen]$INFO[Player.Process(video.dovi.el.type)][/COLOR]</value>
+    </variable>
+
+    <!-- What the VS10 engine is converting to -->
+    <variable name="VideoConvVar">
+        <value condition="!String.IsEmpty(Player.Process(amlogic.vs10.mode)) + !String.Contains(Player.Process(amlogic.vs10.mode),Bypass)"> [COLOR dialog_fg_70]-&gt;[/COLOR] [COLOR $VAR[ColorHighlight]]$INFO[Player.Process(amlogic.vs10.mode)][/COLOR]</value>
+    </variable>
+
+    <!-- VS10 on/off indicator (icon font) -->
+    <variable name="VS10ModeVar">
+        <value condition="String.Contains(Player.Process(amlogic.vs10.mode),Bypass)">[COLOR tomato]&#xF00D;[/COLOR]</value>
+        <value condition="!String.IsEmpty(Player.Process(amlogic.vs10.mode))">[COLOR palegreen]&#xF00C;[/COLOR]</value>
+        <value>[COLOR dimgrey]&#xF00D;[/COLOR]</value>
+    </variable>
+
+    <!-- Dolby Vision layer presence (icon font) -->
+    <variable name="RPUPresentVar">
+        <value condition="String.IsEqual(Player.Process(video.dovi.has.config),1)">[COLOR palegreen]&#xF00C;[/COLOR]</value>
+        <value>[COLOR tomato]&#xF00D;[/COLOR]</value>
+    </variable>
+
+    <variable name="BLPresentVar">
+        <value condition="String.IsEqual(Player.Process(video.dovi.has.config),1)">[COLOR palegreen]&#xF00C;[/COLOR]</value>
+        <value>[COLOR tomato]&#xF00D;[/COLOR]</value>
+    </variable>
+
+    <variable name="ELPresentVar">
+        <value condition="!String.IsEmpty(Player.Process(video.dovi.el.type))">[COLOR palegreen]&#xF00C;[/COLOR]</value>
+        <value>[COLOR tomato]&#xF00D;[/COLOR]</value>
+    </variable>
+
+    <!-- Decoder type -->
+    <variable name="VideoDecoder">
+        <value condition="Player.Process(videohwdecoder)">HW</value>
+        <value>SW</value>
+    </variable>
+
+    <!-- Audio codec -->
+    <variable name="AudioCodecVar">
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos) | String.IsEqual(VideoPlayer.AudioCodec,truehd)">Dolby TrueHD</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos) | String.IsEqual(VideoPlayer.AudioCodec,eac3)">Dolby Digital Plus</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,ac3) | String.IsEqual(VideoPlayer.AudioCodec,dolbydigital)">Dolby Digital</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)">DTS:X IMAX</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x)">DTS:X</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma)">DTS-HD MA</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_hra)">DTS-HD HRA</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,dca) | String.IsEqual(VideoPlayer.AudioCodec,dts)">DTS</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,flac)">FLAC</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,opus)">Opus</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,vorbis)">Vorbis</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,mp3)">MP3</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,aac)">AAC</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,pcm)">PCM</value>
+        <value>[UPPERCASE]$INFO[VideoPlayer.AudioCodec][/UPPERCASE]</value>
+    </variable>
+
+    <!-- Immersive-format suffix shown in the highlight colour -->
+    <variable name="AudioCodecSpatialVar">
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos) | String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)"> Atmos</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)"> DTS:X</value>
+    </variable>
+
+    <!-- Channel count to speaker-layout name (also used as a texture name) -->
+    <variable name="AudioChannelsVar">
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,1)">1.0</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,2)">2.0</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,3)">2.1</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,4)">4.1</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,5)">4.1</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,6)">5.1</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,7)">6.1</value>
+        <value condition="Integer.IsEqual(VideoPlayer.AudioChannels,8)">7.1</value>
+        <value>unk</value>
+    </variable>
+
+</includes>

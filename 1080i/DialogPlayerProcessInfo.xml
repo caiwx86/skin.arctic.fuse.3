@@ -62,22 +62,22 @@
 					<width>400</width>
 					<aspectratio>keep</aspectratio>
 					<control type="image">
-						<texture colordiffuse="CCFFFFFF">ppicodecs/$INFO[VideoPlayer.AudioChannels].png</texture>
+						<texture colordiffuse="CCFFFFFF">ppicodecs/$VAR[AudioChannelsVar].png</texture>
 						<visible>![Integer.IsEqual(VideoPlayer.AudioChannels,6) + String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)]</visible>
 						<visible>![Integer.IsEqual(VideoPlayer.AudioChannels,8) + String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)]</visible>
 						<visible>![Integer.IsEqual(VideoPlayer.AudioChannels,8) + String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos)]</visible>
 						<visible>![Integer.IsEqual(VideoPlayer.AudioChannels,8) + [String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)]]</visible>
 					</control>
 					<control type="image">
-						<texture colordiffuse="CCFFFFFF">ppicodecs/5.1.4.png</texture>
+						<texture colordiffuse="CCFFFFFF">ppicodecs/5.1.2.png</texture>
 						<visible>Integer.IsEqual(VideoPlayer.AudioChannels,6) + String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)</visible>
 					</control>
 					<control type="image">
-						<texture colordiffuse="CCFFFFFF">ppicodecs/7.1.4.png</texture>
+						<texture colordiffuse="CCFFFFFF">ppicodecs/7.1.2.png</texture>
 						<visible>Integer.IsEqual(VideoPlayer.AudioChannels,8) + [String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos) | String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)]</visible>
 					</control>
 					<control type="image">
-						<texture colordiffuse="CCFFFFFF">ppicodecs/00.png</texture>
+						<texture colordiffuse="CCFFFFFF">ppicodecs/unk.png</texture>
 						<visible>Integer.IsEqual(VideoPlayer.AudioChannels,0)</visible>
 					</control>
 					<control type="image">
@@ -155,7 +155,7 @@
 				<control type="label">
 					<left>240</left>
 					<top>125</top>
-					<label>[UPPERCASE]$INFO[Player.Process(videodecoder)][/UPPERCASE] $VAR[VideoDecoder,(,)] [COLOR $VAR[ColorHighlight]]l[/COLOR] [CAPITALIZE]$INFO[Player.Process(deintmethod)][/CAPITALIZE]</label>
+					<label>[UPPERCASE]$INFO[Player.Process(videodecoder)][/UPPERCASE] ($VAR[VideoDecoder]) [COLOR $VAR[ColorHighlight]]l[/COLOR] [CAPITALIZE]$INFO[Player.Process(deintmethod)][/CAPITALIZE]</label>
 					<font>font_tiny</font>
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
@@ -261,7 +261,7 @@
 				<control type="label">
 					<left>240</left>
 					<top>125</top>
-					<label>[COLOR dialog_fg_90]$INFO[Player.Process(amlogic.pixformat)] [/COLOR]$VAR[DVTunnelVar, [COLOR dialog_fg_70](,)[/COLOR]]</label>
+					<label>[COLOR dialog_fg_90]$INFO[Player.Process(amlogic.pixformat)] [/COLOR]</label>
 					<font>font_tiny</font>
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
@@ -275,7 +275,7 @@
 				<control type="label">
 					<left>240</left>
 					<top>160</top>
-					<label>$INFO[Player.Process(amlogic.eoft_gamut)]  P: $INFO[Player.Process(video.dovi.profile)]$INFO[Player.Process(video.dovi.bl.signal.compatibility),.] [COLOR dialog_fg_70]$VAR[DualTrackVar][/COLOR]</label>
+					<label>$INFO[Player.Process(amlogic.eoft_gamut)]  P: $INFO[Player.Process(video.dovi.profile)]$INFO[Player.Process(video.dovi.bl.signal.compatibility),.]</label>
 					<font>font_tiny</font>
 					<textcolor>dialog_fg_90</textcolor>
 					<visible>String.Contains(Player.Process(video.hdr.type),dolby vision)</visible>
@@ -394,14 +394,12 @@
 				<width>760</width>
 				<!-- Codec -->
 				<control type="label">
-					<visible></visible>
 					<top>20</top>
 					<label>$LOCALIZE[32046]:</label>
 					<font>font_tiny</font>
 					<textcolor>$VAR[ColorHighlight]</textcolor>
 				</control>
 				<control type="label">
-					<visible></visible>
 					<left>240</left>
 					<top>20</top>
 					<label>[COLOR dialog_fg_90]$VAR[AudioCodecVar]  $VAR[AudioChannelsVar][/COLOR][COLOR dialog_fg_70]$VAR[AudioCodecSpatialVar][/COLOR] [COLOR $VAR[ColorHighlight]]l[/COLOR] [COLOR dialog_fg_90]$INFO[Player.Process(audiobitspersample)]-bit[/COLOR] [COLOR $VAR[ColorHighlight]]l[/COLOR] [COLOR dialog_fg_90]$INFO[Player.Process(audio.sample.rate)] kHz[/COLOR]</label>
@@ -409,7 +407,6 @@
 				</control>
 				<!-- Audio channels -->
 				<control type="label">
-					<visible></visible>
 					<top>55</top>
 					<label>$LOCALIZE[21444]:</label>
 					<font>font_tiny</font>
@@ -423,7 +420,6 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="label">
-					<visible></visible>
 					<top>90</top>
 					<label>$LOCALIZE[32091]:</label>
 					<font>font_tiny</font>
@@ -512,7 +508,7 @@
 					<left>240</left>
 					<top>195</top>
 					<width>360</width>
-					<label>$INFO[VideoPlayer.SubtitlesLangEx][COLOR dialog_fg_70] $VAR[SubNameVar][/COLOR]</label>
+					<label>$INFO[VideoPlayer.SubtitlesLangEx]</label>
 					<font>font_tiny</font>
 					<textcolor>dialog_fg_90</textcolor>
 					<visible>VideoPlayer.SubtitlesEnabled</visible>
@@ -588,7 +584,6 @@
 						<centertop>50%</centertop>
 						<height>10</height>
 						<info>Player.CacheLevel</info>
-						<include>DefSettingsButton</include>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
 						<midtexture colordiffuse="ff607d8b" border="4">progress/progress-end.png</midtexture>
@@ -631,7 +626,6 @@
 						<centertop>50%</centertop>
 						<height>10</height>
 						<info>System.CPUUsage</info>
-						<include>DefSettingsButton</include>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
 						<midtexture colordiffuse="ff607d8b" border="4">progress/progress-end.png</midtexture>
@@ -661,7 +655,6 @@
 						<centertop>50%</centertop>
 						<height>10</height>
 						<info>system.memory(used)</info>
-						<include>DefSettingsButton</include>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
 						<midtexture colordiffuse="ff607d8b" border="4">progress/progress-end.png</midtexture>
@@ -720,7 +713,6 @@
 						<centertop>50%</centertop>
 						<height>10</height>
 						<info>Player.Process(video.queue.level)</info>
-						<include>DefSettingsButton</include>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
 						<midtexture colordiffuse="ff607d8b" border="4">progress/progress-end.png</midtexture>
@@ -752,7 +744,6 @@
 						<centertop>50%</centertop>
 						<height>10</height>
 						<info>Player.Process(video.queue.data.level)</info>
-						<include>DefSettingsButton</include>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
 						<midtexture colordiffuse="ff607d8b" border="4">progress/progress-end.png</midtexture>
@@ -784,7 +775,6 @@
 						<centertop>50%</centertop>
 						<height>10</height>
 						<info>Player.Process(audio.queue.level)</info>
-						<include>DefSettingsButton</include>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
 						<midtexture colordiffuse="ff607d8b" border="4">progress/progress-end.png</midtexture>
@@ -816,7 +806,6 @@
 						<centertop>50%</centertop>
 						<height>10</height>
 						<info>Player.Process(audio.queue.data.level)</info>
-						<include>DefSettingsButton</include>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
 						<midtexture colordiffuse="ff607d8b" border="4">progress/progress-end.png</midtexture>
