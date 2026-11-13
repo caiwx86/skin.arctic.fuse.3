@@ -38,16 +38,17 @@
 	</variable>
 
 	<include name="PPI_Button">
-		<!-- Button 9 -->
+		<!-- Button 9: TinyPPI add-on when available, otherwise the skin's own
+		     player-process-info window (kept by this fork). -->
 		<control type="button" id="6009">
 			<include>Defs_OSD_Button</include>
 			<onclick>CancelAlarm(osd_timeout,true)</onclick>
-			<onclick>RunScript(script.tinyppi,dialog)</onclick>
-			<visible>System.AddonIsEnabled(script.tinyppi)</visible>
+			<onclick condition="System.AddonIsEnabled(script.tinyppi)">RunScript(script.tinyppi,dialog)</onclick>
+			<onclick condition="!System.AddonIsEnabled(script.tinyppi)">Action(PlayerProcessInfo)</onclick>
 		</control>
 		<include content="OSD_Button_Icon_Overlay">
 			<param name="icon">special://skin/extras/icons/ppi.png</param>
-			<param name="visible">System.AddonIsEnabled(script.tinyppi)</param>
+			<param name="visible">true</param>
 			<param name="id">6009</param>
 			<param name="groupid">6109</param>
 			<param name="itemgap">osd_itemgap</param>
