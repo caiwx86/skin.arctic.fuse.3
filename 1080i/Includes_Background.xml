@@ -299,4 +299,10 @@
 
     </include>
 
+    <!-- Used by add-on supplied windows (e.g. plugin.video.filteredmovies) that
+         include the active skin's DefaultBackground. -->
+    <include name="DefaultBackground">
+        <include>Background</include>
+    </include>
+
 </includes>

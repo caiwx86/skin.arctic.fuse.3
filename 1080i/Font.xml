@@ -20,6 +20,11 @@
             <size>21</size>
         </font>
         <font>
+            <name>font12_title</name>
+            <filename>NotoSans-Bold.ttf</filename>
+            <size>24</size>
+        </font>
+        <font>
             <name>font32</name>
             <filename>NotoSans-Bold.ttf</filename>
             <size>32</size>

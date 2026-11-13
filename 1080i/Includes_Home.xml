@@ -517,10 +517,44 @@
                 <param name="id">3108</param>
             </include>
             <include condition="!$EXP[Exp_Hubs_Menu_Loopback]">Home_Settings_Button</include>
+            <include content="Home_Filter_Button">
+                <param name="id">3199</param>
+            </include>
             <control type="group">
                 <width>0</width>
             </control>
         </control>
+    </include>
+
+    <include name="Home_Filter_Button">
+        <param name="icon">special://skin/extras/icons/filter.png</param>
+        <param name="id">3199</param>
+        <param name="visible">System.HasAddon(plugin.video.filteredmovies)</param>
+        <definition>
+            <control type="group">
+                <width>80</width>
+                <height>80</height>
+                <visible>$PARAM[visible]</visible>
+                <control type="button" id="$PARAM[id]">
+                    <onclick>RunScript(plugin.video.filteredmovies, 0, ?mode=launch_t9)</onclick>
+                    <texturenofocus />
+                    <texturefocus />
+                    <label />
+                </control>
+                <control type="group">
+                    <control type="image">
+                        <include>Home_Grouplist_Icon_Definition</include>
+                        <texture background="true" colordiffuse="main_fg_30">$PARAM[icon]</texture>
+                        <visible>!Control.HasFocus($PARAM[id])</visible>
+                    </control>
+                    <control type="image">
+                        <include>Home_Grouplist_Icon_Definition</include>
+                        <texture background="true" colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
+                        <visible>Control.HasFocus($PARAM[id])</visible>
+                    </control>
+                </control>
+            </control>
+        </definition>
     </include>
 
     <include name="Home_Settings_Button">
