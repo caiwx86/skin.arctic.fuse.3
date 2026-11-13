@@ -13,6 +13,8 @@
     <onback>SetProperty(Reboot.Blocked,true,1197)</onback>
     <controls>
         <control type="group">
+            <width>100%</width>
+            <height>100%</height>
             <control type="image">
                 <width>100%</width>
                 <height>100%</height>
