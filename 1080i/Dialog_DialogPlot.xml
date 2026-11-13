@@ -350,7 +350,7 @@
                         <visible>String.IsEmpty(Control.GetLabel(99981))</visible>
                         <control type="image">
                             <aspectratio scalediffuse="false" aligny="center">keep</aspectratio>
-                            <texture background="true">$PARAM[c_logo_icon]</texture>
+                            <texture>$PARAM[c_logo_icon]</texture>
                         </control>
                     </control>
                 </control>

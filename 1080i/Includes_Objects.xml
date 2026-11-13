@@ -179,11 +179,11 @@
                         <left>2</left>
                         <right>-2</right>
                         <bottom>-2</bottom>
-                        <texture background="true" diffuse="$PARAM[diffuse]" colordiffuse="7f000000">$PARAM[icon]</texture>
+                        <texture diffuse="$PARAM[diffuse]" colordiffuse="7f000000">$PARAM[icon]</texture>
                         <aspectratio scalediffuse="false" align="right" aligny="bottom">keep</aspectratio>
                     </control>
                     <control type="image">
-                        <texture background="true" diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
+                        <texture diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
                         <aspectratio scalediffuse="false" align="right" aligny="bottom">keep</aspectratio>
                     </control>
                 </control>

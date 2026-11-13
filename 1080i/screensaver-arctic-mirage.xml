@@ -71,7 +71,7 @@
                         </control>
                     </control>
                     <control type="image">
-                        <texture background="true">$INFO[Container(1297).ListItem.Art(clearlogo)]</texture>
+                        <texture>$INFO[Container(1297).ListItem.Art(clearlogo)]</texture>
                         <aspectratio aligny="bottom">keep</aspectratio>
                         <visible>!String.IsEmpty(Container(1297).ListItem.Art(clearlogo))</visible>
                     </control>
@@ -122,7 +122,7 @@
                         </control>
                     </control>
                     <control type="image">
-                        <texture background="true">$INFO[Container(1297).ListItem.Art(clearlogo)]</texture>
+                        <texture>$INFO[Container(1297).ListItem.Art(clearlogo)]</texture>
                         <aspectratio aligny="bottom">keep</aspectratio>
                         <visible>!String.IsEmpty(Container(1297).ListItem.Art(clearlogo))</visible>
                     </control>
