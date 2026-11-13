@@ -13,7 +13,8 @@
             <value>
                 <![CDATA[
                 <onclick>ActivateWindow(1197)</onclick>
-                <onclick>AlarmClock(RebootNow,Reboot,00:02,silent)</onclick>
+                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, sync; /sbin/reboot"),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootFallback,Reboot,00:10,silent)</onclick>
                 ]]>
             </value>
         </rule>
@@ -22,9 +23,8 @@
             <value>
                 <![CDATA[
                 <onclick>ActivateWindow(1197)</onclick>
-                <onclick condition="System.HasAddon(script.reboottoandroid)">RunScript(script.reboottoandroid)</onclick>
-                <onclick condition="!System.HasAddon(script.reboottoandroid)">System.Exec("/usr/sbin/rebootfromnand")</onclick>
-                <onclick condition="!System.HasAddon(script.reboottoandroid)">AlarmClock(RebootNow,Reboot,00:03,silent)</onclick>
+                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, sync; /usr/sbin/rebootfromnand; sync; /sbin/reboot"),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootFallback,Reboot,00:10,silent)</onclick>
                 ]]>
             </value>
         </rule>
