@@ -69,14 +69,14 @@
         <value condition="!String.IsEmpty(Container(450).ListItem.Art(artist.clearlogo))">$INFO[Container(450).ListItem.Art(artist.clearlogo)]</value>
     </variable>
     <variable name="Image_Clearlogo">
-        <value condition="!String.IsEmpty(ListItem.Art(clearlogo))">$INFO[ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(ListItem.Art(artist.clearlogo))">$INFO[ListItem.Art(artist.clearlogo)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(clearlogo))+ ![String.EndsWith(ListItem.Art(clearlogo),.jpg) | String.EndsWith(ListItem.Art(clearlogo),.jpeg)]">$INFO[ListItem.Art(clearlogo)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(tvshow.clearlogo))+ ![String.EndsWith(ListItem.Art(tvshow.clearlogo),.jpg) | String.EndsWith(ListItem.Art(tvshow.clearlogo),.jpeg)]">$INFO[ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="!String.IsEmpty(ListItem.Art(artist.clearlogo))+ ![String.EndsWith(ListItem.Art(artist.clearlogo),.jpg) | String.EndsWith(ListItem.Art(artist.clearlogo),.jpeg)]">$INFO[ListItem.Art(artist.clearlogo)]</value>
     </variable>
     <variable name="Image_Clearlogo_Container">
-        <value condition="!String.IsEmpty(Container.ListItem.Art(clearlogo))">$INFO[Container.ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container.ListItem.Art(tvshow.clearlogo))">$INFO[Container.ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container.ListItem.Art(artist.clearlogo))">$INFO[Container.ListItem.Art(artist.clearlogo)]</value>
+        <value condition="!String.IsEmpty(Container.ListItem.Art(clearlogo))+ ![String.EndsWith(Container.ListItem.Art(clearlogo),.jpg) | String.EndsWith(Container.ListItem.Art(clearlogo),.jpeg)]">$INFO[Container.ListItem.Art(clearlogo)]</value>
+        <value condition="!String.IsEmpty(Container.ListItem.Art(tvshow.clearlogo))+ ![String.EndsWith(Container.ListItem.Art(tvshow.clearlogo),.jpg) | String.EndsWith(Container.ListItem.Art(tvshow.clearlogo),.jpeg)]">$INFO[Container.ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="!String.IsEmpty(Container.ListItem.Art(artist.clearlogo))+ ![String.EndsWith(Container.ListItem.Art(artist.clearlogo),.jpg) | String.EndsWith(Container.ListItem.Art(artist.clearlogo),.jpeg)]">$INFO[Container.ListItem.Art(artist.clearlogo)]</value>
     </variable>
     <variable name="Image_Landscape">
         <value condition="String.IsEqual(ListItem.Property(tmdb_type),person)"/>
