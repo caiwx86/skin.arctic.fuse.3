@@ -90,6 +90,7 @@
                         <onfocus condition="![$PARAM[overlay]]">ClearProperty(Background.ShowOverlay,Home)</onfocus>
                         <onfocus condition="$PARAM[overlay]">SetProperty(Background.ShowOverlay,True,Home)</onfocus>
                         <onfocus>SetProperty(InfoPanel.FullSwitch,Wall,Home)</onfocus>
+                        <onfocus condition="System.HasAddon(script.arcticfuse.focus)">RunScript(script.arcticfuse.focus,wall,$PARAM[id])</onfocus>
                     </include>
                 </control>
             </control>

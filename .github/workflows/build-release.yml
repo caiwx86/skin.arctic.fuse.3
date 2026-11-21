@@ -68,6 +68,7 @@ jobs:
           -x "${{ steps.parse_metadata.outputs.ID }}/.git/*" \
           -x "${{ steps.parse_metadata.outputs.ID }}/.github/*" \
           -x "${{ steps.parse_metadata.outputs.ID }}/.gitignore"
+          -x "${{ steps.parse_metadata.outputs.ID }}/addon/*"
         shell: bash
 
       # ----- 4. 创建 Release 并上传附件 -----
