@@ -573,7 +573,22 @@
 					<font>font_tiny</font>
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
-				
+				<!--control type="group">
+					<top>35</top>
+					<left>300</left>
+					<height>40</height>
+					<width>300</width>
+					<control type="progress">
+						<description>BAR</description>
+						<centertop>50%</centertop>
+						<height>10</height>
+						<info>Player.CacheLevel</info>
+						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
+						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
+						<midtexture colordiffuse="ff607d8b" border="4">progress/progress-end.png</midtexture>
+						<righttexture colordiffuse="ff607d8b" border="4">progress/progress-right.png</righttexture>
+					</control>
+				</control-->
 				<control type="label">
 					<top>90</top>
 					<label>$LOCALIZE[32050]:</label>
@@ -597,19 +612,18 @@
 				<control type="label">
 					<top>125</top>
 					<left>240</left>
-					<label>$INFO[System.CPUUsage]</label>
+					<label>$INFO[System.CpuAltUsage]</label>
 					<font>font_tiny</font>
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<left>0</left>
-					<top>155</top>
-					<height>10</height>
-					<width>230</width>
+					<top>140</top>
+					<height>40</height>
+					<width>600</width>
 					<control type="progress">
 						<description>cpu BAR</description>
+						<centertop>50%</centertop>
 						<height>10</height>
-						<width>230</width>
 						<info>System.CPUUsage</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
@@ -632,14 +646,13 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<left>0</left>
-					<top>225</top>
-					<height>10</height>
-					<width>230</width>
+					<top>210</top>
+					<height>40</height>
+					<width>600</width>
 					<control type="progress">
 						<description>ram BAR</description>
+						<centertop>50%</centertop>
 						<height>10</height>
-						<width>230</width>
 						<info>system.memory(used.percent)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
@@ -674,7 +687,6 @@
 				</animation>
 				<left>1305</left>
 				<top>30</top>
-				<width>600</width>
 				<!-- Video queue -->
 				<control type="label">
 					<top>20</top>
@@ -691,14 +703,14 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>52</top>
+					<top>0</top>
 					<left>240</left>
-					<height>10</height>
-					<width>250</width>
+					<height>40</height>
+					<width>270</width>
 					<control type="progress">
 						<description>BAR</description>
+						<centertop>50%</centertop>
 						<height>10</height>
-						<width>250</width>
 						<info>Player.Process(video.queue.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
@@ -708,13 +720,13 @@
 				</control>
 				<!-- Video queue data -->
 				<control type="label">
-					<top>65</top>
+					<top>55</top>
 					<label>$LOCALIZE[32009]:</label>
 					<font>font_tiny</font>
 					<textcolor>$VAR[ColorHighlight]</textcolor>
 				</control>
 				<control type="label">
-					<top>65</top>
+					<top>55</top>
 					<align>right</align>
 					<right>30</right>
 					<label>$INFO[Player.Process(video.queue.data.level)]%</label>
@@ -722,14 +734,14 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>97</top>
+					<top>35</top>
 					<left>240</left>
-					<height>10</height>
-					<width>250</width>
+					<height>40</height>
+					<width>270</width>
 					<control type="progress">
 						<description>BAR</description>
+						<centertop>50%</centertop>
 						<height>10</height>
-						<width>250</width>
 						<info>Player.Process(video.queue.data.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
@@ -739,13 +751,13 @@
 				</control>
 				<!-- Audio queue -->
 				<control type="label">
-					<top>110</top>
+					<top>90</top>
 					<label>$LOCALIZE[32010]:</label>
 					<font>font_tiny</font>
 					<textcolor>$VAR[ColorHighlight]</textcolor>
 				</control>
 				<control type="label">
-					<top>110</top>
+					<top>90</top>
 					<align>right</align>
 					<right>30</right>
 					<label>$INFO[Player.Process(audio.queue.level)]%</label>
@@ -753,14 +765,14 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>142</top>
+					<top>70</top>
 					<left>240</left>
-					<height>10</height>
-					<width>250</width>
+					<height>40</height>
+					<width>270</width>
 					<control type="progress">
 						<description>BAR</description>
+						<centertop>50%</centertop>
 						<height>10</height>
-						<width>250</width>
 						<info>Player.Process(audio.queue.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
@@ -770,13 +782,13 @@
 				</control>
 				<!-- Audio queue data -->
 				<control type="label">
-					<top>155</top>
+					<top>125</top>
 					<label>$LOCALIZE[32011]:</label>
 					<font>font_tiny</font>
 					<textcolor>$VAR[ColorHighlight]</textcolor>
 				</control>
 				<control type="label">
-					<top>155</top>
+					<top>125</top>
 					<align>right</align>
 					<right>30</right>
 					<label>$INFO[Player.Process(audio.queue.data.level)]%</label>
@@ -784,14 +796,14 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>187</top>
+					<top>105</top>
 					<left>240</left>
-					<height>10</height>
-					<width>250</width>
+					<height>40</height>
+					<width>270</width>
 					<control type="progress">
 						<description>BAR</description>
+						<centertop>50%</centertop>
 						<height>10</height>
-						<width>250</width>
 						<info>Player.Process(audio.queue.data.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
