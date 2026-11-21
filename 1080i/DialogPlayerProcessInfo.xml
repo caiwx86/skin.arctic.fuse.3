@@ -616,10 +616,10 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<left>240</left>
+					<left>0</left>
 					<top>148</top>
 					<height>10</height>
-					<width>270</width>
+					<width>230</width>
 					<control type="progress">
 						<description>cpu BAR</description>
 						<height>10</height>
@@ -645,10 +645,10 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<left>240</left>
+					<left>0</left>
 					<top>218</top>
 					<height>10</height>
-					<width>270</width>
+					<width>230</width>
 					<control type="progress">
 						<description>ram BAR</description>
 						<height>10</height>
@@ -686,6 +686,7 @@
 				</animation>
 				<left>1305</left>
 				<top>30</top>
+				<width>600</width>
 				<!-- Video queue -->
 				<control type="label">
 					<top>20</top>
@@ -705,7 +706,7 @@
 					<top>40</top>
 					<left>240</left>
 					<height>10</height>
-					<width>270</width>
+					<width>250</width>
 					<control type="progress">
 						<description>BAR</description>
 						<height>10</height>
@@ -735,7 +736,7 @@
 					<top>75</top>
 					<left>240</left>
 					<height>10</height>
-					<width>270</width>
+					<width>250</width>
 					<control type="progress">
 						<description>BAR</description>
 						<height>10</height>
@@ -765,7 +766,7 @@
 					<top>110</top>
 					<left>240</left>
 					<height>10</height>
-					<width>270</width>
+					<width>250</width>
 					<control type="progress">
 						<description>BAR</description>
 						<height>10</height>
@@ -795,7 +796,7 @@
 					<top>145</top>
 					<left>240</left>
 					<height>10</height>
-					<width>270</width>
+					<width>250</width>
 					<control type="progress">
 						<description>BAR</description>
 						<height>10</height>
