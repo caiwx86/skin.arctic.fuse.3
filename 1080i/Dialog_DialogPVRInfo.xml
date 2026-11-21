@@ -61,7 +61,7 @@
                                             <width>391</width>
                                             <control type="image">
                                                 <aspectratio scalediffuse="false">keep</aspectratio>
-                                                <texture background="true" diffuse="diffuse/landscape_w391_h220.png">$INFO[ListItem.Icon]</texture>
+                                                <texture diffuse="diffuse/landscape_w391_h220.png">$INFO[ListItem.Icon]</texture>
                                             </control>
                                         </include>
                                         <control type="grouplist">

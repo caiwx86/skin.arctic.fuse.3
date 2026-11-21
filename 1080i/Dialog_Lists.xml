@@ -39,7 +39,7 @@
                 </control>
                 <control type="image">
                     <aspectratio>stretch</aspectratio>
-                    <texture background="true" diffuse="$PARAM[diffuse]">$INFO[ListItem.Icon]</texture>
+                    <texture diffuse="$PARAM[diffuse]">$INFO[ListItem.Icon]</texture>
                     <visible>String.IsEmpty(ListItem.Property(isicon))</visible>
                 </control>
                 <control type="image">

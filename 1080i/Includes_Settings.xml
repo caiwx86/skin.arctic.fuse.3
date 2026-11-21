@@ -96,7 +96,7 @@
             <label>$LOCALIZE[24001]</label>
             <label2>$LOCALIZE[13000]</label2>
             <icon>special://skin/extras/icons/addon.png</icon>
-            <onclick>ActivateWindow(addonbrowser)</onclick>
+            <onclick>ReplaceWindow(addonbrowser)</onclick>
         </item>
         <!-- <item>
             <label>$LOCALIZE[19033]</label>

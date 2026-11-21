@@ -114,7 +114,7 @@
                     <param name="control">panel</param>
                     <param name="orientation">vertical</param>
                     <param name="offset_y">40</param>
-                    <preloaditems>0</preloaditems>
+                    <preloaditems>2</preloaditems>
                     <top>290</top>
                     <bottom>-40</bottom>
                     <onup>601</onup>
@@ -405,7 +405,7 @@
                     </control>
                     <control type="image">
                         <bordersize>$PARAM[bordersize]</bordersize>
-                        <texture background="true" colordiffuse="main_bg_90">$PARAM[image]</texture>
+                        <texture colordiffuse="main_bg_90">$PARAM[image]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -419,7 +419,7 @@
                     </control>
                     <control type="image">
                         <bordersize>$PARAM[bordersize]</bordersize>
-                        <texture background="true" colordiffuse="$VAR[ColorSelected]">$PARAM[image]</texture>
+                        <texture colordiffuse="$VAR[ColorSelected]">$PARAM[image]</texture>
                     </control>
                 </control>
             </control>

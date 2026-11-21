@@ -2,6 +2,8 @@
 <!-- Search moved to SkinVariables multisearch. Window 1105 is kept so user configs calling ActivateWindow(1105) still open search -->
 <window type="window" id="1105">
     <onload>Action(Back)</onload>
-    <onload>RunScript(script.skinvariables,run_multisearch,tmdbhelper_container,progress_dialog$VAR[Value_MultiSearch_Layout_Param]$VAR[Value_MultiSearch_Discover_Param])</onload>
+    <onload condition="System.HasAddon(plugin.video.filteredmovies)">RunScript(plugin.video.filteredmovies, 0, ?mode=launch_t9)</onload>
+    <onload condition="System.HasAddon(plugin.video.filteredmovies)">Close</onload>
+    <onload condition="!System.HasAddon(plugin.video.filteredmovies)">RunScript(script.skinvariables,run_multisearch,tmdbhelper_container,progress_dialog$VAR[Value_MultiSearch_Layout_Param]$VAR[Value_MultiSearch_Discover_Param])</onload>
     <controls />
 </window>

@@ -34,11 +34,17 @@
         </definition>
     </include>
 
+    <!-- filteredmovies T9 search page takes over the search entry when the add-on is installed -->
+    <variable name="Action_SearchEntry">
+        <value condition="System.HasAddon(plugin.video.filteredmovies)">RunScript(plugin.video.filteredmovies, 0, ?mode=launch_t9)</value>
+        <value>RunScript(script.skinvariables,run_multisearch,tmdbhelper_container,progress_dialog$VAR[Value_MultiSearch_Layout_Param]$VAR[Value_MultiSearch_Discover_Param])</value>
+    </variable>
+
     <include name="Home_ControlList_Item_MultiSearch">
         <include content="Home_ControlList_Item">
             <param name="label">$LOCALIZE[137]</param>
             <param name="icon">special://skin/extras/icons/search.png</param>
-            <param name="action">RunScript(script.skinvariables,run_multisearch,tmdbhelper_container,progress_dialog$VAR[Value_MultiSearch_Layout_Param]$VAR[Value_MultiSearch_Discover_Param])</param>
+            <param name="action">$VAR[Action_SearchEntry]</param>
             <param name="enabled">[!Skin.HasSetting(HomeSwitcher.DisableSearch)]</param>
             <param name="visible">$EXP[Exp_Hubs_Window_IsMultiSearch]</param>
             <param name="mod">$PARAM[mod]</param>
@@ -259,7 +265,7 @@
                     <width>80</width>
                     <control type="image">
                         <include>Home_Grouplist_Icon_Definition</include>
-                        <texture background="true" colordiffuse="main_fg_30">special://skin/extras/icons/search.png</texture>
+                        <texture colordiffuse="main_fg_30">special://skin/extras/icons/search.png</texture>
                         <visible>!Control.HasFocus(300)</visible>
                     </control>
                 </control>
@@ -342,14 +348,14 @@
                     </control>
                     <control type="image">
                         <include>Home_Grouplist_Icon_Definition</include>
-                        <texture background="true" colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
+                        <texture colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
                     </control>
                 </control>
                 <control type="group">
                     <visible>!Window.IsVisible($PARAM[window])</visible>
                     <control type="image">
                         <include>Home_Grouplist_Icon_Definition</include>
-                        <texture background="true" colordiffuse="main_fg_30">$PARAM[icon]</texture>
+                        <texture colordiffuse="main_fg_30">$PARAM[icon]</texture>
                     </control>
                 </control>
             </control>
@@ -534,7 +540,7 @@
                         <visible>$PARAM[use_icons]</visible>
                         <control type="image">
                             <include>Home_Grouplist_Icon_Definition</include>
-                            <texture background="true" colordiffuse="main_fg_30">$VAR[Home_Icon_$PARAM[window]]</texture>
+                            <texture colordiffuse="main_fg_30">$VAR[Home_Icon_$PARAM[window]]</texture>
                         </control>
                     </control>
                 </control>
@@ -590,7 +596,7 @@
                         </control>
                         <control type="image">
                             <include>Home_Grouplist_Icon_Definition</include>
-                            <texture background="true" colordiffuse="$VAR[ColorSelected]">$VAR[Home_Icon_$PARAM[window]]</texture>
+                            <texture colordiffuse="$VAR[ColorSelected]">$VAR[Home_Icon_$PARAM[window]]</texture>
                         </control>
                     </control>
                 </control>
@@ -693,12 +699,12 @@
                     <visible>![Window.IsVisible($PARAM[window]) + Integer.IsEqual(System.CurrentControlID,300)]</visible>
                     <control type="image">
                         <include>Home_Grouplist_Icon_Definition</include>
-                        <texture background="true" colordiffuse="main_fg_30">$PARAM[icon]</texture>
+                        <texture colordiffuse="main_fg_30">$PARAM[icon]</texture>
                         <visible>!Control.HasFocus($PARAM[id])</visible>
                     </control>
                     <control type="image">
                         <include>Home_Grouplist_Icon_Definition</include>
-                        <texture background="true" colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
+                        <texture colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
                         <visible>Control.HasFocus($PARAM[id])</visible>
                     </control>
                 </control>
@@ -709,7 +715,7 @@
                     </control>
                     <control type="image">
                         <include>Home_Grouplist_Icon_Definition</include>
-                        <texture background="true" colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
+                        <texture colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
                     </control>
                 </control>
             </control>
