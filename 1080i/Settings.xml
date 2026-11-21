@@ -53,14 +53,14 @@
                                 <param name="property">Settings.Main.Category</param>
                                 <param name="category">System</param>
                                 <param name="label">$LOCALIZE[14116]</param>
-                                <param name="onclick">ActivateWindow(systeminfo)</param>
+                                <param name="onclick">ReplaceWindow(systeminfo)</param>
                             </include>
                             <include content="Settings_Category_Button">
                                 <param name="id">35</param>
                                 <param name="property">Settings.Main.Category</param>
                                 <param name="category">Addons</param>
                                 <param name="label">$LOCALIZE[24001]</param>
-                                <param name="onclick">ActivateWindow(addonbrowser)</param>
+                                <param name="onclick">ReplaceWindow(addonbrowser)</param>
                             </include>
                         </control>
                     </include>
