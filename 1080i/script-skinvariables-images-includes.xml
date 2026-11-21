@@ -64,9 +64,9 @@
         <value condition="!String.IsEmpty(Container.ListItem.Property(fallback.icon))">$INFO[Container.ListItem.Property(fallback.icon)]</value>
     </variable>
     <variable name="Image_Clearlogo_C450">
-        <value condition="!String.IsEmpty(Container(450).ListItem.Art(clearlogo))">$INFO[Container(450).ListItem.Art(clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(450).ListItem.Art(tvshow.clearlogo))">$INFO[Container(450).ListItem.Art(tvshow.clearlogo)]</value>
-        <value condition="!String.IsEmpty(Container(450).ListItem.Art(artist.clearlogo))">$INFO[Container(450).ListItem.Art(artist.clearlogo)]</value>
+        <value condition="!String.IsEmpty(Container(450).ListItem.Art(clearlogo)) + ![String.EndsWith(Container(450).ListItem.Art(clearlogo),.jpg) | String.EndsWith(Container(450).ListItem.Art(clearlogo),.jpeg)]">$INFO[Container(450).ListItem.Art(clearlogo)]</value>
+        <value condition="!String.IsEmpty(Container(450).ListItem.Art(tvshow.clearlogo)) + ![String.EndsWith(Container(450).ListItem.Art(tvshow.clearlogo),.jpg) | String.EndsWith(Container(450).ListItem.Art(tvshow.clearlogo),.jpeg)]">$INFO[Container(450).ListItem.Art(tvshow.clearlogo)]</value>
+        <value condition="!String.IsEmpty(Container(450).ListItem.Art(artist.clearlogo)) + ![String.EndsWith(Container(450).ListItem.Art(artist.clearlogo),.jpg) | String.EndsWith(Container(450).ListItem.Art(artist.clearlogo),.jpeg)]">$INFO[Container(450).ListItem.Art(artist.clearlogo)]</value>
     </variable>
     <variable name="Image_Clearlogo">
         <value condition="!String.IsEmpty(ListItem.Art(clearlogo))+ ![String.EndsWith(ListItem.Art(clearlogo),.jpg) | String.EndsWith(ListItem.Art(clearlogo),.jpeg)]">$INFO[ListItem.Art(clearlogo)]</value>
