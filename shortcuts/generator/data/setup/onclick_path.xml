@@ -14,9 +14,8 @@
                 <![CDATA[
                 <onclick>Skin.SetString(Reboot.Mode,reboot)</onclick>
                 <onclick>ActivateWindow(1197)</onclick>
-                <!-- Use Kodi's native reboot action. System.Exec only accepts an executable
-                     path and does not reliably run the previous comma-separated shell chain. -->
-                <onclick>AlarmClock(RebootForce,Reboot,00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, busybox reboot -f || /sbin/reboot -f || /usr/sbin/reboot -f || (echo 1 > /proc/sys/kernel/sysrq; echo b > /proc/sysrq-trigger)"),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootFallback,Reboot,00:08,silent)</onclick>
                 ]]>
             </value>
         </rule>
@@ -26,8 +25,8 @@
                 <![CDATA[
                 <onclick>Skin.SetString(Reboot.Mode,reboot)</onclick>
                 <onclick>ActivateWindow(1197)</onclick>
-                <!-- CoreELEC's helper switches the next boot target and performs the reboot. -->
-                <onclick>AlarmClock(RebootForce,System.ExecWait(/usr/sbin/rebootfromnand),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, /usr/sbin/rebootfromnand; busybox reboot -f || /sbin/reboot -f || /usr/sbin/reboot -f || (echo 1 > /proc/sys/kernel/sysrq; echo b > /proc/sysrq-trigger)"),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootFallback,Reboot,00:08,silent)</onclick>
                 ]]>
             </value>
         </rule>
@@ -37,7 +36,8 @@
                 <![CDATA[
                 <onclick>Skin.SetString(Reboot.Mode,shutdown)</onclick>
                 <onclick>ActivateWindow(1197)</onclick>
-                <onclick>AlarmClock(RebootForce,Powerdown,00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, busybox poweroff -f || /sbin/poweroff -f || /usr/sbin/poweroff -f || (echo 1 > /proc/sys/kernel/sysrq; echo o > /proc/sysrq-trigger)"),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootFallback,Powerdown,00:08,silent)</onclick>
                 ]]>
             </value>
         </rule>
