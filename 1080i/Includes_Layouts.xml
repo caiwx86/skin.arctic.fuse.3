@@ -2348,7 +2348,7 @@
                 <font>font_tiny_bold</font>
                 <textcolor>main_fg_90</textcolor>
                 <label>$INFO[$PARAM[listitem].Label]</label>
-                <visible>[String.IsEmpty($VAR[Image_Clearlogo]) | !String.Contains($VAR[Image_Clearlogo],.png)]</visible>
+                <visible>String.IsEmpty($VAR[Image_Clearlogo])</visible>
             </control>
         </definition>
     </include>
