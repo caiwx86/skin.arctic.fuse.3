@@ -611,13 +611,13 @@
 				<control type="label">
 					<top>125</top>
 					<left>240</left>
-					<label>$INFO[System.CpuAltUsage]</label>
+					<label>$INFO[System.CPUUsage]</label>
 					<font>font_tiny</font>
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
 					<left>0</left>
-					<top>148</top>
+					<top>155</top>
 					<height>10</height>
 					<width>230</width>
 					<control type="progress">
@@ -646,7 +646,7 @@
 				</control>
 				<control type="group">
 					<left>0</left>
-					<top>218</top>
+					<top>225</top>
 					<height>10</height>
 					<width>230</width>
 					<control type="progress">
@@ -703,7 +703,7 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>40</top>
+					<top>52</top>
 					<left>240</left>
 					<height>10</height>
 					<width>250</width>
@@ -719,13 +719,13 @@
 				</control>
 				<!-- Video queue data -->
 				<control type="label">
-					<top>55</top>
+					<top>65</top>
 					<label>$LOCALIZE[32009]:</label>
 					<font>font_tiny</font>
 					<textcolor>$VAR[ColorHighlight]</textcolor>
 				</control>
 				<control type="label">
-					<top>55</top>
+					<top>65</top>
 					<align>right</align>
 					<right>30</right>
 					<label>$INFO[Player.Process(video.queue.data.level)]%</label>
@@ -733,7 +733,7 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>75</top>
+					<top>97</top>
 					<left>240</left>
 					<height>10</height>
 					<width>250</width>
@@ -749,13 +749,13 @@
 				</control>
 				<!-- Audio queue -->
 				<control type="label">
-					<top>90</top>
+					<top>110</top>
 					<label>$LOCALIZE[32010]:</label>
 					<font>font_tiny</font>
 					<textcolor>$VAR[ColorHighlight]</textcolor>
 				</control>
 				<control type="label">
-					<top>90</top>
+					<top>110</top>
 					<align>right</align>
 					<right>30</right>
 					<label>$INFO[Player.Process(audio.queue.level)]%</label>
@@ -763,7 +763,7 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>110</top>
+					<top>142</top>
 					<left>240</left>
 					<height>10</height>
 					<width>250</width>
@@ -779,13 +779,13 @@
 				</control>
 				<!-- Audio queue data -->
 				<control type="label">
-					<top>125</top>
+					<top>155</top>
 					<label>$LOCALIZE[32011]:</label>
 					<font>font_tiny</font>
 					<textcolor>$VAR[ColorHighlight]</textcolor>
 				</control>
 				<control type="label">
-					<top>125</top>
+					<top>155</top>
 					<align>right</align>
 					<right>30</right>
 					<label>$INFO[Player.Process(audio.queue.data.level)]%</label>
@@ -793,7 +793,7 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>145</top>
+					<top>187</top>
 					<left>240</left>
 					<height>10</height>
 					<width>250</width>
