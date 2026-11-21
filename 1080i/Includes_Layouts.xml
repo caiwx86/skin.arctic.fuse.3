@@ -2335,7 +2335,7 @@
                 <control type="image">
                     <texture>$VAR[Image_Clearlogo]</texture>
                     <aspectratio>keep</aspectratio>
-                    <visible>![String.EndsWith($VAR[Image_Clearlogo],.jpg) | String.EndsWith($VAR[Image_Clearlogo],.jpeg)]</visible>
+                    <visible>String.Contains($VAR[Image_Clearlogo],.png)</visible>
                 </control>
             </control>
             <control type="textbox">
@@ -2348,7 +2348,7 @@
                 <font>font_tiny_bold</font>
                 <textcolor>main_fg_90</textcolor>
                 <label>$INFO[$PARAM[listitem].Label]</label>
-                <visible>[String.IsEmpty($VAR[Image_Clearlogo]) | String.EndsWith($VAR[Image_Clearlogo],.jpg) | String.EndsWith($VAR[Image_Clearlogo],.jpeg)]</visible>
+                <visible>[String.IsEmpty($VAR[Image_Clearlogo]) | !String.Contains($VAR[Image_Clearlogo],.png)]</visible>
             </control>
         </definition>
     </include>
