@@ -494,9 +494,7 @@
                 <control type="group">
                     <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
-                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.Contains($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)]</visible>
-                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.Contains($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.png)]</visible>
-                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.Contains($PARAM[container]$PARAM[listitem].Art(artist.clearlogo),.png)]</visible>
+                    <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) + String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)) + String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo))</visible>
                     <include content="Info_Title_Text">
                         <param name="title">$PARAM[listitem].TVShowTitle</param>
                         <param name="colordiffuse">$PARAM[colordiffuse]</param>
