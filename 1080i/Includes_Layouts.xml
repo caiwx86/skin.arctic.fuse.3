@@ -2094,6 +2094,7 @@
                 <height>$PARAM[item_h]</height>
 
                 <control type="group">
+                    <bottom>18</bottom>
                     <include content="Object_ItemBack">
                         <param name="selected">$PARAM[selected]</param>
                         <param name="shadow_colordiffuse">$PARAM[shadow_colordiffuse]</param>
@@ -2146,21 +2147,23 @@
                         <param name="listitem">$PARAM[listitem]</param>
                         <param name="indicator">$PARAM[indicator]</param>
                         <param name="focusbounce">true</param>
+                        <param name="right">32</param>
+                        <param name="bottom">14</param>
                     </include>
                 </control>
 
                 <!-- Item title below the poster artwork -->
                 <control type="label">
                     <top>$PARAM[item_h]</top>
-                    <left>10</left>
-                    <right>10</right>
-                    <height>36</height>
+                    <left>8</left>
+                    <right>8</right>
+                    <height>32</height>
                     <align>center</align>
                     <aligny>center</aligny>
                     <font>font_mini</font>
-                    <textcolor>main_fg_90</textcolor>
+                    <textcolor>main_fg_70</textcolor>
                     <label>$INFO[$PARAM[listitem].Label]</label>
-                    <visible>![$PARAM[detailed]] + ![[String.IsEqual($PARAM[listitem].DBType,actor) | String.IsEqual($PARAM[listitem].DBType,video)] + ![String.IsEmpty($PARAM[listitem].$PARAM[main_artwork]) + String.StartsWith($PARAM[listitem].Icon,Default)]]</visible>
+                    <visible>![$PARAM[detailed]]</visible>
                 </control>
 
             </control>

@@ -1656,6 +1656,8 @@
     <include name="Object_SelectBox">
         <param name="indicator">false</param>
         <param name="focusbounce">false</param>
+        <param name="right">25</param>
+        <param name="bottom">0</param>
         <param name="shadow">true</param>
         <param name="indicator_reposition">false</param>
         <definition>
@@ -1674,6 +1676,8 @@
                     <param name="variant">-joined</param>
                     <param name="selected">true</param>
                     <param name="affix">$PARAM[affix]</param>
+                    <param name="right">$PARAM[right]</param>
+                    <param name="bottom">$PARAM[bottom]</param>
                     <param name="listitem">$PARAM[listitem]</param>
                     <include content="Object_Left" condition="$PARAM[indicator_reposition]">
                         <param name="left">$PARAM[indicator_left]</param>
