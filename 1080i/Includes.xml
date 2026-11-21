@@ -109,4 +109,7 @@
 
     <include file="Includes_Overlay.xml" />
     <include file="Includes_Fallbacks.xml" />
+    <include file="Includes_TinyPPI.xml" />
+    <include file="Includes_CodecLogos.xml" />
+    <include file="Includes_CodecLogos_Flags.xml" />
 </includes>
