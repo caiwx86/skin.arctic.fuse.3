@@ -14,8 +14,9 @@
                 <![CDATA[
                 <onclick>Skin.SetString(Reboot.Mode,reboot)</onclick>
                 <onclick>ActivateWindow(1197)</onclick>
-                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, /sbin/reboot -f || /usr/sbin/reboot -f || busybox reboot -f || echo b > /proc/sysrq-trigger"),00:05,silent)</onclick>
-                <onclick>AlarmClock(RebootFallback,Reboot,00:08,silent)</onclick>
+                <!-- Use Kodi's native reboot action. System.Exec only accepts an executable
+                     path and does not reliably run the previous comma-separated shell chain. -->
+                <onclick>AlarmClock(RebootForce,Reboot,00:05,silent)</onclick>
                 ]]>
             </value>
         </rule>
@@ -25,8 +26,8 @@
                 <![CDATA[
                 <onclick>Skin.SetString(Reboot.Mode,reboot)</onclick>
                 <onclick>ActivateWindow(1197)</onclick>
-                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, /usr/sbin/rebootfromnand; /sbin/reboot -f || /usr/sbin/reboot -f || busybox reboot -f || echo b > /proc/sysrq-trigger"),00:05,silent)</onclick>
-                <onclick>AlarmClock(RebootFallback,Reboot,00:08,silent)</onclick>
+                <!-- CoreELEC's helper switches the next boot target and performs the reboot. -->
+                <onclick>AlarmClock(RebootForce,System.ExecWait(/usr/sbin/rebootfromnand),00:05,silent)</onclick>
                 ]]>
             </value>
         </rule>
@@ -36,8 +37,7 @@
                 <![CDATA[
                 <onclick>Skin.SetString(Reboot.Mode,shutdown)</onclick>
                 <onclick>ActivateWindow(1197)</onclick>
-                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, /sbin/poweroff -f || /usr/sbin/poweroff -f || busybox poweroff -f || echo o > /proc/sysrq-trigger"),00:05,silent)</onclick>
-                <onclick>AlarmClock(RebootFallback,Powerdown,00:08,silent)</onclick>
+                <onclick>AlarmClock(RebootForce,Powerdown,00:05,silent)</onclick>
                 ]]>
             </value>
         </rule>
