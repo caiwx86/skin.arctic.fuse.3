@@ -2137,6 +2137,8 @@
                     </include>
                     <include condition="!$PARAM[selected] + $PARAM[indicator]" content="Object_Indicator">
                         <param name="affix">$PARAM[affix]</param>
+                        <param name="right">32</param>
+                        <param name="bottom">14</param>
                         <param name="listitem">$PARAM[listitem]</param>
                     </include>
                     <include content="Object_SelectBox" condition="$PARAM[selected]">
@@ -2145,6 +2147,20 @@
                         <param name="indicator">$PARAM[indicator]</param>
                         <param name="focusbounce">true</param>
                     </include>
+                </control>
+
+                <!-- Item title below the poster artwork -->
+                <control type="label">
+                    <top>$PARAM[item_h]</top>
+                    <left>10</left>
+                    <right>10</right>
+                    <height>36</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>font_mini</font>
+                    <textcolor>main_fg_90</textcolor>
+                    <label>$INFO[$PARAM[listitem].Label]</label>
+                    <visible>![$PARAM[detailed]] + ![[String.IsEqual($PARAM[listitem].DBType,actor) | String.IsEqual($PARAM[listitem].DBType,video)] + ![String.IsEmpty($PARAM[listitem].$PARAM[main_artwork]) + String.StartsWith($PARAM[listitem].Icon,Default)]]</visible>
                 </control>
 
             </control>

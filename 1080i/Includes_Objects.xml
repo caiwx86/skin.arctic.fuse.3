@@ -1269,10 +1269,11 @@
         <param name="shadow">true</param>
         <param name="backing">true</param>
         <param name="right">25</param>
+        <param name="bottom">0</param>
         <definition>
             <control type="group">
                 <nested />
-                <centerbottom>0</centerbottom>
+                <centerbottom>$PARAM[bottom]</centerbottom>
                 <right>$PARAM[right]</right>
                 <width>64</width>
                 <height>64</height>
