@@ -12,12 +12,7 @@
 				<visible>!VideoPlayer.Content(musicvideos)</visible>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<animation effect="fade" start="0" end="100" delay="100" time="200">Visible</animation>
-				<control type="image">
-					<left>-22</left>
-					<width>330</width>
-					<height>240</height>
-					<texture>codecs/cdbg.png</texture>
-				</control>
+				<!-- Keep playback codec logos transparent; cdbg.png renders an opaque black panel. -->
 				<control type="group">
 					<visible>!String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
 					<visible>String.IsEqual(Player.Process(video.source.hdr.type.raw),0) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass) + !String.Contains(Player.Process(amlogic.eoft_gamut),HLG)</visible>
@@ -1176,9 +1171,7 @@
 				<visible>!VideoPlayer.Content(musicvideos)</visible>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<animation effect="fade" start="0" end="100" delay="100" time="200">Visible</animation>
-				<control type="image">
-					<texture>codecs/cdbg.png</texture>
-				</control>
+				<!-- Keep playback codec logos transparent; cdbg.png renders an opaque black panel. -->
 				<control type="group">
 					<visible>!String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
 					<visible>String.IsEqual(Player.Process(video.source.hdr.type.raw),0) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass) + !String.Contains(Player.Process(amlogic.eoft_gamut),HLG)</visible>
@@ -1761,9 +1754,7 @@
 			<visible>!Player.HasPerformedSeek(3)</visible>
 			<visible>!VideoPlayer.Content(musicvideos)</visible>
 			<aspectratio aligny="bottom">keep</aspectratio>
-				<control type="image">
-					<texture>codecs/cdbg.png</texture>
-				</control>
+				<!-- Keep playback codec logos transparent; cdbg.png renders an opaque black panel. -->
 				<control type="group">
 					<visible>!String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
 					<visible>String.IsEqual(Player.Process(video.source.hdr.type.raw),0) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass) + !String.Contains(Player.Process(amlogic.eoft_gamut),HLG)</visible>
@@ -2342,9 +2333,7 @@
 				<visible>!VideoPlayer.Content(musicvideos)</visible>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<animation effect="fade" start="0" end="100" delay="100" time="200">Visible</animation>
-				<control type="image">
-					<texture>codecs/cdbg.png</texture>
-				</control>
+				<!-- Keep playback codec logos transparent; cdbg.png renders an opaque black panel. -->
 				<control type="group">
 					<visible>!String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
 					<visible>String.IsEqual(Player.Process(video.source.hdr.type.raw),0) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass) + !String.Contains(Player.Process(amlogic.eoft_gamut),HLG)</visible>
@@ -2926,9 +2915,7 @@
 			<visible>!Player.HasPerformedSeek(3)</visible>
 			<visible>!VideoPlayer.Content(musicvideos)</visible>
 			<aspectratio aligny="bottom">keep</aspectratio>
-				<control type="image">
-					<texture>codecs/cdbg.png</texture>
-				</control>
+				<!-- Keep playback codec logos transparent; cdbg.png renders an opaque black panel. -->
 				<control type="group">
 					<visible>!String.IsEqual(VideoPlayer.VideoCodec,av1)</visible>
 					<visible>String.IsEqual(Player.Process(video.source.hdr.type.raw),0) + String.Contains(Player.Process(amlogic.vs10.mode),Bypass) + !String.Contains(Player.Process(amlogic.eoft_gamut),HLG)</visible>
