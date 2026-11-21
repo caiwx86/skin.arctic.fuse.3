@@ -181,7 +181,7 @@
 				<control type="label">
 					<left>240</left>
 					<top>195</top>
-					<label>$INFO[Player.Time] $INFO[Player.Duration,/ ,] [COLOR dialog_fg_70]$INFO[Player.Progress, (,%)][/COLOR]</label>
+					<label>$INFO[Player.Time] $INFO[Player.Duration,/ ,] [COLOR dialog_fg_70]$INFO[Player.Progress,(,%)][/COLOR]</label>
 					<font>font_tiny</font>
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
@@ -653,7 +653,7 @@
 						<description>ram BAR</description>
 						<centertop>50%</centertop>
 						<height>10</height>
-						<info>system.memory(used)</info>
+						<info>system.memory(used.percent)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
 						<midtexture colordiffuse="ff607d8b" border="4">progress/progress-end.png</midtexture>
