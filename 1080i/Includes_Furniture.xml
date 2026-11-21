@@ -146,7 +146,7 @@
                 <width>300</width>
                 <height>80</height>
                 <aspectratio align="right">keep</aspectratio>
-                <texture background="true">$VAR[Image_CombinedStudio]</texture>
+                <texture fallback="DefaultStudios.png">$VAR[Image_CombinedStudio]</texture>
                 <centertop>50%</centertop>
             </control>
         </control>
@@ -180,7 +180,7 @@
                     <width>300</width>
                     <height>48</height>
                     <aspectratio align="right">keep</aspectratio>
-                    <texture background="true">$VAR[Image_CombinedStudio]</texture>
+                    <texture fallback="DefaultStudios.png">$VAR[Image_CombinedStudio]</texture>
                     <centertop>50%</centertop>
                     <visible>$PARAM[show_studio]</visible>
                 </control>
