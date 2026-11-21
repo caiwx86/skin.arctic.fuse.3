@@ -452,7 +452,7 @@
                     <fadetime>0</fadetime>
                     <texture>$INFO[Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)]</texture>
                     <visible>!String.IsEqual($PARAM[listitem],VideoPlayer)</visible>
-                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>[!String.IsEqual($PARAM[listitem],VideoPlayer) | !$EXP[Exp_TMDbHelper_OnlineLogo]]</visible>
                     <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo))</visible>
                 </control>
                 <!-- 4. Library artwork logo: skipped when flagged as matted or when it is a JPEG (no alpha) -->
@@ -461,7 +461,7 @@
                     <aspectratio align="left" aligny="center">keep</aspectratio>
                     <fadetime>0</fadetime>
                     <texture>$INFO[$PARAM[container]$PARAM[listitem].Art(clearlogo)]</texture>
-                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>[!String.IsEqual($PARAM[listitem],VideoPlayer) | !$EXP[Exp_TMDbHelper_OnlineLogo]]</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo))</visible>
                     <visible>String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)</visible>
@@ -471,7 +471,7 @@
                     <aspectratio align="left" aligny="center">keep</aspectratio>
                     <fadetime>0</fadetime>
                     <texture>$INFO[$PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)]</texture>
-                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>[!String.IsEqual($PARAM[listitem],VideoPlayer) | !$EXP[Exp_TMDbHelper_OnlineLogo]]</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo))</visible>
                     <visible>String.EndsWith($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.png)</visible>
@@ -481,14 +481,14 @@
                     <aspectratio align="left" aligny="center">keep</aspectratio>
                     <fadetime>0</fadetime>
                     <texture>$INFO[$PARAM[container]$PARAM[listitem].Art(artist.clearlogo)]</texture>
-                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>[!String.IsEqual($PARAM[listitem],VideoPlayer) | !$EXP[Exp_TMDbHelper_OnlineLogo]]</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo))</visible>
                     <visible>String.EndsWith($PARAM[container]$PARAM[listitem].Art(artist.clearlogo),.png)</visible>
                 </control>
                 <!-- 5. Text fallback -->
                 <control type="group">
-                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>[!String.IsEqual($PARAM[listitem],VideoPlayer) | !$EXP[Exp_TMDbHelper_OnlineLogo]]</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <include content="Info_Title_Text">
                         <param name="title">$PARAM[listitem].TVShowTitle</param>
