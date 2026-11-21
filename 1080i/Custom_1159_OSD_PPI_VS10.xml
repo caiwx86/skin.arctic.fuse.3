@@ -14,12 +14,16 @@
             <control type="group">
             <width>460</width>
             <height>440</height>
-                <include content="OSD_Part_Background_Blur">
-                    <param name="diffuse">diffuse/dialog_w440_h450.png</param>
-                </include>
-                <include content="Animation_SlideIn_Dialog">
-                    <param name="posy">48</param>
-                </include>
+                <!-- Single static backdrop: cheaper than the layered blur/shadow/glass stack -->
+                <control type="image">
+                    <texture border="20">$VAR[Image_SimpleDialogBackground]</texture>
+                </control>
+                <animation type="WindowOpen" reversible="false">
+                    <effect type="fade" start="0" end="100" time="120" />
+                </animation>
+                <animation type="Visible" reversible="false">
+                    <effect type="fade" start="0" end="100" time="120" />
+                </animation>
                 <include>OSD_Stream_Selector_Divider</include>
                 <right>-40</right>
                 <bottom>220</bottom>
@@ -153,13 +157,13 @@
                             <control type="group">
                                 <visible>!Control.HasFocus(8493)</visible>
                                 <include content="OSD_VS10_Original">
-                                    <param name="textcolor_top">dialog_fg_90</param>
+                                    <param name="textcolor">dialog_fg_90</param>
                                 </include>
                             </control>
                             <control type="group">
                                 <visible>Control.HasFocus(8493)</visible>
                                 <include content="OSD_VS10_Original">
-                                    <param name="textcolor_top">$VAR[ColorSelected]</param>
+                                    <param name="textcolor">$VAR[ColorSelected]</param>
                                 </include>
                             </control>
                         </control>

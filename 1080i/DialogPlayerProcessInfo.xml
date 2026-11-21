@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">9998</defaultcontrol>
-	<include content="Animation_SlideIn_Dialog">
-		<param name="posy">96</param>
-		<param name="windowopen_delay">100</param>
-	</include>
+	<animation type="WindowOpen" reversible="false">
+		<effect type="fade" start="0" end="100" time="120" />
+	</animation>
 	<controls>
 		<!-- Global background -->
 		<control type="group">
 			<animation type="WindowOpen">
-				<effect type="fade" start="0" end="100" delay="0" time="480"/>
+				<effect type="fade" start="0" end="100" delay="0" time="200"/>
 			</animation>
 			<top>530</top>
 			<width>2000</width>
@@ -53,7 +52,7 @@
 			<control type="group">
 				<left>1420</left>
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="100" delay="0" time="480"/>
+					<effect type="fade" start="0" end="100" delay="0" time="200"/>
 				</animation>
 				<visible>![String.Contains(Player.Process(video.hdr.type),dolby vision) + !String.IsEmpty(Player.Process(video.source.dovi.meta.version))]</visible>
 				<control type="grouplist">
@@ -88,7 +87,7 @@
 			</control>
 			<control type="group">
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="100" delay="0" time="480"/>
+					<effect type="fade" start="0" end="100" delay="0" time="200"/>
 				</animation>
 				<left>30</left>
 				<top>30</top>
@@ -190,7 +189,7 @@
 			<!-- Group: More left bottom -->
 			<control type="group">
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="100" delay="0" time="480"/>
+					<effect type="fade" start="0" end="100" delay="0" time="200"/>
 				</animation>
 				<top>245</top>
 				<left>30</left>
@@ -387,7 +386,7 @@
 			</control>
 			<control type="group">
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="100" delay="0" time="480"/>
+					<effect type="fade" start="0" end="100" delay="0" time="200"/>
 				</animation>
 				<left>670</left>
 				<top>30</top>
@@ -537,7 +536,7 @@
 			<!-- Group: System center-->
 			<control type="group">
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="100" delay="0" time="480"/>
+					<effect type="fade" start="0" end="100" delay="0" time="200"/>
 				</animation>
 				<left>670</left>
 				<top>245</top>
@@ -684,7 +683,7 @@
 			</control>
 			<control type="group">
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="100" delay="0" time="480"/>
+					<effect type="fade" start="0" end="100" delay="0" time="200"/>
 				</animation>
 				<left>1305</left>
 				<top>30</top>
@@ -870,7 +869,7 @@
 			<!-- Group: DV Configuration right-->
 			<control type="group">
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="100" delay="0" time="480"/>
+					<effect type="fade" start="0" end="100" delay="0" time="200"/>
 				</animation>
 				<visible>String.IsEqual(Player.Process(video.dovi.has.config),1) + !String.IsEmpty(Player.Process(video.source.dovi.meta.version))</visible>
 				<left>1305</left>
@@ -933,7 +932,7 @@
 			<!-- Group: DV Levels Metadata right-->
 			<control type="group">
 				<animation type="WindowOpen">
-					<effect type="fade" start="0" end="100" delay="0" time="480"/>
+					<effect type="fade" start="0" end="100" delay="0" time="200"/>
 				</animation>
 				<visible>String.Contains(Player.Process(video.hdr.type),dolby vision) + !String.IsEmpty(Player.Process(video.source.dovi.meta.version))</visible>
 				<left>1305</left>
