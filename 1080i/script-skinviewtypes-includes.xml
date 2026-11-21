@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-<!-- GENERATED FILE - overwritten by script.skinvariables (action=buildviews).
-     The blank Action_BuildViews in Includes_Fallbacks.xml is the fallback that
-     triggers the rebuild once, so view expressions exist on a fresh install. -->
-
     <!-- Defer shortcut generation until viewtypes have been rebuilt and the skin reloaded. -->
     <expression name="Exp_ViewTypes_RebuildPending">true</expression>
 

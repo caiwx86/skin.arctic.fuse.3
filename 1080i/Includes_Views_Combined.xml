@@ -99,6 +99,9 @@
         </control>
     </include>
 
+    <include name="View_Combined_List_HiddenButton_OnFocus">
+        <!-- List_Core's container focus must not commit before the focused item's delay finishes. -->
+    </include>
 
     <include name="View_Combined_List_HiddenButton">
         <include content="View_Combined_Selector_HiddenButton">

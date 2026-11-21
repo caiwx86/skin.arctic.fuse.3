@@ -1801,6 +1801,7 @@
         </definition>
     </include>
 
+    <include name="Layout_Iconic_Pad"><right>40</right></include>
     <include name="Layout_Iconic">
         <param name="selected">false</param>
         <param name="misc">false</param>

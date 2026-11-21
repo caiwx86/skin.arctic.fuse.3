@@ -304,6 +304,9 @@
         </definition>
     </include>
 
+    <include name="Settings_Button_">
+        <description>None</description>
+    </include>
 
     <include name="Settings_Button">
         <param name="control">button</param>
