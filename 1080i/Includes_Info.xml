@@ -445,13 +445,24 @@
                     <texture>$INFO[Window(Home).Property(TMDbHelper.Player.tvshow.clearlogo)]</texture>
                     <visible>[String.IsEmpty(Window(Home).Property(TMDbHelper.Player.clearlogo)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.Player.tvshow.clearlogo))]</visible>
                 </control>
-                <!-- 3. Library artwork clearlogo (Emby and friends). CropImage is never used: its raster crop bakes in a black matte. -->
+                <!-- 3. TMDbHelper online logo for the focused library item (transparent) -->
+                <control type="image">
+                    <height>info_title_logo_h</height>
+                    <aspectratio align="left" aligny="center">keep</aspectratio>
+                    <fadetime>0</fadetime>
+                    <texture>$INFO[Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)]</texture>
+                    <visible>!String.IsEqual($PARAM[listitem],VideoPlayer)</visible>
+                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo))</visible>
+                </control>
+                <!-- 4. Library artwork clearlogo (Emby and friends). CropImage is never used: its raster crop bakes in a black matte. -->
                 <control type="image">
                     <height>info_title_logo_h</height>
                     <aspectratio align="left" aligny="center">keep</aspectratio>
                     <fadetime>0</fadetime>
                     <texture>$INFO[$PARAM[container]$PARAM[listitem].Art(clearlogo)]</texture>
                     <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo))</visible>
                 </control>
                 <control type="image">
@@ -460,6 +471,7 @@
                     <fadetime>0</fadetime>
                     <texture>$INFO[$PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)]</texture>
                     <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo))</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo))</visible>
                 </control>
@@ -469,13 +481,15 @@
                     <fadetime>0</fadetime>
                     <texture>$INFO[$PARAM[container]$PARAM[listitem].Art(artist.clearlogo)]</texture>
                     <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo))</visible>
                     <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo))</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo))</visible>
                 </control>
-                <!-- 4. Text fallback -->
+                <!-- 5. Text fallback -->
                 <control type="group">
                     <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo))</visible>
                     <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo))</visible>
                     <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo))</visible>
