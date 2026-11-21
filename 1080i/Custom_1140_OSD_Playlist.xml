@@ -3,6 +3,9 @@
     <zorder>0</zorder>
     <defaultcontrol always="true">7000</defaultcontrol>
     <onload>CancelAlarm(osd_timeout,true)</onload>
+    <!-- Optional focus helper: focuses the currently playing playlist entry
+         (SetFocus needs a 0-based index, the helper converts PlaylistPosition) -->
+    <onload condition="System.HasAddon(script.arcticfuse.focus)">RunScript(script.arcticfuse.focus,playlist,7000)</onload>
     <include>Animation_OSD_Dialog_WindowChange</include>
     <controls>
         <control type="group">

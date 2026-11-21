@@ -29,7 +29,7 @@
                         <itemgap>osd_itemgap</itemgap>
                         <onleft>6009</onleft>
                         <onright>6005</onright>
-                        <ondown>ActivateWindow($VAR[Action_OSD_Main_OnDown])</ondown>
+                        <ondown>$VAR[Action_OSD_Main_OnDown_Command]</ondown>
 
                         <!-- Button 1 -->
                         <control type="button" id="6001">
@@ -116,7 +116,7 @@
                         <align>right</align>
                         <onleft>6004</onleft>
                         <onright>6001</onright>
-                        <ondown>ActivateWindow($VAR[Action_OSD_Main_OnDown])</ondown>
+                        <ondown>$VAR[Action_OSD_Main_OnDown_Command]</ondown>
 
                         <!-- Button 5 -->
                         <control type="button" id="6005">
@@ -185,12 +185,13 @@
                         <!-- Button 9 -->
                         <control type="button" id="6009">
                             <include>Defs_OSD_Button</include>
-                            <onclick>CancelAlarm(osd_timeout,true)</onclick>
-                            <onclick>ActivateWindow(1159)</onclick>
                             <onup>ActivateWindow(1159)</onup>
+                            <onfocus>ActivateWindow(1159)</onfocus>
+                            <onclick>CancelAlarm(osd_timeout,true)</onclick>
+                            <onclick>ActivateWindow(playerprocessinfo)</onclick>
                         </control>
                         <include content="OSD_Button_Icon_Overlay">
-                            <param name="icon">special://skin/extras/icons/ppi.png</param>
+                            <param name="icon">special://skin/extras/icons/playerinfo.png</param>
                             <param name="id">6009</param>
                             <param name="groupid">6109</param>
                             <param name="itemgap">osd_itemgap</param>

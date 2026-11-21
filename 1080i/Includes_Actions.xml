@@ -107,6 +107,12 @@
         <value>$VAR[Action_OSD_VideoBookmarks_OnDown]</value>
     </variable>
 
+    <!-- Open the OSD playlist with the focus already on the playing episode (helper add-on) -->
+    <variable name="Action_OSD_Main_OnDown_Command">
+        <value condition="$EXP[Exp_OSD_HasPlaylist] + !Skin.HasSetting(OSD.OnDown.Disable1140) + System.HasAddon(script.arcticfuse.focus)">RunScript(script.arcticfuse.focus,open,1140,7000)</value>
+        <value>ActivateWindow($VAR[Action_OSD_Main_OnDown])</value>
+    </variable>
+
     <variable name="Action_OSD_PVROSDGuide_OnDown">
         <value condition="!Skin.HasSetting(OSD.OnDown.DisablePVROSDChannels)">pvrosdchannels</value>
     </variable>
