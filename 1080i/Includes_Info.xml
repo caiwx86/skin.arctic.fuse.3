@@ -452,7 +452,7 @@
                     <fadetime>0</fadetime>
                     <texture>$INFO[Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)]</texture>
                     <visible>!String.IsEqual($PARAM[listitem],VideoPlayer)</visible>
-                    <visible>[!String.IsEqual($PARAM[listitem],VideoPlayer) | !$EXP[Exp_TMDbHelper_OnlineLogo]]</visible>
+                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
                     <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo))</visible>
                 </control>
                 <!-- 4. Library artwork logo: skipped when flagged as matted or when it is a JPEG (no alpha) -->
@@ -488,7 +488,7 @@
                 </control>
                 <!-- 5. Text fallback -->
                 <control type="group">
-                    <visible>[!String.IsEqual($PARAM[listitem],VideoPlayer) | !$EXP[Exp_TMDbHelper_OnlineLogo]]</visible>
+                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <include content="Info_Title_Text">
                         <param name="title">$PARAM[listitem].TVShowTitle</param>
