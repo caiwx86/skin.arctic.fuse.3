@@ -570,7 +570,7 @@
                 <width>50</width>
                 <bordersize>$PARAM[bordersize]</bordersize>
                 <aspectratio scalediffuse="false">$PARAM[aspectratio]</aspectratio>
-                <texture diffuse="$PARAM[diffuse]" colordiffuse="$PARAM[colordiffuse]" fallback="$PARAM[fallback]" background="true">$PARAM[icon]</texture>
+                <texture diffuse="$PARAM[diffuse]" colordiffuse="$PARAM[colordiffuse]" fallback="$PARAM[fallback]">$PARAM[icon]</texture>
             </control>
         </definition>
     </include>

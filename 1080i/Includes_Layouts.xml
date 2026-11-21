@@ -2315,7 +2315,7 @@
                 <height>60</height>
                 <animation effect="rotate" end="-90" center="auto" condition="true">Conditional</animation>
                 <control type="image">
-                    <texture background="true">$VAR[Image_Clearlogo]</texture>
+                    <texture>$VAR[Image_Clearlogo]</texture>
                     <aspectratio>keep</aspectratio>
                 </control>
             </control>

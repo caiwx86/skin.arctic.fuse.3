@@ -4116,3 +4116,335 @@ msgstr "正在重启，请稍候…"
 msgctxt "#32096"
 msgid "Shutting down, please wait..."
 msgstr "正在关机，请稍候…"
+
+msgctxt "#31876"
+msgid "Filter the skin settings by tag."
+msgstr "按标签筛选皮肤设置。"
+
+msgctxt "#31900"
+msgid "Display mode"
+msgstr "显示模式"
+
+msgctxt "#31901"
+msgid "Video mode"
+msgstr "视频模式"
+
+msgctxt "#31902"
+msgid "Color space"
+msgstr "色彩空间"
+
+msgctxt "#31903"
+msgid "Mb/s"
+msgstr "Mb/s"
+
+msgctxt "#31904"
+msgid "Video bit depth"
+msgstr "视频位深"
+
+msgctxt "#31905"
+msgid "Decoder"
+msgstr "解码器"
+
+msgctxt "#31906"
+msgid "VS10 | VP mode"
+msgstr "VS10 | VP 模式"
+
+msgctxt "#31907"
+msgid "Processing"
+msgstr "处理"
+
+msgctxt "#31908"
+msgid "Video queue"
+msgstr "视频队列"
+
+msgctxt "#31909"
+msgid "Video queue data"
+msgstr "视频队列数据"
+
+msgctxt "#31910"
+msgid "Audio queue"
+msgstr "音频队列"
+
+msgctxt "#31911"
+msgid "Audio queue data"
+msgstr "音频队列数据"
+
+msgctxt "#31912"
+msgid "Kb/s"
+msgstr "Kb/s"
+
+msgctxt "#31913"
+msgid "Playback time"
+msgstr "播放时间"
+
+msgctxt "#31914"
+msgid "Processor"
+msgstr "处理器"
+
+msgctxt "#31915"
+msgid "Metadata"
+msgstr "元数据"
+
+msgctxt "#31916"
+msgid "Profile"
+msgstr "配置"
+
+msgctxt "#31917"
+msgid "Level"
+msgstr "级别"
+
+msgctxt "#31918"
+msgid "RPU"
+msgstr "RPU"
+
+msgctxt "#31919"
+msgid "Base Layer"
+msgstr "基本层"
+
+msgctxt "#31920"
+msgid "Enhancement Layer"
+msgstr "增强层"
+
+msgctxt "#31921"
+msgid "CMv2.9 -> CMv4.0"
+msgstr "CMv2.9 -> CMv4.0"
+
+msgctxt "#31922"
+msgid "Metadata"
+msgstr "元数据"
+
+msgctxt "#31923"
+msgid "Output format"
+msgstr "输出格式"
+
+msgctxt "#31924"
+msgid "Aspect ratio"
+msgstr "画面比例"
+
+msgctxt "#31925"
+msgid "HDR10 MDL"
+msgstr "HDR10 MDL"
+
+msgctxt "#31926"
+msgid "HDR10 MaxCLL/FALL"
+msgstr "HDR10 MaxCLL/FALL"
+
+msgctxt "#31927"
+msgid "Media source"
+msgstr "媒体来源"
+
+msgctxt "#31928"
+msgid "Unknown"
+msgstr "未知"
+
+msgctxt "#31929"
+msgid "On"
+msgstr "开"
+
+msgctxt "#31930"
+msgid "Off"
+msgstr "关"
+
+msgctxt "#31931"
+msgid "Deinterlacing"
+msgstr "反交错"
+
+msgctxt "#31932"
+msgid "Player cache"
+msgstr "播放器缓存"
+
+msgctxt "#31933"
+msgid "N/A"
+msgstr "N/A"
+
+msgctxt "#31934"
+msgid "Memory usage"
+msgstr "内存占用"
+
+msgctxt "#31935"
+msgid "Passthrough"
+msgstr "直通"
+
+msgctxt "#31936"
+msgid "AML FPS"
+msgstr "AML 帧率"
+
+msgctxt "#31937"
+msgid "Dolby Vision"
+msgstr "杜比视界"
+
+msgctxt "#31938"
+msgid "Metadata"
+msgstr "元数据"
+
+msgctxt "#31939"
+msgid "HDR Static Metadata"
+msgstr "HDR 静态元数据"
+
+msgctxt "#31940"
+msgid "cd/m²"
+msgstr "cd/m²"
+
+msgctxt "#31941"
+msgid "Source Min/Max"
+msgstr "源最小/最大"
+
+msgctxt "#31942"
+msgid "L6 CLL/FALL"
+msgstr "L6 CLL/FALL"
+
+msgctxt "#31943"
+msgid "L1 Min/Max/Avg"
+msgstr "L1 最小/最大/平均"
+
+msgctxt "#31944"
+msgid "L1 PQ Min/Max/Avg"
+msgstr "L1 PQ 最小/最大/平均"
+
+msgctxt "#31945"
+msgid "12-bit"
+msgstr "12 位"
+
+msgctxt "#31946"
+msgid "Codec"
+msgstr "编解码器"
+
+msgctxt "#31947"
+msgid "Bitrate"
+msgstr "码率"
+
+msgctxt "#31948"
+msgid "VS10 status"
+msgstr "VS10 状态"
+
+msgctxt "#31951"
+msgid "Input"
+msgstr "输入"
+
+msgctxt "#31952"
+msgid "Audio language"
+msgstr "音频语言"
+
+msgctxt "#31953"
+msgid "Subtitle language"
+msgstr "字幕语言"
+
+msgctxt "#31954"
+msgid "Video"
+msgstr "视频"
+
+msgctxt "#31955"
+msgid "Output"
+msgstr "输出"
+
+msgctxt "#31956"
+msgid "Audio"
+msgstr "音频"
+
+msgctxt "#31957"
+msgid "Top left"
+msgstr "左上"
+
+msgctxt "#31958"
+msgid "Top center"
+msgstr "中上"
+
+msgctxt "#31959"
+msgid "Top right"
+msgstr "右上"
+
+msgctxt "#31960"
+msgid "Codec logos (OSD)"
+msgstr "编解码器图标（OSD）"
+
+msgctxt "#31961"
+msgid "Codec logos (PlayerProcessInfo)"
+msgstr "编解码器图标（播放信息）"
+
+msgctxt "#31962"
+msgid "Codec logos (Start)"
+msgstr "编解码器图标（播放开始）"
+
+msgctxt "#31963"
+msgid "Position of codec logos"
+msgstr "编解码器图标位置"
+
+msgctxt "#31964"
+msgid "Original"
+msgstr "原始"
+
+msgctxt "#31965"
+msgid "VS10"
+msgstr "VS10"
+
+msgctxt "#31966"
+msgid "Audio codec"
+msgstr "音频编解码器"
+
+msgctxt "#31967"
+msgid "L5 Active Offsets"
+msgstr "L5 活动偏移"
+
+msgctxt "#31968"
+msgid "Version"
+msgstr "版本"
+
+msgctxt "#31969"
+msgid "Bit depth"
+msgstr "位深"
+
+msgctxt "#31970"
+msgid "EOTF & Gamut"
+msgstr "EOTF 与色域"
+
+msgctxt "#31971"
+msgid "- Duration"
+msgstr "- 时长"
+
+msgctxt "#31972"
+msgid "- Show path"
+msgstr "- 显示路径"
+
+msgctxt "#31973"
+msgid "Artwork Style"
+msgstr "海报样式"
+
+msgctxt "#31974"
+msgid "PlayerProcessInfo type"
+msgstr "播放信息类型"
+
+msgctxt "#31975"
+msgid "second"
+msgstr "秒"
+
+msgctxt "#31976"
+msgid "- Show file name"
+msgstr "- 显示文件名"
+
+msgctxt "#31977"
+msgid "Modern"
+msgstr "现代"
+
+msgctxt "#31978"
+msgid "Classic"
+msgstr "经典"
+
+msgctxt "#31979"
+msgid "Original"
+msgstr "原始"
+
+msgctxt "#31981"
+msgid "Show file name in the version selection"
+msgstr "在版本选择中显示文件名"
+
+msgctxt "#31982"
+msgid "Customise video osd"
+msgstr "自定义视频 OSD"
+
+msgctxt "#31983"
+msgid "Customise video info"
+msgstr "自定义视频信息"
+
+msgctxt "#31984"
+msgid "Show two-row information bar"
+msgstr "显示两行信息栏"
