@@ -9,11 +9,35 @@
             </value>
         </rule>
         <rule>
+            <condition>{item_path}==Reboot</condition>
+            <value>
+                <![CDATA[
+                <onclick>Skin.SetString(Reboot.Mode,reboot)</onclick>
+                <onclick>ActivateWindow(1197)</onclick>
+                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, busybox reboot -f || /sbin/reboot -f || /usr/sbin/reboot -f || (echo 1 > /proc/sys/kernel/sysrq; echo b > /proc/sysrq-trigger)"),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootFallback,Reboot,00:08,silent)</onclick>
+                ]]>
+            </value>
+        </rule>
+        <rule>
             <condition>{item_path}==RebootToAndroid</condition>
             <value>
                 <![CDATA[
-                <onclick>System.ExecWait("/usr/sbin/rebootfromnand")</onclick>
-                <onclick>Reboot()</onclick>
+                <onclick>Skin.SetString(Reboot.Mode,reboot)</onclick>
+                <onclick>ActivateWindow(1197)</onclick>
+                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, /usr/sbin/rebootfromnand; busybox reboot -f || /sbin/reboot -f || /usr/sbin/reboot -f || (echo 1 > /proc/sys/kernel/sysrq; echo b > /proc/sysrq-trigger)"),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootFallback,Reboot,00:08,silent)</onclick>
+                ]]>
+            </value>
+        </rule>
+        <rule>
+            <condition>{item_path}==Powerdown</condition>
+            <value>
+                <![CDATA[
+                <onclick>Skin.SetString(Reboot.Mode,shutdown)</onclick>
+                <onclick>ActivateWindow(1197)</onclick>
+                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, busybox poweroff -f || /sbin/poweroff -f || /usr/sbin/poweroff -f || (echo 1 > /proc/sys/kernel/sysrq; echo o > /proc/sysrq-trigger)"),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootFallback,Powerdown,00:08,silent)</onclick>
                 ]]>
             </value>
         </rule>
