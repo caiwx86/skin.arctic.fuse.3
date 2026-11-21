@@ -1,37 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 
-    <include name="Object_Left"><left>$PARAM[left]</left></include>
-    <include name="Object_CenterLeft"><centerleft>$PARAM[centerleft]</centerleft></include>
-    <include name="Object_Right"><right>$PARAM[right]</right></include>
-    <include name="Object_CenterRight"><centerright>$PARAM[centerright]</centerright></include>
-    <include name="Object_Top"><top>$PARAM[top]</top></include>
-    <include name="Object_CenterTop"><centertop>$PARAM[centertop]</centertop></include>
-    <include name="Object_Bottom"><bottom>$PARAM[bottom]</bottom></include>
-    <include name="Object_CenterBottom"><centerbottom>$PARAM[centerbottom]</centerbottom></include>
-    <include name="Object_BorderSize"><bordersize>$PARAM[bordersize]</bordersize></include>
-    <include name="Object_Height"><height>$PARAM[height]</height></include>
-    <include name="Object_Width"><width>$PARAM[width]</width></include>
-    <include name="Object_Font"><font>$PARAM[font]</font></include>
-    <include name="Object_Scroll"><scroll>$PARAM[scroll]</scroll></include>
-    <include name="Object_AutoScroll"><autoscroll>$PARAM[autoscroll]</autoscroll></include>
-    <include name="Object_Align"><align>$PARAM[align]</align></include>
-    <include name="Object_Orientation"><orientation>$PARAM[orientation]</orientation></include>
-    <include name="Object_Visible"><visible allowhiddenfocus="$PARAM[allowhiddenfocus]">$PARAM[visible]</visible></include>
-    <include name="Object_ColorDiffuse"><colordiffuse>$PARAM[colordiffuse]</colordiffuse></include>
-    <include name="Object_TextColor"><textcolor>$PARAM[textcolor]</textcolor></include>
-    <include name="Object_SelectedColor"><selectedcolor>$PARAM[selectedcolor]</selectedcolor></include>
-    <include name="Object_FocusedColor"><focusedcolor>$PARAM[focusedcolor]</focusedcolor></include>
-    <include name="Object_FocusPosition"><focusposition>$PARAM[focusposition]</focusposition></include>
-    <include name="Object_Movement"><movement>$PARAM[movement]</movement></include>
-    <include name="Object_Label"><label fallback="$PARAM[fallback]">$PARAM[label]</label></include>
-    <include name="Object_OnLeft"><onleft>$PARAM[onleft]</onleft></include>
-    <include name="Object_OnRight"><onright>$PARAM[onright]</onright></include>
-    <include name="Object_HitRect"><hitrect x="$PARAM[x]" y="$PARAM[y]" w="$PARAM[w]" h="$PARAM[h]" /></include>
-    <include name="Object_MenuControl"><menucontrol>$PARAM[menucontrol]</menucontrol></include>
-    <include name="Object_DefaultControl"><defaultcontrol always="$PARAM[always]">$PARAM[defaultcontrol]</defaultcontrol></include>
-    <include name="Object_Property"><property name="$PARAM[name]">$PARAM[property]</property></include>
-    <include name="Object_ItemGap"><itemgap>$PARAM[itemgap]</itemgap></include>
     <include name="Object_Texture">
         <texture colordiffuse="$PARAM[colordiffuse]" flipx="$PARAM[flipx]" flipy="$PARAM[flipy]" background="$PARAM[background]" diffuse="$PARAM[diffuse]" border="$PARAM[border]">$PARAM[texture]</texture>
     </include>
@@ -178,9 +147,6 @@
         </definition>
     </include>
 
-    <include name="Object_Circle_200_Outline">
-        <description>None</description>
-    </include>
 
     <include name="Object_ItemBack">
         <param name="selected">false</param>
@@ -1813,13 +1779,7 @@
         </definition>
     </include>
 
-    <include name="Object_Null">
-        <description>Empty include to pass to params</description>
-    </include>
 
-    <include name="Object_Null_OnFocus">
-        <description>Empty include to pass to params</description>
-    </include>
 
     <include name="Object_StatisticsDots_Month">
         <control type="group">
