@@ -442,8 +442,8 @@
                     <height>info_title_logo_h</height>
                     <aspectratio align="left" aligny="center">keep</aspectratio>
                     <fadetime>0</fadetime>
-                    <texture>$INFO[$PARAM[croplogo]]</texture>
-                    <visible>[!String.IsEmpty($PARAM[croplogo]) + $EXP[Exp_TMDbHelper_IsCrop]]</visible>
+                    <texture>$INFO[Window(Home).Property(TMDbHelper.Player.clearlogo)]</texture>
+                    <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.clearlogo))</visible>
                     <visible>String.IsEqual($PARAM[listitem],VideoPlayer)</visible>
                 </control>
                 <control type="image">
