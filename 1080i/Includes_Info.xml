@@ -465,7 +465,7 @@
                     <visible>!String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true)</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo))</visible>
-                    <visible>![String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.jpg) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.jpeg)]</visible>
+                    <visible>String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)</visible>
                 </control>
                 <control type="image">
                     <height>info_title_logo_h</height>
@@ -475,7 +475,7 @@
                     <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
                     <visible>!String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true)</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
-                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.jpg) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.jpeg)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo))</visible>
                 </control>
                 <control type="image">
@@ -486,17 +486,17 @@
                     <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
                     <visible>!String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true)</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
-                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.jpg) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.jpeg)]</visible>
-                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.jpg) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.jpeg)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.EndsWith($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.png)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo))</visible>
                 </control>
                 <!-- 5. Text fallback -->
                 <control type="group">
                     <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
-                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.jpg) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.jpeg)]</visible>
-                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.jpg) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.jpeg)]</visible>
-                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(artist.clearlogo),.jpg) | String.EndsWith($PARAM[container]$PARAM[listitem].Art(artist.clearlogo),.jpeg)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.EndsWith($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.png)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.EndsWith($PARAM[container]$PARAM[listitem].Art(artist.clearlogo),.png)]</visible>
                     <include content="Info_Title_Text">
                         <param name="title">$PARAM[listitem].TVShowTitle</param>
                         <param name="colordiffuse">$PARAM[colordiffuse]</param>
