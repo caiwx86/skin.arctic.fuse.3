@@ -424,73 +424,101 @@
         <param name="listitem">ListItem</param>
         <param name="service">ListItem</param>
         <param name="wrapmultiline">true</param>
-        <param name="croplogo">Window.Property(TMDbHelper.ListItem.CropImage)</param>
         <definition>
             <control type="group">
                 <left>$PARAM[left]</left>
                 <width>$PARAM[width]</width>
                 <height>info_title_h</height>
+                <!-- 1. TMDbHelper online clearlogo (transparent) -->
                 <control type="image">
                     <height>info_title_logo_h</height>
                     <aspectratio align="left" aligny="center">keep</aspectratio>
                     <fadetime>0</fadetime>
-                    <texture background="true">$INFO[$PARAM[croplogo]]</texture>
-                    <visible>[!String.IsEmpty($PARAM[croplogo]) + $EXP[Exp_TMDbHelper_IsCrop]]</visible>
+                    <texture>$INFO[Window(Home).Property(TMDbHelper.Player.clearlogo)]</texture>
+                    <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.clearlogo))</visible>
                 </control>
+                <!-- 2. TMDbHelper online show clearlogo -->
                 <control type="image">
                     <height>info_title_logo_h</height>
                     <aspectratio align="left" aligny="center">keep</aspectratio>
                     <fadetime>0</fadetime>
-                    <texture background="true">$INFO[$PARAM[container]$PARAM[listitem].Art(clearlogo)]</texture>
-                    <visible>![!String.IsEmpty($PARAM[croplogo]) + $EXP[Exp_TMDbHelper_IsCrop]]</visible>
+                    <texture>$INFO[Window(Home).Property(TMDbHelper.Player.tvshow.clearlogo)]</texture>
+                    <visible>[String.IsEmpty(Window(Home).Property(TMDbHelper.Player.clearlogo)) + !String.IsEmpty(Window(Home).Property(TMDbHelper.Player.tvshow.clearlogo))]</visible>
+                </control>
+                <!-- 3. TMDbHelper online logo of the focused library item (transparent) -->
+                <control type="image">
+                    <height>info_title_logo_h</height>
+                    <aspectratio align="left" aligny="center">keep</aspectratio>
+                    <fadetime>0</fadetime>
+                    <texture>$INFO[Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)]</texture>
+                    <visible>!String.IsEqual($PARAM[listitem],VideoPlayer)</visible>
+                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo))</visible>
+                </control>
+                <!-- 4. Library artwork logo: skipped when flagged as matted or when it is a JPEG (no alpha) -->
+                <control type="image">
+                    <height>info_title_logo_h</height>
+                    <aspectratio align="left" aligny="center">keep</aspectratio>
+                    <fadetime>0</fadetime>
+                    <texture>$INFO[$PARAM[container]$PARAM[listitem].Art(clearlogo)]</texture>
+                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>!String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true)</visible>
+                    <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo))</visible>
+                    <visible>String.Contains($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)</visible>
                 </control>
                 <control type="image">
                     <height>info_title_logo_h</height>
                     <aspectratio align="left" aligny="center">keep</aspectratio>
                     <fadetime>0</fadetime>
-                    <texture background="true">$INFO[$PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)]</texture>
-                    <visible>![!String.IsEmpty($PARAM[croplogo]) + $EXP[Exp_TMDbHelper_IsCrop]]</visible>
-                    <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo))</visible>
+                    <texture>$INFO[$PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)]</texture>
+                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>!String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true)</visible>
+                    <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.Contains($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo))</visible>
                 </control>
                 <control type="image">
                     <height>info_title_logo_h</height>
                     <aspectratio align="left" aligny="center">keep</aspectratio>
                     <fadetime>0</fadetime>
-                    <texture background="true">$INFO[$PARAM[container]$PARAM[listitem].Art(artist.clearlogo)]</texture>
-                    <visible>![!String.IsEmpty($PARAM[croplogo]) + $EXP[Exp_TMDbHelper_IsCrop]]</visible>
-                    <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo))</visible>
-                    <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo))</visible>
+                    <texture>$INFO[$PARAM[container]$PARAM[listitem].Art(artist.clearlogo)]</texture>
+                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>!String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true)</visible>
+                    <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.Contains($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.Contains($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.png)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo))</visible>
                 </control>
+                <!-- 5. Text fallback -->
                 <control type="group">
-                    <visible>![!String.IsEmpty($PARAM[croplogo]) + $EXP[Exp_TMDbHelper_IsCrop]]</visible>
-                    <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo))</visible>
-                    <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo))</visible>
-                    <visible>String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo))</visible>
+                    <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
+                    <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.Contains($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.Contains($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.png)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo)) | String.IsEqual(Window(Home).Property(ArcticFuse.Logo.Matted),true) | !String.Contains($PARAM[container]$PARAM[listitem].Art(artist.clearlogo),.png)]</visible>
                     <include content="Info_Title_Text">
-                        <param name="title">$PARAM[container]$PARAM[listitem].TVShowTitle</param>
+                        <param name="title">$PARAM[listitem].TVShowTitle</param>
                         <param name="colordiffuse">$PARAM[colordiffuse]</param>
-                        <param name="visible">!String.IsEmpty($PARAM[container]$PARAM[listitem].TVShowTitle)</param>
+                        <param name="visible">!String.IsEmpty($PARAM[listitem].TVShowTitle)</param>
                     </include>
                     <include content="Info_Title_Text">
-                        <param name="title">$PARAM[container]$PARAM[listitem].Artist</param>
+                        <param name="title">$PARAM[listitem].Artist</param>
                         <param name="colordiffuse">$PARAM[colordiffuse]</param>
                         <param name="wrapmultiline">$PARAM[wrapmultiline]</param>
-                        <param name="visible">String.IsEmpty($PARAM[container]$PARAM[listitem].TVShowTitle) + !String.IsEmpty($PARAM[container]$PARAM[listitem].Artist)</param>
+                        <param name="visible">String.IsEmpty($PARAM[listitem].TVShowTitle) + !String.IsEmpty($PARAM[listitem].Artist)</param>
                     </include>
                     <include content="Info_Title_Text">
-                        <param name="title">$PARAM[container]$PARAM[listitem].Title</param>
+                        <param name="title">$PARAM[listitem].Title</param>
                         <param name="colordiffuse">$PARAM[colordiffuse]</param>
                         <param name="wrapmultiline">$PARAM[wrapmultiline]</param>
-                        <param name="visible">String.IsEmpty($PARAM[container]$PARAM[listitem].TVShowTitle) + String.IsEmpty($PARAM[container]$PARAM[listitem].Artist) + !String.IsEmpty($PARAM[container]$PARAM[listitem].Title)</param>
+                        <param name="visible">String.IsEmpty($PARAM[listitem].TVShowTitle) + String.IsEmpty($PARAM[listitem].Artist) + !String.IsEmpty($PARAM[listitem].Title)</param>
                     </include>
                     <include content="Info_Title_Text">
-                        <param name="title">$PARAM[container]$PARAM[listitem].Label</param>
+                        <param name="title">$PARAM[listitem].Label</param>
                         <param name="colordiffuse">$PARAM[colordiffuse]</param>
                         <param name="wrapmultiline">$PARAM[wrapmultiline]</param>
-                        <param name="visible">String.IsEmpty($PARAM[container]$PARAM[listitem].TVShowTitle) + String.IsEmpty($PARAM[container]$PARAM[listitem].Artist) + String.IsEmpty($PARAM[container]$PARAM[listitem].Title)</param>
+                        <param name="visible">String.IsEmpty($PARAM[listitem].TVShowTitle) + String.IsEmpty($PARAM[listitem].Artist) + String.IsEmpty($PARAM[listitem].Title)</param>
                     </include>
                 </control>
             </control>
@@ -1589,7 +1617,6 @@
                     <param name="container">$PARAM[container]</param>
                     <param name="listitem">$PARAM[listitem]</param>
                     <param name="service">$PARAM[service]</param>
-                    <param name="croplogo">$PARAM[croplogo]</param>
                 </include>
                 <include content="Object_Control" condition="![$PARAM[include_title]]">
                     <param name="control">group</param>
