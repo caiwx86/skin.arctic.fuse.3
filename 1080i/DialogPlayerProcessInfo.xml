@@ -1081,7 +1081,6 @@
     <label></label>
     
     <onclick>Dialog.Close(playerprocessinfo)</onclick>
-    <onclick>runaddon(script.tinyppi)</onclick>
     
     <!-- Down button -->
     <ondown>Dialog.Close(playerprocessinfo)</ondown>
