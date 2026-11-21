@@ -122,10 +122,10 @@
             <control type="image">
                 <texture colordiffuse="$VAR[ColorBackground]">common/white.png</texture>
             </control>
-            <include content="Background_StartUp_Custom" condition="$EXP[Exp_StartUp_CustomImage]">
+            <include content="Background_StartUp_Custom" condition="!String.IsEmpty(Skin.String(Startup.ImageFolder)) + !Skin.String(Startup.ImageFolder,special://skin/extras/backgrounds/launch/)">
                 <param name="colordiffuse">$PARAM[colordiffuse]</param>
             </include>
-            <include condition="!$EXP[Exp_StartUp_CustomImage]">Background_StartUp_SelectedScene</include>
+            <include condition="String.IsEmpty(Skin.String(Startup.ImageFolder)) | Skin.String(Startup.ImageFolder,special://skin/extras/backgrounds/launch/)">Background_StartUp_SelectedScene</include>
         </definition>
     </include>
 
