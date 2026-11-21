@@ -170,14 +170,6 @@
                     <right>40</right>
                     <bottom>40</bottom>
                     <control type="image">
-                        <top>2</top>
-                        <left>2</left>
-                        <right>-2</right>
-                        <bottom>-2</bottom>
-                        <texture diffuse="$PARAM[diffuse]" colordiffuse="7f000000">$PARAM[icon]</texture>
-                        <aspectratio scalediffuse="false" align="right" aligny="bottom">keep</aspectratio>
-                    </control>
-                    <control type="image">
                         <texture diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
                         <aspectratio scalediffuse="false" align="right" aligny="bottom">keep</aspectratio>
                     </control>
@@ -376,7 +368,7 @@
                 <visible>!String.IsEqual($PARAM[listitem].Icon,DefaultFolder.png) | !String.IsEqual($PARAM[listitem].Label,$LOCALIZE[22082])</visible>
             </control>
             <control type="image">
-                <texture background="true" diffuse="$PARAM[diffuse]">fallback/more-items-wide.png</texture>
+                <texture diffuse="$PARAM[diffuse]">fallback/more-items-wide.png</texture>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <visible>String.IsEqual($PARAM[listitem].Icon,DefaultFolder.png) + String.IsEqual($PARAM[listitem].Label,$LOCALIZE[22082])</visible>
             </control>
@@ -544,14 +536,14 @@
             <control type="image">
                 <include condition="$PARAM[selected]">Color_SelectedImage</include>
                 <colordiffuse>main_fg_90</colordiffuse>
-                <texture background="true" fallback="DefaultCountry.png">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.maps/,.png]</texture>
+                <texture fallback="DefaultCountry.png">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.maps/,.png]</texture>
                 <aspectratio>keep</aspectratio>
                 <visible>[String.IsEqual($PARAM[listitem].DBType,country) | String.IsEqual($PARAM[listitem].Property(DBType),country)]</visible>
             </control>
             <control type="image">
                 <include condition="$PARAM[selected]">Color_SelectedImage</include>
                 <colordiffuse>main_fg_90</colordiffuse>
-                <texture background="true" fallback="DefaultStudios.png">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</texture>
+                <texture fallback="DefaultStudios.png">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</texture>
                 <aspectratio>keep</aspectratio>
                 <visible>[String.IsEqual($PARAM[listitem].DBType,studio) | String.IsEqual($PARAM[listitem].Property(DBType),studio)]</visible>
             </control>
@@ -1355,7 +1347,7 @@
                 <include content="Object_Control" condition="!Skin.HasSetting(Indicator.DisableWatched)">
                     <param name="control">group</param>
                     <control type="image">
-                        <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" background="true" flipx="true" flipy="true">progress/circle/p100.png</texture>
+                        <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" flipx="true" flipy="true">progress/circle/p100.png</texture>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                     </control>
                     <control type="image">

@@ -96,12 +96,12 @@
                 <width>80</width>
                 <control type="image">
                     <include>Home_Grouplist_Icon_Definition</include>
-                    <texture background="true" colordiffuse="main_fg_30">special://skin/extras/icons/search.png</texture>
+                    <texture colordiffuse="main_fg_30">special://skin/extras/icons/search.png</texture>
                     <visible>!Control.HasFocus(100)</visible>
                 </control>
                 <control type="image">
                     <include>Home_Grouplist_Icon_Definition</include>
-                    <texture background="true" colordiffuse="$VAR[ColorSelected]">special://skin/extras/icons/search.png</texture>
+                    <texture colordiffuse="$VAR[ColorSelected]">special://skin/extras/icons/search.png</texture>
                     <visible>Control.HasFocus(100)</visible>
                 </control>
             </control>

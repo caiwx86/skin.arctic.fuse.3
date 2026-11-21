@@ -138,7 +138,7 @@
                     </control>
                 </control>
                 <control type="image">
-                    <texture background="true" colordiffuse="panel_fg_70">resource://resource.images.weathericons.white/$PARAM[fanartcode].png</texture>
+                    <texture colordiffuse="panel_fg_70">resource://resource.images.weathericons.white/$PARAM[fanartcode].png</texture>
                     <width>160</width>
                     <height>$PARAM[icon_height]</height>
                     <centerbottom>$PARAM[icon_centerbottom]</centerbottom>

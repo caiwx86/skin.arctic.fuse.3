@@ -258,7 +258,7 @@
                                     <width>40</width>
                                     <height>40</height>
                                     <bordersize>-12</bordersize>
-                                    <texture background="true" colordiffuse="dialog_fg_90">special://skin/extras/icons/circle-arrow-left.png</texture>
+                                    <texture colordiffuse="dialog_fg_90">special://skin/extras/icons/circle-arrow-left.png</texture>
                                     <visible>Integer.IsGreater(Container($PARAM[id]).NumItems,1)</visible>
                                 </control>
 
@@ -296,7 +296,7 @@
                                     <width>40</width>
                                     <height>40</height>
                                     <bordersize>-12</bordersize>
-                                    <texture background="true" colordiffuse="dialog_fg_90">special://skin/extras/icons/circle-arrow-right.png</texture>
+                                    <texture colordiffuse="dialog_fg_90">special://skin/extras/icons/circle-arrow-right.png</texture>
                                     <visible>Integer.IsGreater(Container($PARAM[id]).NumItems,1)</visible>
                                 </control>
                             </control>

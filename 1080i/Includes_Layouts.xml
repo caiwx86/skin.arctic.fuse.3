@@ -215,7 +215,7 @@
                         </control>
 
                         <control type="image">
-                            <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" background="true" flipx="true" flipy="true">progress/circle/p100.png</texture>
+                            <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" flipx="true" flipy="true">progress/circle/p100.png</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                         </control>
                         <control type="image">
@@ -267,7 +267,7 @@
                         </control>
 
                         <control type="image">
-                            <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" background="true" flipx="true" flipy="true">progress/circle/p100.png</texture>
+                            <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" flipx="true" flipy="true">progress/circle/p100.png</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                         </control>
                         <control type="image">
@@ -1018,7 +1018,7 @@
                             <top>4</top>
                             <bordersize>-8</bordersize>
                             <aspectratio scalediffuse="false">keep</aspectratio>
-                            <texture background="true">special://skin/extras/icons/arrow-down-wide-short.png</texture>
+                            <texture>special://skin/extras/icons/arrow-down-wide-short.png</texture>
                             <visible>String.IsEmpty(ListItem.Property(widget_sortorder))</visible>
                         </control>
                         <control type="image">
@@ -1026,7 +1026,7 @@
                             <top>4</top>
                             <bordersize>-8</bordersize>
                             <aspectratio scalediffuse="false">keep</aspectratio>
-                            <texture background="true">special://skin/extras/icons/arrow-up-wide-short.png</texture>
+                            <texture>special://skin/extras/icons/arrow-up-wide-short.png</texture>
                             <visible>!String.IsEmpty(ListItem.Property(widget_sortorder))</visible>
                         </control>
                         <control type="label">
@@ -1051,7 +1051,7 @@
                             <top>4</top>
                             <bordersize>-8</bordersize>
                             <aspectratio scalediffuse="false">keep</aspectratio>
-                            <texture background="true" fallback="special://skin/extras/icons/shapes.png">$VAR[Image_Widget_Style]</texture>
+                            <texture fallback="special://skin/extras/icons/shapes.png">$VAR[Image_Widget_Style]</texture>
                         </control>
                         <control type="label">
                             <left>-20</left>
