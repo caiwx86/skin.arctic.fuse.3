@@ -170,15 +170,7 @@
                     <right>40</right>
                     <bottom>40</bottom>
                     <control type="image">
-                        <top>2</top>
-                        <left>2</left>
-                        <right>-2</right>
-                        <bottom>-2</bottom>
-                        <texture background="true" diffuse="$PARAM[diffuse]" colordiffuse="7f000000">$PARAM[icon]</texture>
-                        <aspectratio scalediffuse="false" align="right" aligny="bottom">keep</aspectratio>
-                    </control>
-                    <control type="image">
-                        <texture background="true" diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
+                        <texture diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
                         <aspectratio scalediffuse="false" align="right" aligny="bottom">keep</aspectratio>
                     </control>
                 </control>
@@ -361,7 +353,7 @@
         <param name="selected">false</param>
         <definition>
             <control type="image">
-                <texture background="true" diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
+                <texture diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
                 <aspectratio scalediffuse="false">$PARAM[aspectratio]</aspectratio>
                 <visible>![String.IsEqual($PARAM[listitem].Art(thumb),$PARAM[listitem].Icon) | String.IsEmpty($PARAM[listitem].Art(thumb))] | !String.IsEmpty($PARAM[listitem].Art(fanart)) | !String.IsEmpty($PARAM[listitem].Art(poster)) | !String.StartsWith($PARAM[listitem].Icon,Default)</visible>
             </control>
@@ -370,13 +362,13 @@
                     <param name="colordiffuse">$VAR[ColorSelected]</param>
                 </include>
                 <colordiffuse>main_fg_100</colordiffuse>
-                <texture background="true" diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
+                <texture diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
                 <aspectratio scalediffuse="false">$PARAM[aspectratio]</aspectratio>
                 <visible>String.StartsWith($PARAM[listitem].Icon,Default) + [String.IsEqual($PARAM[listitem].Art(thumb),$PARAM[listitem].Icon) | String.IsEmpty($PARAM[listitem].Art(thumb))] + String.IsEmpty($PARAM[listitem].Art(fanart)) + String.IsEmpty($PARAM[listitem].Art(poster))</visible>
                 <visible>!String.IsEqual($PARAM[listitem].Icon,DefaultFolder.png) | !String.IsEqual($PARAM[listitem].Label,$LOCALIZE[22082])</visible>
             </control>
             <control type="image">
-                <texture background="true" diffuse="$PARAM[diffuse]">fallback/more-items-wide.png</texture>
+                <texture diffuse="$PARAM[diffuse]">fallback/more-items-wide.png</texture>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <visible>String.IsEqual($PARAM[listitem].Icon,DefaultFolder.png) + String.IsEqual($PARAM[listitem].Label,$LOCALIZE[22082])</visible>
             </control>
@@ -537,21 +529,21 @@
             <control type="image">
                 <include condition="$PARAM[selected]">Color_SelectedImage</include>
                 <colordiffuse>main_fg_90</colordiffuse>
-                <texture background="true" fallback="DefaultGenre.png">$INFO[ListItem.Label,genres/,.png]</texture>
+                <texture fallback="DefaultGenre.png">$INFO[ListItem.Label,genres/,.png]</texture>
                 <aspectratio>keep</aspectratio>
                 <visible>[String.IsEqual($PARAM[listitem].DBType,genre) | String.IsEqual($PARAM[listitem].Property(DBType),genre)]</visible>
             </control>
             <control type="image">
                 <include condition="$PARAM[selected]">Color_SelectedImage</include>
                 <colordiffuse>main_fg_90</colordiffuse>
-                <texture background="true" fallback="DefaultCountry.png">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.maps/,.png]</texture>
+                <texture fallback="DefaultCountry.png">$INFO[ListItem.Label,resource://resource.images.moviecountryicons.maps/,.png]</texture>
                 <aspectratio>keep</aspectratio>
                 <visible>[String.IsEqual($PARAM[listitem].DBType,country) | String.IsEqual($PARAM[listitem].Property(DBType),country)]</visible>
             </control>
             <control type="image">
                 <include condition="$PARAM[selected]">Color_SelectedImage</include>
                 <colordiffuse>main_fg_90</colordiffuse>
-                <texture background="true" fallback="DefaultStudios.png">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</texture>
+                <texture fallback="DefaultStudios.png">$INFO[ListItem.Label,resource://resource.images.studios.white/,.png]</texture>
                 <aspectratio>keep</aspectratio>
                 <visible>[String.IsEqual($PARAM[listitem].DBType,studio) | String.IsEqual($PARAM[listitem].Property(DBType),studio)]</visible>
             </control>
@@ -570,7 +562,7 @@
                 <width>50</width>
                 <bordersize>$PARAM[bordersize]</bordersize>
                 <aspectratio scalediffuse="false">$PARAM[aspectratio]</aspectratio>
-                <texture diffuse="$PARAM[diffuse]" colordiffuse="$PARAM[colordiffuse]" fallback="$PARAM[fallback]" background="true">$PARAM[icon]</texture>
+                <texture diffuse="$PARAM[diffuse]" colordiffuse="$PARAM[colordiffuse]" fallback="$PARAM[fallback]">$PARAM[icon]</texture>
             </control>
         </definition>
     </include>
@@ -1269,10 +1261,11 @@
         <param name="shadow">true</param>
         <param name="backing">true</param>
         <param name="right">25</param>
+        <param name="bottom">0</param>
         <definition>
             <control type="group">
                 <nested />
-                <centerbottom>0</centerbottom>
+                <centerbottom>$PARAM[bottom]</centerbottom>
                 <right>$PARAM[right]</right>
                 <width>64</width>
                 <height>64</height>
@@ -1354,7 +1347,7 @@
                 <include content="Object_Control" condition="!Skin.HasSetting(Indicator.DisableWatched)">
                     <param name="control">group</param>
                     <control type="image">
-                        <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" background="true" flipx="true" flipy="true">progress/circle/p100.png</texture>
+                        <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" flipx="true" flipy="true">progress/circle/p100.png</texture>
                         <aspectratio align="center" aligny="center">keep</aspectratio>
                     </control>
                     <control type="image">
@@ -1655,6 +1648,8 @@
     <include name="Object_SelectBox">
         <param name="indicator">false</param>
         <param name="focusbounce">false</param>
+        <param name="right">25</param>
+        <param name="bottom">0</param>
         <param name="shadow">true</param>
         <param name="indicator_reposition">false</param>
         <definition>
@@ -1673,6 +1668,8 @@
                     <param name="variant">-joined</param>
                     <param name="selected">true</param>
                     <param name="affix">$PARAM[affix]</param>
+                    <param name="right">$PARAM[right]</param>
+                    <param name="bottom">$PARAM[bottom]</param>
                     <param name="listitem">$PARAM[listitem]</param>
                     <include content="Object_Left" condition="$PARAM[indicator_reposition]">
                         <param name="left">$PARAM[indicator_left]</param>
@@ -1731,7 +1728,7 @@
                     <right>40</right>
                     <control type="image">
                         <aspectratio align="left">keep</aspectratio>
-                        <texture background="true" fallback="$PARAM[fallback]" colordiffuse="white" diffuse="diffuse/square_w120_h120.png">$PARAM[icon]</texture>
+                        <texture fallback="$PARAM[fallback]" colordiffuse="white" diffuse="diffuse/square_w120_h120.png">$PARAM[icon]</texture>
                         <visible>![$PARAM[icon_check]]</visible>
                     </control>
                     <control type="group">
@@ -1742,13 +1739,13 @@
                         <centerleft>50%</centerleft>
                         <control type="image">
                             <aspectratio align="left">keep</aspectratio>
-                            <texture background="true" fallback="$PARAM[fallback]" colordiffuse="$PARAM[color]">$PARAM[icon]</texture>
+                            <texture fallback="$PARAM[fallback]" colordiffuse="$PARAM[color]">$PARAM[icon]</texture>
                             <visible>!$PARAM[icon_default_check]</visible>
                         </control>
                         <control type="image">
                             <aspectratio align="left">keep</aspectratio>
                             <bordersize>icon_default_bordersize</bordersize>
-                            <texture background="true" fallback="$PARAM[fallback]" colordiffuse="$PARAM[color]">$PARAM[icon]</texture>
+                            <texture fallback="$PARAM[fallback]" colordiffuse="$PARAM[color]">$PARAM[icon]</texture>
                             <visible>$PARAM[icon_default_check]</visible>
                         </control>
                     </control>
