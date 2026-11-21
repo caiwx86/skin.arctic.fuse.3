@@ -14,16 +14,13 @@
             <control type="group">
             <width>460</width>
             <height>440</height>
-                <!-- Single static backdrop: cheaper than the layered blur/shadow/glass stack -->
-                <control type="image">
-                    <texture border="20">$VAR[Image_SimpleDialogBackground]</texture>
-                </control>
-                <animation type="WindowOpen" reversible="false">
-                    <effect type="fade" start="0" end="100" time="120" />
-                </animation>
-                <animation type="Visible" reversible="false">
-                    <effect type="fade" start="0" end="100" time="120" />
-                </animation>
+                <!-- Same backdrop and motion as the subtitle / audio stream panels -->
+                <include>OSD_Part_Background_Blur</include>
+                <include content="Animation_SlideIn_Dialog">
+                    <param name="visible_delay">0</param>
+                    <param name="windowopen_delay">0</param>
+                    <param name="posy">48</param>
+                </include>
                 <include>OSD_Stream_Selector_Divider</include>
                 <right>-40</right>
                 <bottom>220</bottom>
