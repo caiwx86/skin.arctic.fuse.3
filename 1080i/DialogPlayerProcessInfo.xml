@@ -580,7 +580,6 @@
 					<width>300</width>
 					<control type="progress">
 						<description>BAR</description>
-						<centertop>50%</centertop>
 						<height>10</height>
 						<info>Player.CacheLevel</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
@@ -618,12 +617,11 @@
 				</control>
 				<control type="group">
 					<left>240</left>
-					<top>140</top>
-					<height>40</height>
+					<top>148</top>
+					<height>10</height>
 					<width>270</width>
 					<control type="progress">
 						<description>cpu BAR</description>
-						<centertop>50%</centertop>
 						<height>10</height>
 						<info>System.CPUUsage</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
@@ -648,12 +646,11 @@
 				</control>
 				<control type="group">
 					<left>240</left>
-					<top>210</top>
-					<height>40</height>
+					<top>218</top>
+					<height>10</height>
 					<width>270</width>
 					<control type="progress">
 						<description>ram BAR</description>
-						<centertop>50%</centertop>
 						<height>10</height>
 						<info>system.memory(used.percent)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
@@ -705,13 +702,12 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>0</top>
+					<top>40</top>
 					<left>240</left>
-					<height>40</height>
+					<height>10</height>
 					<width>270</width>
 					<control type="progress">
 						<description>BAR</description>
-						<centertop>50%</centertop>
 						<height>10</height>
 						<info>Player.Process(video.queue.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
@@ -736,13 +732,12 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>35</top>
+					<top>75</top>
 					<left>240</left>
-					<height>40</height>
+					<height>10</height>
 					<width>270</width>
 					<control type="progress">
 						<description>BAR</description>
-						<centertop>50%</centertop>
 						<height>10</height>
 						<info>Player.Process(video.queue.data.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
@@ -767,13 +762,12 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>70</top>
+					<top>110</top>
 					<left>240</left>
-					<height>40</height>
+					<height>10</height>
 					<width>270</width>
 					<control type="progress">
 						<description>BAR</description>
-						<centertop>50%</centertop>
 						<height>10</height>
 						<info>Player.Process(audio.queue.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
@@ -798,13 +792,12 @@
 					<textcolor>dialog_fg_90</textcolor>
 				</control>
 				<control type="group">
-					<top>105</top>
+					<top>145</top>
 					<left>240</left>
-					<height>40</height>
+					<height>10</height>
 					<width>270</width>
 					<control type="progress">
 						<description>BAR</description>
-						<centertop>50%</centertop>
 						<height>10</height>
 						<info>Player.Process(audio.queue.data.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
