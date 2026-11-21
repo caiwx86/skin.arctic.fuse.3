@@ -12,6 +12,7 @@
             <condition>{item_path}==Reboot</condition>
             <value>
                 <![CDATA[
+                <onclick>Skin.SetString(Reboot.Mode,reboot)</onclick>
                 <onclick>ActivateWindow(1197)</onclick>
                 <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, /sbin/reboot -f"),00:05,silent)</onclick>
                 <onclick>AlarmClock(RebootFallback,Reboot,00:10,silent)</onclick>
@@ -22,9 +23,21 @@
             <condition>{item_path}==RebootToAndroid</condition>
             <value>
                 <![CDATA[
+                <onclick>Skin.SetString(Reboot.Mode,reboot)</onclick>
                 <onclick>ActivateWindow(1197)</onclick>
                 <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, /usr/sbin/rebootfromnand; /sbin/reboot -f"),00:05,silent)</onclick>
                 <onclick>AlarmClock(RebootFallback,Reboot,00:10,silent)</onclick>
+                ]]>
+            </value>
+        </rule>
+        <rule>
+            <condition>{item_path}==Powerdown</condition>
+            <value>
+                <![CDATA[
+                <onclick>Skin.SetString(Reboot.Mode,shutdown)</onclick>
+                <onclick>ActivateWindow(1197)</onclick>
+                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, /sbin/poweroff -f"),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootFallback,Powerdown,00:10,silent)</onclick>
                 ]]>
             </value>
         </rule>

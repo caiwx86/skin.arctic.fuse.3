@@ -25,6 +25,7 @@
                 <width>100%</width>
                 <height>50</height>
                 <align>center</align>
+                <label condition="String.IsEqual(Skin.String(Reboot.Mode),shutdown)">$LOCALIZE[32096]</label>
                 <label>$LOCALIZE[32095]</label>
                 <font>font_title_midi</font>
                 <textcolor>main_fg_90</textcolor>
