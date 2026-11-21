@@ -463,9 +463,9 @@
                     <texture>$INFO[$PARAM[container]$PARAM[listitem].Art(clearlogo)]</texture>
                     <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
-                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | !String.Contains($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)] + [String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)) | !String.Contains($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.png)] + [String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo)) | !String.Contains($PARAM[container]$PARAM[listitem].Art(artist.clearlogo),.png)]</visible>
+                    <visible>[String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo)) | !String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)] + [String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo)) | !String.EndsWith($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.png)] + [String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo)) | !String.EndsWith($PARAM[container]$PARAM[listitem].Art(artist.clearlogo),.png)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(clearlogo))</visible>
-                    <visible>String.Contains($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)</visible>
+                    <visible>String.EndsWith($PARAM[container]$PARAM[listitem].Art(clearlogo),.png)</visible>
                 </control>
                 <control type="image">
                     <height>info_title_logo_h</height>
@@ -475,7 +475,7 @@
                     <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo))</visible>
-                    <visible>String.Contains($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.png)</visible>
+                    <visible>String.EndsWith($PARAM[container]$PARAM[listitem].Art(tvshow.clearlogo),.png)</visible>
                 </control>
                 <control type="image">
                     <height>info_title_logo_h</height>
@@ -485,7 +485,7 @@
                     <visible>!$EXP[Exp_TMDbHelper_OnlineLogo]</visible>
                     <visible>![String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.Base_Clearlogo)) + !String.IsEqual($PARAM[listitem],VideoPlayer)]</visible>
                     <visible>!String.IsEmpty($PARAM[container]$PARAM[listitem].Art(artist.clearlogo))</visible>
-                    <visible>String.Contains($PARAM[container]$PARAM[listitem].Art(artist.clearlogo),.png)</visible>
+                    <visible>String.EndsWith($PARAM[container]$PARAM[listitem].Art(artist.clearlogo),.png)</visible>
                 </control>
                 <!-- 5. Text fallback -->
                 <control type="group">
