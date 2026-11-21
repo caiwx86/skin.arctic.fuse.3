@@ -16,9 +16,10 @@
         </include>
 
         <!-- <include>Background</include> -->
-        <include content="Background_StartUp_Layered">
-            <param name="overlays">true</param>
-        </include>
+        <!-- Lite build: static background instead of the animated splash layers. -->
+        <control type="image">
+            <texture background="true">special://skin/extras/backgrounds/blur/blue_blur.jpg</texture>
+        </control>
 
         <control type="group">
             <include>Animation_View_WindowChange</include>
@@ -113,7 +114,6 @@
 
         </control>
 
-        <!-- <include>Background_StartUp_Overlays</include> -->
 
         <!-- <control type="group">
             <include>Dimension_Bottombar</include>

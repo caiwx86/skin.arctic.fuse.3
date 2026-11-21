@@ -236,14 +236,12 @@
                     <param name="plotwidth">$PARAM[plotwidth]</param>
                     <param name="include_title">true</param>
                     <param name="include_details">false</param>
-                    <param name="croplogo">Window(Home).Property(TMDbHelper.ListItem.Current.CropImage)</param>
                 </include>
                 <include content="Info_Panel" condition="String.IsEqual(ListItem.Property(tmdb_type),person)">
                     <param name="plotheight">560</param>
                     <param name="plotwidth">$PARAM[plotwidth]</param>
                     <param name="include_title">true</param>
                     <param name="include_details">false</param>
-                    <param name="croplogo">Window(Home).Property(TMDbHelper.ListItem.Current.CropImage)</param>
                 </include>
             </control>
             <control type="group">
