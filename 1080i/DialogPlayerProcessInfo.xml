@@ -581,6 +581,7 @@
 					<control type="progress">
 						<description>BAR</description>
 						<height>10</height>
+						<width>300</width>
 						<info>Player.CacheLevel</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
@@ -623,6 +624,7 @@
 					<control type="progress">
 						<description>cpu BAR</description>
 						<height>10</height>
+						<width>230</width>
 						<info>System.CPUUsage</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
@@ -652,6 +654,7 @@
 					<control type="progress">
 						<description>ram BAR</description>
 						<height>10</height>
+						<width>230</width>
 						<info>system.memory(used.percent)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
@@ -710,6 +713,7 @@
 					<control type="progress">
 						<description>BAR</description>
 						<height>10</height>
+						<width>250</width>
 						<info>Player.Process(video.queue.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
@@ -740,6 +744,7 @@
 					<control type="progress">
 						<description>BAR</description>
 						<height>10</height>
+						<width>250</width>
 						<info>Player.Process(video.queue.data.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
@@ -770,6 +775,7 @@
 					<control type="progress">
 						<description>BAR</description>
 						<height>10</height>
+						<width>250</width>
 						<info>Player.Process(audio.queue.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
@@ -800,6 +806,7 @@
 					<control type="progress">
 						<description>BAR</description>
 						<height>10</height>
+						<width>250</width>
 						<info>Player.Process(audio.queue.data.level)</info>
 						<texturebg colordiffuse="panel_fg_12" border="4">progress/progress-bg.png</texturebg>
 						<lefttexture colordiffuse="ff607d8b" border="4">progress/progress-left.png</lefttexture>
