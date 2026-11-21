@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1197">
+    <!-- Forced restart screen: 5 second countdown (fires when 1 is shown), then a hard system reboot
+         (bypasses Kodi's slow shutdown). Back/ESC is swallowed so the dialog
+         cannot be cancelled. -->
+    <zorder>1200</zorder>
+    <onload>SetProperty(Reboot.Countdown,5,1197)</onload>
+    <onload>AlarmClock(RebootCd4,SetProperty(Reboot.Countdown,4,1197),00:01,silent)</onload>
+    <onload>AlarmClock(RebootCd3,SetProperty(Reboot.Countdown,3,1197),00:02,silent)</onload>
+    <onload>AlarmClock(RebootCd2,SetProperty(Reboot.Countdown,2,1197),00:03,silent)</onload>
+    <onload>AlarmClock(RebootCd1,SetProperty(Reboot.Countdown,1,1197),00:04,silent)</onload>
+    <onback>SetProperty(Reboot.Blocked,true,1197)</onback>
+    <controls>
+        <control type="group">
+            <width>100%</width>
+            <height>100%</height>
+            <control type="image">
+                <width>100%</width>
+                <height>100%</height>
+                <texture colordiffuse="FF000000">common/white.png</texture>
+            </control>
+            <control type="label">
+                <top>44%</top>
+                <width>100%</width>
+                <height>50</height>
+                <align>center</align>
+                <label condition="String.IsEqual(Skin.String(Reboot.Mode),shutdown)">$LOCALIZE[32096]</label>
+                <label>$LOCALIZE[32095]</label>
+                <font>font_title_midi</font>
+                <textcolor>main_fg_90</textcolor>
+            </control>
+            <control type="label">
+                <top>50%</top>
+                <width>100%</width>
+                <height>100</height>
+                <align>center</align>
+                <label>$INFO[Window.Property(Reboot.Countdown)]</label>
+                <font>font_title_huge</font>
+                <textcolor>$VAR[ColorHighlight]</textcolor>
+            </control>
+        </control>
+    </controls>
+</window>

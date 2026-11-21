@@ -43,48 +43,19 @@
             <control type="image">
                 <bordersize>0</bordersize>
                 <aspectratio scalediffuse="false">scale</aspectratio>
-                <texture background="true" diffuse="$PARAM[diffuse]" fallback="special://home/addons/resource.images.arctic.weather/resources/weather-woodblock-landscape/na.jpg">special://home/addons/resource.images.arctic.weather/resources/weather-woodblock-landscape/$PARAM[fanartcode].jpg</texture>
+                <texture background="true" diffuse="$PARAM[diffuse]">special://skin/extras/backgrounds/blur/blue_blur.jpg</texture>
             </control>
         </definition>
     </include>
 
     <include name="Weather_Card_Animated_Artwork">
+        <!-- Lite build: the animated woodblock weather artwork is not bundled; show a static skin image. -->
         <definition>
             <control type="image">
                 <bordersize>0</bordersize>
                 <aspectratio scalediffuse="false">scale</aspectratio>
-                <texture background="true" diffuse="$PARAM[diffuse]" fallback="special://home/addons/resource.images.arctic.weather/resources/weather-woodblock-animated/na/base.jpg">special://home/addons/resource.images.arctic.weather/resources/weather-woodblock-animated/$PARAM[fanartcode]/base.jpg</texture>
+                <texture background="true" diffuse="$PARAM[diffuse]">special://skin/extras/backgrounds/blur/blue_blur.jpg</texture>
             </control>
-            <include content="Weather_Card_FrameLayer">
-                <param name="path">special://home/addons/resource.images.arctic.weather/resources/weather-woodblock-animated/$PARAM[fanartcode]/atmosphere/</param>
-                <param name="diffuse">$PARAM[diffuse]</param>
-                <param name="visible">String.IsEqual($PARAM[fanartcode_info],0) | String.IsEqual($PARAM[fanartcode_info],2)</param>
-                <param name="time">300</param>
-                <param name="fade">100</param>
-            </include>
-            <include content="Weather_Card_FrameLayer">
-                <param name="path">special://home/addons/resource.images.arctic.weather/resources/weather-woodblock-animated/$PARAM[fanartcode]/atmosphere/</param>
-                <param name="diffuse">$PARAM[diffuse]</param>
-                <param name="visible">![String.IsEqual($PARAM[fanartcode_info],0) | String.IsEqual($PARAM[fanartcode_info],2)]</param>
-                <param name="time">1200</param>
-            </include>
-            <include content="Weather_Card_FrameLayer">
-                <param name="path">special://home/addons/resource.images.arctic.weather/resources/weather-woodblock-animated/$PARAM[fanartcode]/surface/</param>
-                <param name="diffuse">$PARAM[diffuse]</param>
-            </include>
-            <include content="Background_StartUp_LightningBurst">
-                <param name="visible">true</param>
-                <param name="texture">special://home/addons/resource.images.arctic.weather/resources/weather-woodblock-animated/$PARAM[fanartcode]/lightning.png</param>
-                <param name="diffuse">$PARAM[diffuse]</param>
-                <param name="cycle_time">5000</param>
-                <param name="colordiffuse">ccffffff</param>
-                <param name="echo_colordiffuse">8fffffff</param>
-            </include>
-            <include content="Weather_Card_FrameLayer">
-                <param name="path">special://home/addons/resource.images.arctic.weather/resources/weather-woodblock-animated/$PARAM[fanartcode]/weather/</param>
-                <param name="diffuse">$PARAM[diffuse]</param>
-                <param name="time">180</param>
-            </include>
         </definition>
     </include>
 
@@ -167,7 +138,7 @@
                     </control>
                 </control>
                 <control type="image">
-                    <texture background="true" colordiffuse="panel_fg_70">resource://resource.images.weathericons.white/$PARAM[fanartcode].png</texture>
+                    <texture colordiffuse="panel_fg_70">resource://resource.images.weathericons.white/$PARAM[fanartcode].png</texture>
                     <width>160</width>
                     <height>$PARAM[icon_height]</height>
                     <centerbottom>$PARAM[icon_centerbottom]</centerbottom>

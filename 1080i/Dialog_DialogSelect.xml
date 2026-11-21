@@ -258,7 +258,7 @@
                                     <width>40</width>
                                     <height>40</height>
                                     <bordersize>-12</bordersize>
-                                    <texture background="true" colordiffuse="dialog_fg_90">special://skin/extras/icons/circle-arrow-left.png</texture>
+                                    <texture colordiffuse="dialog_fg_90">special://skin/extras/icons/circle-arrow-left.png</texture>
                                     <visible>Integer.IsGreater(Container($PARAM[id]).NumItems,1)</visible>
                                 </control>
 
@@ -296,7 +296,7 @@
                                     <width>40</width>
                                     <height>40</height>
                                     <bordersize>-12</bordersize>
-                                    <texture background="true" colordiffuse="dialog_fg_90">special://skin/extras/icons/circle-arrow-right.png</texture>
+                                    <texture colordiffuse="dialog_fg_90">special://skin/extras/icons/circle-arrow-right.png</texture>
                                     <visible>Integer.IsGreater(Container($PARAM[id]).NumItems,1)</visible>
                                 </control>
                             </control>
@@ -904,8 +904,7 @@
                 <icon>special://skin/extras/backgrounds/styles/$PARAM[style].jpg</icon>
                 <property name="style">$PARAM[style]</property>
                 <onclick>Close</onclick>
-                <onclick condition="!System.HasAddon(resource.images.arctic.backgrounds.$PARAM[style])">InstallAddon(resource.images.arctic.backgrounds.$PARAM[style])</onclick>
-                <onclick condition="System.HasAddon(resource.images.arctic.backgrounds.$PARAM[style]) + !System.AddonIsEnabled(resource.images.arctic.backgrounds.$PARAM[style])">EnableAddon(resource.images.arctic.backgrounds.$PARAM[style])</onclick>
+                <!-- Lite build: style artwork ships with the skin, no background add-on to install. -->
                 <onclick>Skin.SetString(Background.Style,$PARAM[style])</onclick>
             </item>
         </definition>
