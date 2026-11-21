@@ -55,6 +55,8 @@ jobs:
               raise SystemExit('addon.xml 中未找到 id 属性')
           if not version:
               raise SystemExit('addon.xml 中未找到 version 属性')
+          # 统一规范：内部版本号不带前缀，发布时统一加 v，避免出现 vv1.2.3
+          version = version.strip().lstrip('vV')
           with open(os.environ['GITHUB_OUTPUT'], 'a') as f:
               f.write(f'ID={addon_id}\n')
               f.write(f'VERSION={version}\n')
