@@ -215,7 +215,7 @@
                         </control>
 
                         <control type="image">
-                            <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" background="true" flipx="true" flipy="true">progress/circle/p100.png</texture>
+                            <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" flipx="true" flipy="true">progress/circle/p100.png</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                         </control>
                         <control type="image">
@@ -267,7 +267,7 @@
                         </control>
 
                         <control type="image">
-                            <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" background="true" flipx="true" flipy="true">progress/circle/p100.png</texture>
+                            <texture colordiffuse="$VAR[ColorWatchedProgress]" diffuse="indicator/circle-diffuse.png" flipx="true" flipy="true">progress/circle/p100.png</texture>
                             <aspectratio align="center" aligny="center">keep</aspectratio>
                         </control>
                         <control type="image">
@@ -1018,7 +1018,7 @@
                             <top>4</top>
                             <bordersize>-8</bordersize>
                             <aspectratio scalediffuse="false">keep</aspectratio>
-                            <texture background="true">special://skin/extras/icons/arrow-down-wide-short.png</texture>
+                            <texture>special://skin/extras/icons/arrow-down-wide-short.png</texture>
                             <visible>String.IsEmpty(ListItem.Property(widget_sortorder))</visible>
                         </control>
                         <control type="image">
@@ -1026,7 +1026,7 @@
                             <top>4</top>
                             <bordersize>-8</bordersize>
                             <aspectratio scalediffuse="false">keep</aspectratio>
-                            <texture background="true">special://skin/extras/icons/arrow-up-wide-short.png</texture>
+                            <texture>special://skin/extras/icons/arrow-up-wide-short.png</texture>
                             <visible>!String.IsEmpty(ListItem.Property(widget_sortorder))</visible>
                         </control>
                         <control type="label">
@@ -1051,7 +1051,7 @@
                             <top>4</top>
                             <bordersize>-8</bordersize>
                             <aspectratio scalediffuse="false">keep</aspectratio>
-                            <texture background="true" fallback="special://skin/extras/icons/shapes.png">$VAR[Image_Widget_Style]</texture>
+                            <texture fallback="special://skin/extras/icons/shapes.png">$VAR[Image_Widget_Style]</texture>
                         </control>
                         <control type="label">
                             <left>-20</left>
@@ -2137,6 +2137,8 @@
                     </include>
                     <include condition="!$PARAM[selected] + $PARAM[indicator]" content="Object_Indicator">
                         <param name="affix">$PARAM[affix]</param>
+                        <param name="right">32</param>
+                        <param name="bottom">14</param>
                         <param name="listitem">$PARAM[listitem]</param>
                     </include>
                     <include content="Object_SelectBox" condition="$PARAM[selected]">
@@ -2144,7 +2146,23 @@
                         <param name="listitem">$PARAM[listitem]</param>
                         <param name="indicator">$PARAM[indicator]</param>
                         <param name="focusbounce">true</param>
+                        <param name="right">32</param>
+                        <param name="bottom">14</param>
                     </include>
+                </control>
+
+                <!-- Item title below the poster artwork -->
+                <control type="label">
+                    <top>$PARAM[item_h]</top>
+                    <left>8</left>
+                    <right>8</right>
+                    <height>32</height>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                    <font>font_mini</font>
+                    <textcolor>main_fg_70</textcolor>
+                    <label>$INFO[$PARAM[listitem].Label]</label>
+                    <visible>![$PARAM[detailed]]</visible>
                 </control>
 
             </control>
@@ -2315,8 +2333,9 @@
                 <height>60</height>
                 <animation effect="rotate" end="-90" center="auto" condition="true">Conditional</animation>
                 <control type="image">
-                    <texture background="true">$VAR[Image_Clearlogo]</texture>
+                    <texture>$VAR[Image_Clearlogo]</texture>
                     <aspectratio>keep</aspectratio>
+                    <visible>![String.EndsWith($VAR[Image_Clearlogo],.jpg) | String.EndsWith($VAR[Image_Clearlogo],.jpeg)]</visible>
                 </control>
             </control>
             <control type="textbox">
@@ -2329,7 +2348,7 @@
                 <font>font_tiny_bold</font>
                 <textcolor>main_fg_90</textcolor>
                 <label>$INFO[$PARAM[listitem].Label]</label>
-                <visible>String.IsEmpty($PARAM[listitem].Art(clearlogo)) + String.IsEmpty($PARAM[listitem].Art(tvshow.clearlogo)) + String.IsEmpty($PARAM[listitem].Art(artist.clearlogo))</visible>
+                <visible>[String.IsEmpty($VAR[Image_Clearlogo]) | String.EndsWith($VAR[Image_Clearlogo],.jpg) | String.EndsWith($VAR[Image_Clearlogo],.jpeg)]</visible>
             </control>
         </definition>
     </include>
