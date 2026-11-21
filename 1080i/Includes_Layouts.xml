@@ -188,7 +188,7 @@
                     </include>
                     <control type="image">
                         <aspectratio>scale</aspectratio>
-                        <texture background="true" diffuse="diffuse/landscape_w1040_h585.png">$PARAM[icon]</texture>
+                        <texture diffuse="diffuse/landscape_w1040_h585.png">$PARAM[icon]</texture>
                     </control>
                     <include content="Object_SelectBox" condition="$PARAM[selected]">
                         <param name="indicator">false</param>
@@ -328,7 +328,7 @@
                     <param name="colordiffuse">$VAR[ColorSelected]</param>
                 </include>
                 <colordiffuse>$PARAM[textcolor]_70</colordiffuse>
-                <texture background="true" diffuse="diffuse/circle/circle_120.png">$INFO[ListItem.Icon]</texture>
+                <texture diffuse="diffuse/circle/circle_120.png">$INFO[ListItem.Icon]</texture>
             </control>
             <control type="image">
                 <bordersize>icon_main_bordersize</bordersize>
@@ -338,13 +338,13 @@
                     <param name="colordiffuse">$VAR[ColorSelected]</param>
                 </include>
                 <colordiffuse>$PARAM[textcolor]_70</colordiffuse>
-                <texture background="true" diffuse="diffuse/circle/circle_120.png">$INFO[ListItem.Icon]</texture>
+                <texture diffuse="diffuse/circle/circle_120.png">$INFO[ListItem.Icon]</texture>
             </control>
             <control type="image">
                 <bordersize>icon_item_bordersize</bordersize>
                 <aspectratio scalediffuse="false">scale</aspectratio>
                 <visible>![String.IsEmpty(ListItem.Icon) | String.StartsWith(ListItem.Icon,special://skin/extras/icons) | String.StartsWith(ListItem.Icon,Default)]</visible>
-                <texture background="true" diffuse="diffuse/circle/circle_120.png" fallback="fallback/kodi-logo.png">$INFO[ListItem.Icon]</texture>
+                <texture diffuse="diffuse/circle/circle_120.png" fallback="fallback/kodi-logo.png">$INFO[ListItem.Icon]</texture>
             </control>
         </control>
     </include>
@@ -911,19 +911,19 @@
                         <bordersize>icon_home_bordersize</bordersize>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <visible>String.IsEmpty(ListItem.Icon) | String.StartsWith(ListItem.Icon,special://skin/extras/icons)</visible>
-                        <texture background="true" diffuse="diffuse/circle/circle_120.png" fallback="special://skin/extras/icons/shapes.png">$INFO[ListItem.Icon]</texture>
+                        <texture diffuse="diffuse/circle/circle_120.png" fallback="special://skin/extras/icons/shapes.png">$INFO[ListItem.Icon]</texture>
                     </control>
                     <control type="image">
                         <bordersize>icon_main_bordersize</bordersize>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <visible>String.StartsWith(ListItem.Icon,Default)</visible>
-                        <texture background="true" diffuse="diffuse/circle/circle_120.png" fallback="special://skin/extras/icons/shapes.png">$INFO[ListItem.Icon]</texture>
+                        <texture diffuse="diffuse/circle/circle_120.png" fallback="special://skin/extras/icons/shapes.png">$INFO[ListItem.Icon]</texture>
                     </control>
                     <control type="image">
                         <bordersize>icon_item_bordersize</bordersize>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <visible>![String.IsEmpty(ListItem.Icon) | String.StartsWith(ListItem.Icon,special://skin/extras/icons) | String.StartsWith(ListItem.Icon,Default)]</visible>
-                        <texture background="true" diffuse="diffuse/circle/circle_120.png" fallback="fallback/kodi-logo.png">$INFO[ListItem.Icon]</texture>
+                        <texture diffuse="diffuse/circle/circle_120.png" fallback="fallback/kodi-logo.png">$INFO[ListItem.Icon]</texture>
                     </control>
                 </control>
                 <control type="group">
@@ -1764,7 +1764,7 @@
                         <param name="bottom">40</param>
                     </include>
                     <control type="image">
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio scalediffuse="false" aligny="center">keep</aspectratio>
                         <visible>![String.StartsWith(ListItem.Icon,Default) | String.StartsWith(ListItem.Icon,special://skin/extras/icons/) | String.StartsWith(ListItem.Icon,image://special%3a%2f%2fskin%2fextras%2ficons%2f)]</visible>
                     </control>
@@ -1773,7 +1773,7 @@
                             <param name="colordiffuse">$VAR[ColorSelected]</param>
                         </include>
                         <colordiffuse>dialog_fg_70</colordiffuse>
-                        <texture background="true">$INFO[ListItem.Icon]</texture>
+                        <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio scalediffuse="false" aligny="center">keep</aspectratio>
                         <visible>[String.StartsWith(ListItem.Icon,Default) | String.StartsWith(ListItem.Icon,special://skin/extras/icons/) | String.StartsWith(ListItem.Icon,image://special%3a%2f%2fskin%2fextras%2ficons%2f)]</visible>
                     </control>
@@ -1827,7 +1827,7 @@
                         <left>20</left>
                         <width>$PARAM[item_h]</width>
                         <control type="image">
-                            <texture background="true" fallback="DefaultFolder.png" diffuse="diffuse/circle/provider_circle.png">$INFO[ListItem.Icon]</texture>
+                            <texture fallback="DefaultFolder.png" diffuse="diffuse/circle/provider_circle.png">$INFO[ListItem.Icon]</texture>
                             <aspectratio>keep</aspectratio>
                             <bordersize>20</bordersize>
                             <visible>![String.IsEmpty(ListItem.Icon) | String.StartsWith(ListItem.Icon,Default)]</visible>
@@ -1837,13 +1837,13 @@
                             <include content="Object_Control" condition="$PARAM[selected]">
                                 <param name="control">image</param>
                                 <colordiffuse>$VAR[ColorSelected]</colordiffuse>
-                                <texture background="true" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+                                <texture fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
                                 <aspectratio>keep</aspectratio>
                                 <bordersize>24</bordersize>
                             </include>
                             <include content="Object_Control" condition="!$PARAM[selected]">
                                 <param name="control">image</param>
-                                <texture background="true" colordiffuse="$PARAM[textcolor]_70" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
+                                <texture colordiffuse="$PARAM[textcolor]_70" fallback="DefaultFolder.png">$INFO[ListItem.Icon]</texture>
                                 <aspectratio>keep</aspectratio>
                                 <bordersize>24</bordersize>
                             </include>
@@ -2067,7 +2067,7 @@
                             <param name="pad">40</param>
                         </include>
                         <aspectratio scalediffuse="false">keep</aspectratio>
-                        <texture background="true" diffuse="diffuse/landscape_w1680_h670.png">$INFO[ListItem.Icon]</texture>
+                        <texture diffuse="diffuse/landscape_w1680_h670.png">$INFO[ListItem.Icon]</texture>
                     </control>
                 </control>
                 <control type="group">

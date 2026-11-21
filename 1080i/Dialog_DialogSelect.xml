@@ -126,7 +126,7 @@
                             <include content="Part_Box_Outline">
                                 <include>Size_Dialog_Pad</include>
                                 <control type="image">
-                                    <texture background="true">$INFO[Container($PARAM[listid]).ListItem.$PARAM[image]]</texture>
+                                    <texture>$INFO[Container($PARAM[listid]).ListItem.$PARAM[image]]</texture>
                                     <aspectratio>keep</aspectratio>
                                 </control>
                             </include>

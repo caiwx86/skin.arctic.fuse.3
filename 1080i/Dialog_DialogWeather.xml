@@ -279,7 +279,7 @@
                     <align>right</align>
                 </control>
                 <control type="image">
-                    <texture background="true" colordiffuse="dialog_fg_90">$INFO[ListItem.Icon]</texture>
+                    <texture colordiffuse="dialog_fg_90">$INFO[ListItem.Icon]</texture>
                     <left>30</left>
                     <right>30</right>
                     <top>30</top>
@@ -408,7 +408,7 @@
                     <align>center</align>
                 </control>
                 <control type="image">
-                    <texture background="true" colordiffuse="dialog_fg_90">$INFO[ListItem.Icon]</texture>
+                    <texture colordiffuse="dialog_fg_90">$INFO[ListItem.Icon]</texture>
                     <include content="Dimension_Padding">
                         <param name="pad">50</param>
                     </include>
@@ -536,7 +536,7 @@
                     <align>left</align>
                 </control>
                 <control type="image">
-                    <texture background="true" colordiffuse="dialog_fg_90">$INFO[ListItem.Icon]</texture>
+                    <texture colordiffuse="dialog_fg_90">$INFO[ListItem.Icon]</texture>
                     <left>30</left>
                     <right>30</right>
                     <top>30</top>

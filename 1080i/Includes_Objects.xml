@@ -353,7 +353,7 @@
         <param name="selected">false</param>
         <definition>
             <control type="image">
-                <texture background="true" diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
+                <texture diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
                 <aspectratio scalediffuse="false">$PARAM[aspectratio]</aspectratio>
                 <visible>![String.IsEqual($PARAM[listitem].Art(thumb),$PARAM[listitem].Icon) | String.IsEmpty($PARAM[listitem].Art(thumb))] | !String.IsEmpty($PARAM[listitem].Art(fanart)) | !String.IsEmpty($PARAM[listitem].Art(poster)) | !String.StartsWith($PARAM[listitem].Icon,Default)</visible>
             </control>
@@ -362,7 +362,7 @@
                     <param name="colordiffuse">$VAR[ColorSelected]</param>
                 </include>
                 <colordiffuse>main_fg_100</colordiffuse>
-                <texture background="true" diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
+                <texture diffuse="$PARAM[diffuse]">$PARAM[icon]</texture>
                 <aspectratio scalediffuse="false">$PARAM[aspectratio]</aspectratio>
                 <visible>String.StartsWith($PARAM[listitem].Icon,Default) + [String.IsEqual($PARAM[listitem].Art(thumb),$PARAM[listitem].Icon) | String.IsEmpty($PARAM[listitem].Art(thumb))] + String.IsEmpty($PARAM[listitem].Art(fanart)) + String.IsEmpty($PARAM[listitem].Art(poster))</visible>
                 <visible>!String.IsEqual($PARAM[listitem].Icon,DefaultFolder.png) | !String.IsEqual($PARAM[listitem].Label,$LOCALIZE[22082])</visible>
@@ -529,7 +529,7 @@
             <control type="image">
                 <include condition="$PARAM[selected]">Color_SelectedImage</include>
                 <colordiffuse>main_fg_90</colordiffuse>
-                <texture background="true" fallback="DefaultGenre.png">$INFO[ListItem.Label,genres/,.png]</texture>
+                <texture fallback="DefaultGenre.png">$INFO[ListItem.Label,genres/,.png]</texture>
                 <aspectratio>keep</aspectratio>
                 <visible>[String.IsEqual($PARAM[listitem].DBType,genre) | String.IsEqual($PARAM[listitem].Property(DBType),genre)]</visible>
             </control>
@@ -1728,7 +1728,7 @@
                     <right>40</right>
                     <control type="image">
                         <aspectratio align="left">keep</aspectratio>
-                        <texture background="true" fallback="$PARAM[fallback]" colordiffuse="white" diffuse="diffuse/square_w120_h120.png">$PARAM[icon]</texture>
+                        <texture fallback="$PARAM[fallback]" colordiffuse="white" diffuse="diffuse/square_w120_h120.png">$PARAM[icon]</texture>
                         <visible>![$PARAM[icon_check]]</visible>
                     </control>
                     <control type="group">
@@ -1739,13 +1739,13 @@
                         <centerleft>50%</centerleft>
                         <control type="image">
                             <aspectratio align="left">keep</aspectratio>
-                            <texture background="true" fallback="$PARAM[fallback]" colordiffuse="$PARAM[color]">$PARAM[icon]</texture>
+                            <texture fallback="$PARAM[fallback]" colordiffuse="$PARAM[color]">$PARAM[icon]</texture>
                             <visible>!$PARAM[icon_default_check]</visible>
                         </control>
                         <control type="image">
                             <aspectratio align="left">keep</aspectratio>
                             <bordersize>icon_default_bordersize</bordersize>
-                            <texture background="true" fallback="$PARAM[fallback]" colordiffuse="$PARAM[color]">$PARAM[icon]</texture>
+                            <texture fallback="$PARAM[fallback]" colordiffuse="$PARAM[color]">$PARAM[icon]</texture>
                             <visible>$PARAM[icon_default_check]</visible>
                         </control>
                     </control>

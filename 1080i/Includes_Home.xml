@@ -348,14 +348,14 @@
                     </control>
                     <control type="image">
                         <include>Home_Grouplist_Icon_Definition</include>
-                        <texture background="true" colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
+                        <texture colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
                     </control>
                 </control>
                 <control type="group">
                     <visible>!Window.IsVisible($PARAM[window])</visible>
                     <control type="image">
                         <include>Home_Grouplist_Icon_Definition</include>
-                        <texture background="true" colordiffuse="main_fg_30">$PARAM[icon]</texture>
+                        <texture colordiffuse="main_fg_30">$PARAM[icon]</texture>
                     </control>
                 </control>
             </control>
@@ -540,7 +540,7 @@
                         <visible>$PARAM[use_icons]</visible>
                         <control type="image">
                             <include>Home_Grouplist_Icon_Definition</include>
-                            <texture background="true" colordiffuse="main_fg_30">$VAR[Home_Icon_$PARAM[window]]</texture>
+                            <texture colordiffuse="main_fg_30">$VAR[Home_Icon_$PARAM[window]]</texture>
                         </control>
                     </control>
                 </control>
@@ -596,7 +596,7 @@
                         </control>
                         <control type="image">
                             <include>Home_Grouplist_Icon_Definition</include>
-                            <texture background="true" colordiffuse="$VAR[ColorSelected]">$VAR[Home_Icon_$PARAM[window]]</texture>
+                            <texture colordiffuse="$VAR[ColorSelected]">$VAR[Home_Icon_$PARAM[window]]</texture>
                         </control>
                     </control>
                 </control>
@@ -699,12 +699,12 @@
                     <visible>![Window.IsVisible($PARAM[window]) + Integer.IsEqual(System.CurrentControlID,300)]</visible>
                     <control type="image">
                         <include>Home_Grouplist_Icon_Definition</include>
-                        <texture background="true" colordiffuse="main_fg_30">$PARAM[icon]</texture>
+                        <texture colordiffuse="main_fg_30">$PARAM[icon]</texture>
                         <visible>!Control.HasFocus($PARAM[id])</visible>
                     </control>
                     <control type="image">
                         <include>Home_Grouplist_Icon_Definition</include>
-                        <texture background="true" colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
+                        <texture colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
                         <visible>Control.HasFocus($PARAM[id])</visible>
                     </control>
                 </control>
@@ -715,7 +715,7 @@
                     </control>
                     <control type="image">
                         <include>Home_Grouplist_Icon_Definition</include>
-                        <texture background="true" colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
+                        <texture colordiffuse="$VAR[ColorSelected]">$PARAM[icon]</texture>
                     </control>
                 </control>
             </control>
