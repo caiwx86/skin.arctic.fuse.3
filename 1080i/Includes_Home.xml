@@ -34,11 +34,17 @@
         </definition>
     </include>
 
+    <!-- filteredmovies T9 search page takes over the search entry when the add-on is installed -->
+    <variable name="Action_SearchEntry">
+        <value condition="System.HasAddon(plugin.video.filteredmovies)">RunScript(plugin.video.filteredmovies, 0, ?mode=launch_t9)</value>
+        <value>RunScript(script.skinvariables,run_multisearch,tmdbhelper_container,progress_dialog$VAR[Value_MultiSearch_Layout_Param]$VAR[Value_MultiSearch_Discover_Param])</value>
+    </variable>
+
     <include name="Home_ControlList_Item_MultiSearch">
         <include content="Home_ControlList_Item">
             <param name="label">$LOCALIZE[137]</param>
             <param name="icon">special://skin/extras/icons/search.png</param>
-            <param name="action">RunScript(script.skinvariables,run_multisearch,tmdbhelper_container,progress_dialog$VAR[Value_MultiSearch_Layout_Param]$VAR[Value_MultiSearch_Discover_Param])</param>
+            <param name="action">$VAR[Action_SearchEntry]</param>
             <param name="enabled">[!Skin.HasSetting(HomeSwitcher.DisableSearch)]</param>
             <param name="visible">$EXP[Exp_Hubs_Window_IsMultiSearch]</param>
             <param name="mod">$PARAM[mod]</param>
