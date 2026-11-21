@@ -13,7 +13,7 @@
             <value>
                 <![CDATA[
                 <onclick>ActivateWindow(1197)</onclick>
-                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, sync; /sbin/reboot"),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, /sbin/reboot -f"),00:05,silent)</onclick>
                 <onclick>AlarmClock(RebootFallback,Reboot,00:10,silent)</onclick>
                 ]]>
             </value>
@@ -23,7 +23,7 @@
             <value>
                 <![CDATA[
                 <onclick>ActivateWindow(1197)</onclick>
-                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, sync; /usr/sbin/rebootfromnand; sync; /sbin/reboot"),00:05,silent)</onclick>
+                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, /usr/sbin/rebootfromnand; /sbin/reboot -f"),00:05,silent)</onclick>
                 <onclick>AlarmClock(RebootFallback,Reboot,00:10,silent)</onclick>
                 ]]>
             </value>
