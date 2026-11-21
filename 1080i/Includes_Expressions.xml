@@ -155,4 +155,5 @@
 
     <expression name="Exp_SeasonalTheme_Visible">[!System.ScreenSaverActive + !Window.IsVisible(slideshow) + [[!Window.IsVisible(visualisation) + !VideoPlayer.IsFullscreen] | Window.IsActive(fullscreeninfo)]]</expression>
 
+    <expression name="Exp_TMDbHelper_OnlineLogo">[!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.clearlogo)) | !String.IsEmpty(Window(Home).Property(TMDbHelper.Player.tvshow.clearlogo))]</expression>
 </includes>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1197">
-    <!-- Forced restart screen: 5 second countdown, then a hard system reboot
+    <!-- Forced restart screen: 5 second countdown (fires when 1 is shown), then a hard system reboot
          (bypasses Kodi's slow shutdown). Back/ESC is swallowed so the dialog
          cannot be cancelled. -->
     <zorder>1200</zorder>
@@ -9,7 +9,6 @@
     <onload>AlarmClock(RebootCd3,SetProperty(Reboot.Countdown,3,1197),00:02,silent)</onload>
     <onload>AlarmClock(RebootCd2,SetProperty(Reboot.Countdown,2,1197),00:03,silent)</onload>
     <onload>AlarmClock(RebootCd1,SetProperty(Reboot.Countdown,1,1197),00:04,silent)</onload>
-    <onload>AlarmClock(RebootCd0,SetProperty(Reboot.Countdown,0,1197),00:05,silent)</onload>
     <onback>SetProperty(Reboot.Blocked,true,1197)</onback>
     <controls>
         <control type="group">
@@ -25,6 +24,7 @@
                 <width>100%</width>
                 <height>50</height>
                 <align>center</align>
+                <label condition="String.IsEqual(Skin.String(Reboot.Mode),shutdown)">$LOCALIZE[32096]</label>
                 <label>$LOCALIZE[32095]</label>
                 <font>font_title_midi</font>
                 <textcolor>main_fg_90</textcolor>

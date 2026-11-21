@@ -12,9 +12,11 @@
             <condition>{item_path}==Reboot</condition>
             <value>
                 <![CDATA[
+                <onclick>Skin.SetString(Reboot.Mode,reboot)</onclick>
                 <onclick>ActivateWindow(1197)</onclick>
-                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, sync; /sbin/reboot"),00:05,silent)</onclick>
-                <onclick>AlarmClock(RebootFallback,Reboot,00:10,silent)</onclick>
+                <!-- Use Kodi's native reboot action. System.Exec only accepts an executable
+                     path and does not reliably run the previous comma-separated shell chain. -->
+                <onclick>AlarmClock(RebootForce,Reboot,00:05,silent)</onclick>
                 ]]>
             </value>
         </rule>
@@ -22,9 +24,20 @@
             <condition>{item_path}==RebootToAndroid</condition>
             <value>
                 <![CDATA[
+                <onclick>Skin.SetString(Reboot.Mode,reboot)</onclick>
                 <onclick>ActivateWindow(1197)</onclick>
-                <onclick>AlarmClock(RebootForce,System.Exec("/bin/sh, -c, sync; /usr/sbin/rebootfromnand; sync; /sbin/reboot"),00:05,silent)</onclick>
-                <onclick>AlarmClock(RebootFallback,Reboot,00:10,silent)</onclick>
+                <!-- CoreELEC's helper switches the next boot target and performs the reboot. -->
+                <onclick>AlarmClock(RebootForce,System.ExecWait(/usr/sbin/rebootfromnand),00:05,silent)</onclick>
+                ]]>
+            </value>
+        </rule>
+        <rule>
+            <condition>{item_path}==Powerdown</condition>
+            <value>
+                <![CDATA[
+                <onclick>Skin.SetString(Reboot.Mode,shutdown)</onclick>
+                <onclick>ActivateWindow(1197)</onclick>
+                <onclick>AlarmClock(RebootForce,Powerdown,00:05,silent)</onclick>
                 ]]>
             </value>
         </rule>

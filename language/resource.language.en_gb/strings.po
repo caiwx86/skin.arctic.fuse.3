@@ -2796,6 +2796,7 @@ msgstr ""
 
 msgctxt "#32067"
 msgid "L5 Active Offsets Top-Bottom"
+msgstr ""
 
 msgctxt "#32068"
 msgid "L5 Active Offsets Left-Right"
@@ -2909,3 +2910,7 @@ msgstr ""
 msgctxt "#32095"
 msgid "Restarting, please wait..."
 msgstr ""
+
+msgctxt "#32096"
+msgid "Shutting down, please wait..."
+msgstr "Shutting down, please wait..."
