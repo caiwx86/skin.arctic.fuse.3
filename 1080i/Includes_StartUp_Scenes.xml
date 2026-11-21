@@ -91,10 +91,11 @@
         <value>none</value>
     </variable>
     <include name="Background_StartUp_SelectedScene">
+        <!-- Lite build: the animated Arctic Splash scenes are not bundled; show a static skin image. -->
         <definition>
-            <include condition="String.IsEqual(Window(Home).Property(Startup.Scene),tokyo)">Background_StartUp_Scene_Tokyo</include>
-            <include condition="String.IsEqual(Window(Home).Property(Startup.Scene),countryside)">Background_StartUp_Scene_Countryside</include>
-            <include condition="![String.IsEqual(Window(Home).Property(Startup.Scene),tokyo) | String.IsEqual(Window(Home).Property(Startup.Scene),countryside)]">Background_StartUp_Layered</include>
+            <control type="image">
+                <texture background="true">special://skin/extras/backgrounds/styles/surrealist.jpg</texture>
+            </control>
         </definition>
     </include>
 </includes>

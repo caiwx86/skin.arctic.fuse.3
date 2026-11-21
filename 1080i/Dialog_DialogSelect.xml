@@ -904,8 +904,7 @@
                 <icon>special://skin/extras/backgrounds/styles/$PARAM[style].jpg</icon>
                 <property name="style">$PARAM[style]</property>
                 <onclick>Close</onclick>
-                <onclick condition="!System.HasAddon(resource.images.arctic.backgrounds.$PARAM[style])">InstallAddon(resource.images.arctic.backgrounds.$PARAM[style])</onclick>
-                <onclick condition="System.HasAddon(resource.images.arctic.backgrounds.$PARAM[style]) + !System.AddonIsEnabled(resource.images.arctic.backgrounds.$PARAM[style])">EnableAddon(resource.images.arctic.backgrounds.$PARAM[style])</onclick>
+                <!-- Lite build: style artwork ships with the skin, no background add-on to install. -->
                 <onclick>Skin.SetString(Background.Style,$PARAM[style])</onclick>
             </item>
         </definition>
