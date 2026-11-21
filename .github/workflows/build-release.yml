@@ -17,6 +17,7 @@ on:
     branches:
       - omega
     paths:
+      - '.github/**'
       - '1080i/**'
       - 'addon.xml'
       - 'media/**'
@@ -76,7 +77,7 @@ jobs:
       # ----- 3. 打包，文件名 = ID-版本号.zip（连接符可自定义） -----
       - name: 打包文件
         run: |
-          zip -r "${{ steps.parse_metadata.outputs.ID }}-${{ steps.parse_metadata.outputs.VERSION }}.zip" \
+          zip -r "${{ steps.parse_metadata.outputs.ID }}-v${{ steps.parse_metadata.outputs.VERSION }}.zip" \
           "${{ steps.parse_metadata.outputs.ID }}" \
           -x "${{ steps.parse_metadata.outputs.ID }}/.git/*" \
           -x "${{ steps.parse_metadata.outputs.ID }}/.github/*" \
@@ -92,7 +93,7 @@ jobs:
           body: |
             自动发布版本 v${{ steps.parse_metadata.outputs.VERSION }}
             插件 ID: ${{ steps.parse_metadata.outputs.ID }}
-          files: ${{ steps.parse_metadata.outputs.ID }}-${{ steps.parse_metadata.outputs.VERSION }}.zip
+          files: ${{ steps.parse_metadata.outputs.ID }}-v${{ steps.parse_metadata.outputs.VERSION }}.zip
           draft: ${{ github.event.inputs.draft || false }}
           prerelease: ${{ github.event.inputs.prerelease || false }}
         env:
