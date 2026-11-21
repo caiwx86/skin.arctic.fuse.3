@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+
+    <!--
+        Variables used by the native TinyPPI player-process overlay
+        (1080i/DialogPlayerProcessInfo.xml) and by the codec-logo includes
+        (1080i/Includes_CodecLogos.xml).
+
+        They were referenced by the overlay but never defined, so every
+        field that depends on them rendered empty.  All labels are read
+        through Player.Process / VideoPlayer, which CoreELEC fills in.
+    -->
+
+    <!-- HDR type shown for AV1, where Player.Process(video.source.hdr.type) is empty -->
+    <variable name="HDRcodectypeVar">
+        <value condition="String.Contains(VideoPlayer.HdrType,dolbyvision)">Dolby Vision</value>
+        <value condition="String.Contains(VideoPlayer.HdrType,dv)">Dolby Vision</value>
+        <value condition="String.Contains(VideoPlayer.HdrType,hdr10plus)">HDR10+</value>
+        <value condition="String.Contains(VideoPlayer.HdrType,hdr10)">HDR10</value>
+        <value condition="String.Contains(VideoPlayer.HdrType,hlg)">HLG</value>
+        <value condition="String.Contains(VideoPlayer.HdrType,hdr)">HDR</value>
+        <value>SDR</value>
+    </variable>
+
+    <!-- Dynamic metadata marker appended to the media source line -->
+    <variable name="SecondHDRVar">
+        <value condition="String.Contains(Player.Process(video.hdr.type),hdr10plus)">[COLOR dialog_fg_70](HDR10+)[/COLOR]</value>
+    </variable>
+
+    <!-- Format the stream arrives in, before the VS10 engine converts it -->
+    <variable name="NonConvertedcodectypeVar">
+        <value condition="!String.IsEqual(VideoPlayer.VideoCodec,av1) + !String.IsEmpty(Player.Process(video.source.hdr.type))">$INFO[Player.Process(video.source.hdr.type)]</value>
+        <value>$VAR[HDRcodectypeVar]</value>
+    </variable>
+
+    <!-- Dolby Vision profile, e.g. " P8.1" -->
+
+    <!-- Dolby Vision enhancement layer (FEL / MEL) -->
+
+    <!-- Same tag, used by the codec-logo overlay -->
+    <variable name="DVEL1Var">
+        <value condition="!String.IsEmpty(Player.Process(video.dovi.el.type))">[COLOR palegreen]$INFO[Player.Process(video.dovi.el.type)][/COLOR]</value>
+    </variable>
+
+    <!-- What the VS10 engine is converting to -->
+
+    <!-- VS10 on/off indicator (icon font) -->
+
+    <!-- Dolby Vision layer presence (icon font) -->
+
+
+
+    <!-- Decoder type -->
+
+    <!-- Audio codec -->
+
+    <!-- Immersive-format suffix shown in the highlight colour -->
+    <variable name="AudioCodecSpatialVar">
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,truehd_atmos) | String.IsEqual(VideoPlayer.AudioCodec,eac3_ddp_atmos)"> Atmos</value>
+        <value condition="String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x) | String.IsEqual(VideoPlayer.AudioCodec,dtshd_ma_x_imax)"> DTS:X</value>
+    </variable>
+
+    <!-- Channel count to speaker-layout name (also used as a texture name) -->
+
+</includes>

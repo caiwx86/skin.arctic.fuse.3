@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+    <!-- CoreELEC 21 compatibility: these named height includes replace the
+         inline definitions that Kodi 21 cannot expand inside a control. -->
+    <include name="Info_Line_One_Row">
+        <height>60</height>
+    </include>
+
+    <include name="Info_Line_Two_Row">
+        <height>50</height>
+    </include>
+</includes>

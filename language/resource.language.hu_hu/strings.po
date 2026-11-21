@@ -1,0 +1,3549 @@
+# Kodi Media Center language file
+# Addon Name: Arctic Fuse 3
+# Addon Name: skin.arctic.fuse.3
+# Addon Provider: jurialmunkey
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2026-01-29 8:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.1\n"
+
+msgctxt "#31000"
+msgid "Live TV / PVR"
+msgstr "Live TV / PVR"
+
+#: /1080i/Includes_MediaFilter.xml
+msgctxt "#31001"
+msgid "In-Progress Episodes"
+msgstr "Folyamatban levő epizódok"
+
+#: /1080i/Includes_Views_Combined.xml
+msgctxt "#31002"
+msgid "Combined Square"
+msgstr "Kombinált négyzetes"
+
+#: /1080i/Includes_Views_Combined.xml
+msgctxt "#31003"
+msgid "Combined Landscape"
+msgstr "Kombinált tájkép"
+
+#: /1080i/Includes_Views_Combined.xml
+msgctxt "#31004"
+msgid "Combined Poster"
+msgstr "Kombinált poszter"
+
+#: /1080i/Includes_Views_Combined.xml
+msgctxt "#31005"
+msgid "Combined Circle"
+msgstr "Kombinált kör"
+
+#: /1080i/Includes_Views_Combined.xml
+msgctxt "#31006"
+msgid "Combined Board"
+msgstr "Kombinált tabló"
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31007"
+msgid "Row"
+msgstr "Sor"
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31008"
+msgid "Wall"
+msgstr "Fal"
+
+#: /1080i/Includes_Shortcuts_Window.xml
+msgctxt "#31009"
+msgid "Widget Customisation"
+msgstr "Widget testreszabás"
+
+#: /1080i/Includes_Hubs.xml
+msgctxt "#31010"
+msgid "Program"
+msgstr "Program"
+
+#: /1080i/Includes_Hubs.xml
+msgctxt "#31011"
+msgid "Picture"
+msgstr "Kép"
+
+#: /1080i/Includes_Hubs.xml
+msgctxt "#31012"
+msgid "Recent"
+msgstr "Legutóbbi"
+
+#: /1080i/Includes_Views_PVR.xml
+msgctxt "#31013"
+msgid "List Standard"
+msgstr "Alap lista"
+
+#: /1080i/Includes_Views_PVR.xml
+msgctxt "#31014"
+msgid "List Info"
+msgstr "Infó lista"
+
+msgctxt "#31015"
+msgid "Order"
+msgstr "Sorrend"
+
+msgctxt "#31016"
+msgid "Sort by"
+msgstr "Rendezési elv"
+
+#: /1080i/Includes_Views_PVR.xml
+msgctxt "#31017"
+msgid "List Details"
+msgstr "Részletes lista"
+
+msgctxt "#31018"
+msgid "Recommendations"
+msgstr "Ajánlások"
+
+#: /1080i/Includes_Views_PVR.xml
+msgctxt "#31019"
+msgid "List Planner"
+msgstr "Lista tervező"
+
+#: /1080i/Includes_Views_PVR.xml
+msgctxt "#31020"
+msgid "List Outline"
+msgstr "Lista vázlat"
+
+#: /1080i/Includes_Views_Combined.xml
+msgctxt "#31021"
+msgid "Combined Expanded"
+msgstr "Kombinált kiterjesztett"
+
+msgctxt "#31022"
+msgid "items"
+msgstr "elemek"
+
+msgctxt "#31023"
+msgid "Loading"
+msgstr "Betöltés"
+
+msgctxt "#31024"
+msgid "Critics Consensus"
+msgstr "Kritikák összegzése"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31025"
+msgid "Item"
+msgstr "Elem"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31026"
+msgid "Hub"
+msgstr "Csomópont"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31027"
+msgid "Focus widgets on startup"
+msgstr "Indításkor a fókusz a widgeten van"
+
+msgctxt "#31028"
+msgid "Outline"
+msgstr "Tartalom"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31029"
+msgid "Images"
+msgstr "Képek"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31030"
+msgid "Critics"
+msgstr "Kritikák"
+
+#: /1080i/DialogPVRChannelManager.xml
+msgctxt "#31032"
+msgid "Apply"
+msgstr "Alkalmaz"
+
+msgctxt "#31033"
+msgid "People"
+msgstr "Emberek"
+
+msgctxt "#31034"
+msgid "Cast member"
+msgstr "Szereplő"
+
+msgctxt "#31035"
+msgid "Crew member"
+msgstr "Stábtag"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31036"
+msgid "Show more item"
+msgstr "További elemek"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31037"
+msgid "Side submenu"
+msgstr "Oldalsó almenü"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31038"
+msgid "Directing"
+msgstr "Rendező"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31039"
+msgid "Writing"
+msgstr "Író"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31040"
+msgid "List Flixart 2"
+msgstr "Flixart 2 lista"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31041"
+msgid "Similar"
+msgstr "Hasonló"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31042"
+msgid "Jump to widget"
+msgstr "Ugrás a widgetre"
+
+#: /1080i/Custom_1115_Window_Shortcuts.xml
+msgctxt "#31043"
+msgid "Tray"
+msgstr "Tálca"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31044"
+msgid "Viewtypes"
+msgstr "Nézettípusok"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31045"
+msgid "Landscape"
+msgstr "Fekvő"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31046"
+msgid "No Results"
+msgstr "Nincs találat"
+
+#: /1080i/Custom_1154_Dialog_SearchDiscover_Sort.xml
+msgctxt "#31047"
+msgid "Popularity"
+msgstr "Népszerűség"
+
+#: /1080i/Custom_1115_Window_Shortcuts.xml
+msgctxt "#31048"
+msgid "tiles"
+msgstr "csempék"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31049"
+msgid "Edit menu"
+msgstr "Menü szerkesztése"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31050"
+msgid "Crew"
+msgstr "Stáb"
+
+#: /1080i/Custom_1153_Dialog_SearchDiscover_Actors.xml
+msgctxt "#31051"
+msgid "Person"
+msgstr "Személy"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31052"
+msgid "Sound"
+msgstr "Hang"
+
+msgctxt "#31053"
+msgid "Profile"
+msgstr "Profil"
+
+msgctxt "#31054"
+msgid "Liked by"
+msgstr "Lájkolva"
+
+msgctxt "#31055"
+msgid "out of"
+msgstr "ebből"
+
+msgctxt "#31056"
+msgid "critics"
+msgstr "kritikák"
+
+msgctxt "#31057"
+msgid "Years Old"
+msgstr "éves múlt"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31058"
+msgid "Wrap"
+msgstr "Borító (nincs oldalsáv)"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31059"
+msgid "Side"
+msgstr "Oldalsáv"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31060"
+msgid "Slide"
+msgstr "Csúsztatás"
+
+#: /shortcuts/template.xml
+msgctxt "#31061"
+msgid "User rating"
+msgstr "Felhasználói értékelés"
+
+#: /shortcuts/template.xml
+msgctxt "#31062"
+msgid "Playlist order"
+msgstr "Lejátszási lista sorrend"
+
+#: /shortcuts/template.xml
+msgctxt "#31063"
+msgid "Watched episodes"
+msgstr "Megnézett részek"
+
+msgctxt "#31064"
+msgid "Awards"
+msgstr "Díjak"
+
+msgctxt "#31065"
+msgid "Creator"
+msgstr "Rendező"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31067"
+msgid "Cinematography"
+msgstr "Filmezés"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31068"
+msgid "Experimental"
+msgstr "Kísérleti"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31069"
+msgid "Background video"
+msgstr "Háttér videó"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31070"
+msgid "Fixed aspect ratio"
+msgstr "Fix képarány"
+
+msgctxt "#31071"
+msgid "Playback Speed"
+msgstr "Lejátszási sebesség"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31072"
+msgid "Art Department"
+msgstr "Művészeti osztály"
+
+msgctxt "#31073"
+msgid "mins"
+msgstr "perc"
+
+msgctxt "#31074"
+msgid "hr"
+msgstr "óra"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31075"
+msgid "Editing"
+msgstr "Szerkesztő"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31076"
+msgid "Starring"
+msgstr "Főszereplő"
+
+msgctxt "#31077"
+msgid "More Information"
+msgstr "Több infó"
+
+#: /1080i/Dialog_DialogCustom.xml
+msgctxt "#31080"
+msgid "Button"
+msgstr "Gomb"
+
+#: /1080i/Dialog_DialogCustom.xml
+msgctxt "#31081"
+msgid "Others"
+msgstr "Egyebek"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31083"
+msgid "Combined Row"
+msgstr "Kombinált sor"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31084"
+msgid "Preload hubs"
+msgstr "Csomópontok előtöltése"
+
+msgctxt "#31085"
+msgid "Live TV"
+msgstr "Élő TV"
+
+msgctxt "#31086"
+msgid "Customise options"
+msgstr "Beállítási lehetőségek"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31087"
+msgid "Game Saves"
+msgstr "Játékmentések"
+
+#: /1080i/VideoOSDBookmarks.xml
+msgctxt "#31088"
+msgid "No bookmarks"
+msgstr "Nincs könyvjelző"
+
+#: /1080i/VideoOSDBookmarks.xml
+msgctxt "#31089"
+msgid "Add a bookmark here"
+msgstr "Könyvjelző hozzáadása ide"
+
+msgctxt "#31090"
+msgid "In-Progress"
+msgstr "Folyamatban"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31091"
+msgid "In-Game Saves"
+msgstr "Játékon belüli mentések"
+
+#: /1080i/SkinSettings.xml /1080i/Includes_Shortcuts_Window.xml
+msgctxt "#31092"
+msgid "Detailed information"
+msgstr "Részletes infó"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31094"
+msgid "Pointer size"
+msgstr "Egérmutató mérete"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31095"
+msgid "Translations"
+msgstr "Fordítások"
+
+#: /1080i/Dialog_DialogPictureInfo.xml
+msgctxt "#31096"
+msgid "plays"
+msgstr "lejátszva"
+
+#: /1080i/Includes_DialogInfo.xml
+msgctxt "#31097"
+msgid "File details"
+msgstr "Fájlrészletek"
+
+#: /1080i/SkinSettings.xml /1080i/Includes_Items.xml
+msgctxt "#31098"
+msgid "Gallery"
+msgstr "Galéria"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31099"
+msgid "Last aired"
+msgstr "Utoljára sugárzott"
+
+#: /1080i/Includes_Views_Row.xml
+msgctxt "#31100"
+msgid "Row Board"
+msgstr "Sor tabló"
+
+#: /1080i/Includes_Views_Wall.xml
+msgctxt "#31101"
+msgid "Wall Board"
+msgstr "Fal tabló"
+
+#: /1080i/Includes_DialogInfo.xml
+msgctxt "#31102"
+msgid "Extension"
+msgstr "Kiterjesztés"
+
+msgctxt "#31103"
+msgid "Widgets"
+msgstr "Widgetek"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31104"
+msgid "Position"
+msgstr "Pozíció"
+
+msgctxt "#31105"
+msgid "Spotlight"
+msgstr "Kiemelt"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31106"
+msgid "Top"
+msgstr "Fennt"
+
+#: /1080i/Dialog_DialogGameControllers.xml
+msgctxt "#31107"
+msgid "Edit buttons"
+msgstr "Gombok beállítása"
+
+msgctxt "#31108"
+msgid "Collections"
+msgstr "Gyűjtemények"
+
+#: /1080i/Dialog_DialogPVRGroupManager.xml
+msgctxt "#31109"
+msgid "Edit group"
+msgstr "Csoport beállítása"
+
+#: /1080i/Includes_Info.xml
+msgctxt "#31110"
+msgid "Starts at"
+msgstr "Indítás innen"
+
+msgctxt "#31111"
+msgid "Row Poster"
+msgstr "Sor poszter"
+
+msgctxt "#31112"
+msgid "Row Landscape"
+msgstr "Sor tájkép"
+
+msgctxt "#31113"
+msgid "Row Square"
+msgstr "Sor négyzetes"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31114"
+msgid "Hubs"
+msgstr "Csomópontok"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31115"
+msgid "Australian summer"
+msgstr "Ausztrál nyár"
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31117"
+msgid "RAM"
+msgstr "RAM"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31118"
+msgid "Expanded"
+msgstr "Kiterjesztett"
+
+#: /1080i/DialogPlayerProcessInfo.xml
+msgctxt "#31119"
+msgid "EOTF and Gamut"
+msgstr "EOTF és Gamut"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31120"
+msgid "List Basic"
+msgstr "Alap lista"
+
+#: /1080i/Dialog_FileBrowser.xml
+msgctxt "#31121"
+msgid "Mirror"
+msgstr "Tükör"
+
+#: /1080i/Includes_MediaFilter.xml
+msgctxt "#31122"
+msgid "Watchlist"
+msgstr "Lejátszási lista"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31123"
+msgid "Plot line"
+msgstr "Cselekménysor"
+
+msgctxt "#31124"
+msgid "Indicator"
+msgstr "Indikátor"
+
+msgctxt "#31125"
+msgid "Invert Text Colour"
+msgstr "Szövegszín felcserélése"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31126"
+msgid "Plotline"
+msgstr "Cselekményszál"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31127"
+msgid "EPG genre colours"
+msgstr "EPG műfajszínek"
+
+#: /1080i/Includes_MediaFilter.xml
+msgctxt "#31128"
+msgid "Trending"
+msgstr "Trendi"
+
+msgctxt "#31129"
+msgid "Up next in"
+msgstr "Következő"
+
+msgctxt "#31130"
+msgid "seconds"
+msgstr "másodperc"
+
+msgctxt "#31131"
+msgid "Continue watching in"
+msgstr "Folytatás ekkor"
+
+#: /shortcuts/skinvariables-splash.json
+msgctxt "#31132"
+msgid "Preloading Hubs"
+msgstr "Csomópontok előtöltése"
+
+#: /shortcuts/skinvariables-splash.json
+msgctxt "#31133"
+msgid "Loading Widgets"
+msgstr "Widgetek betöltése"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31134"
+msgid "Playing"
+msgstr "Lejátszás"
+
+#: /1080i/Includes_Views.xml
+msgctxt "#31135"
+msgid "Page"
+msgstr "Oldal"
+
+#: /1080i/Includes_Labels.xml For Spotlight to allow shorter labels which fit
+msgctxt "#31136"
+msgid "Browse"
+msgstr "Tallózás"
+
+#: /1080i/SkinSettings.xml /1080i/Includes_Labels.xml
+msgctxt "#31137"
+msgid "Detailed"
+msgstr "Részletes"
+
+msgctxt "#31138"
+msgid "Aqua Classic"
+msgstr "Klasszikus aqua"
+
+msgctxt "#31139"
+msgid "Tropical Sunset"
+msgstr "Trópusi naplemente"
+
+msgctxt "#31140"
+msgid "Miami Vaporwave"
+msgstr "Miami vaporwave"
+
+msgctxt "#31141"
+msgid "Plain Monochrome"
+msgstr "Egyszerű egyszínű"
+
+msgctxt "#31142"
+msgid "Total Duration"
+msgstr "Teljes hossz"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31143"
+msgid "Classic"
+msgstr "Klasszikus"
+
+#: /1080i/Includes_Labels.xml For Spotlight to allow shorter labels which fit
+msgctxt "#31144"
+msgid "Play"
+msgstr "Lejátszás"
+
+msgctxt "#31145"
+msgid "Initialising Skin"
+msgstr "Felszín betöltése"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31146"
+msgid "Onyx"
+msgstr "Ónix"
+
+#: /1080i/Includes_Shortcuts_Window.xml
+msgctxt "#31147"
+msgid "More"
+msgstr "Több"
+
+#: /1080i/Dialog_DialogCustom.xml
+msgctxt "#31148"
+msgid "Black Onyx"
+msgstr "Fekete ónix"
+
+#: /1080i/Settings.xml /1080i/SettingsSystemInfo.xml
+msgctxt "#31149"
+msgid "Used memory"
+msgstr "Használt memória"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31150"
+msgid "Categories"
+msgstr "Kategóriák"
+
+#: /1080i/Settings.xml
+msgctxt "#31151"
+msgid "Customise video info"
+msgstr "Videóinfó testreszabása"
+
+#: /1080i/AddonBrowser.xml
+msgctxt "#31152"
+msgid "Running add-ons"
+msgstr "Futó kiegészítők"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31153"
+msgid "Results for"
+msgstr "Találatok erre:"
+
+msgctxt "#31154"
+msgid "Misc options"
+msgstr "Egyéb opciók"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31155"
+msgid "Decades"
+msgstr "Évtizedek"
+
+#: /1080i/Includes_Views_Row.xml
+msgctxt "#31156"
+msgid "Row Flyer"
+msgstr "Sor szórólap"
+
+#: /1080i/Includes_Views_Wall.xml
+msgctxt "#31157"
+msgid "Wall Flyer"
+msgstr "Fal szórólap"
+
+#: /1080i/Includes_Keyboard_Mini.xml
+msgctxt "#31158"
+msgid "Layout"
+msgstr "Elrendezés"
+
+msgctxt "#31160"
+msgid "REC"
+msgstr "FELVÉTEL"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31161"
+msgid "Flyer"
+msgstr "Szórólap"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31162"
+msgid "Hide"
+msgstr "Elrejtés"
+
+#: /shortcuts/skinviewtypes.json
+msgctxt "#31163"
+msgid "Combined Flyer"
+msgstr "Kombinált szórólap"
+
+#: /1080i/Includes_Views_Row.xml
+msgctxt "#31164"
+msgid "Row Placard"
+msgstr "Sor plakát"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31165"
+msgid "On pause"
+msgstr "Szüneteltetéskor"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31166"
+msgid "Back action"
+msgstr "Vissza művelet"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31167"
+msgid "Logo"
+msgstr "Logó"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31169"
+msgid "Birthday"
+msgstr "Születésnap"
+
+#: /1080i/Custom_1115_Dialog_Shortcuts_Window.xml
+msgctxt "#31170"
+msgid "Note"
+msgstr "Feljegyzés"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31171"
+msgid "On-screen keyboard size"
+msgstr "OSD billentyűzet mérete"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31172"
+msgid "Placard"
+msgstr "Plakát"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31173"
+msgid "Scroll"
+msgstr "Görgetés"
+
+msgctxt "#31174"
+msgid "Navigation"
+msgstr "Navigáció"
+
+#: /1080i/Dialog_Lists.xml
+msgctxt "#31175"
+msgid "Player"
+msgstr "Lejátszó"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31176"
+msgid "Create a new save"
+msgstr "Új mentés létrehozása"
+
+msgctxt "#31177"
+msgid "Menus"
+msgstr "Menük"
+
+#: /1080i/Dialog_DialogGameControllers.xml
+msgctxt "#31178"
+msgid "Cheats available"
+msgstr "Csalások elérhetők"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31179"
+msgid "Keyword"
+msgstr "Kulcsszó"
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31180"
+msgid "Garbage"
+msgstr "Szemét"
+
+#: /1080i/Includes_DialogInfo.xml
+msgctxt "#31181"
+msgid "Scheduled"
+msgstr "Halasztott"
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31182"
+msgid "Bad"
+msgstr "Rossz"
+
+#: /1080i/Includes_Info.xml
+msgctxt "#31183"
+msgid "times"
+msgstr "idő"
+
+#: /1080i/Includes_Info.xml
+msgctxt "#31184"
+msgid "Ends"
+msgstr "Vége"
+
+msgctxt "#31185"
+msgid "Autoscroll"
+msgstr "Auto görgetés"
+
+msgctxt "#31187"
+msgid "Autoscroll interval"
+msgstr "Auto görgetés időköze"
+
+msgctxt "#31188"
+msgid "Limit"
+msgstr "Limit"
+
+msgctxt "#31189"
+msgid "Timeout"
+msgstr "Időtúllépés"
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31190"
+msgid "Average"
+msgstr "Átlagos"
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31191"
+msgid "Good"
+msgstr "Jó"
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31192"
+msgid "Great"
+msgstr "Nagyon jó"
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31193"
+msgid "Amazing"
+msgstr "Fantasztikus"
+
+#: /1080i/Includes_Info.xml
+msgctxt "#31194"
+msgid "Album duration"
+msgstr "Album hossza"
+
+msgctxt "#31196"
+msgid "Up Next"
+msgstr "Up Next"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31197"
+msgid "Skin theme"
+msgstr "Felszín téma"
+
+#: /1080i/Includes_Info.xml
+msgctxt "#31198"
+msgid "Track duration"
+msgstr "Szám hossza"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31199"
+msgid "Date and time"
+msgstr "Dátum és idő"
+
+#: /1080i/Includes_Info.xml
+msgctxt "#31200"
+msgid "Added on"
+msgstr "Hozzáadva"
+
+#: /1080i/Dialog_DialogPlot.xml
+msgctxt "#31201"
+msgid "Excellent"
+msgstr "Kiváló"
+
+msgctxt "#31202"
+msgid "Ratings"
+msgstr "Értékelések"
+
+msgctxt "#31203"
+msgid "Customise"
+msgstr "Testreszabás"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31204"
+msgid "Customise dialog background"
+msgstr "Háttér dialóg testreszabása"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31205"
+msgid "Codecs and providers"
+msgstr "Kodekek és szolgáltatók"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31206"
+msgid "Item count"
+msgstr "Elemek száma"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31207"
+msgid "Codecs"
+msgstr "Kodekek"
+
+#: /1080i/SkinSettings.xml /1080i/SkinSettings.xml
+msgctxt "#31208"
+msgid "Header"
+msgstr "Fejléc"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31209"
+msgid "Boxes"
+msgstr "Boxok"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31210"
+msgid "Series Premiere"
+msgstr "Sorozat bemutató"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31211"
+msgid "Season Premiere"
+msgstr "Szezon bemutató"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31212"
+msgid "Mid-Season Premiere"
+msgstr "Közép szezon bemutató"
+
+msgctxt "#31213"
+msgid "Visualisation settings"
+msgstr "Megjelenítési beállítások"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31214"
+msgid "Series Finale"
+msgstr "Sorozat finálé"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31215"
+msgid "Season Finale"
+msgstr "Szezon finálé"
+
+msgctxt "#31216"
+msgid "Video decoder"
+msgstr "Videódekóder"
+
+msgctxt "#31217"
+msgid "Pixel format"
+msgstr "Pixel formátum"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31218"
+msgid "Mid-Season Finale"
+msgstr "Közép szezon finálé"
+
+#: /1080i/Settings.xml
+msgctxt "#31219"
+msgid "Recently Watched"
+msgstr "Nemrég megnézett"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31220"
+msgid "Purple"
+msgstr "Lila"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31221"
+msgid "Slate"
+msgstr "Palaszürke"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31222"
+msgid "Coal"
+msgstr "Szénszürke"
+
+msgctxt "#31223"
+msgid "Gridlines"
+msgstr "Határvonalak"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31224"
+msgid "Pink"
+msgstr "Rózsaszín"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31225"
+msgid "Chalk"
+msgstr "Krétaszín"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31226"
+msgid "Blush"
+msgstr "Pirosas"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31227"
+msgid "Premiere"
+msgstr "Bemutató"
+
+#: /1080i/Custom_1115_Dialog_ColourPresets.xml
+msgctxt "#31228"
+msgid "Aqua"
+msgstr "Vízkék"
+
+#: /1080i/Custom_1115_Dialog_ColourPresets.xml
+msgctxt "#31229"
+msgid "Vaporwave"
+msgstr "Vaporwave pasztell"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31230"
+msgid "Calendar"
+msgstr "Naptár"
+
+#: /1080i/Custom_1111_Dialog_ColourPicker.xml
+msgctxt "#31232"
+msgid "Gradient"
+msgstr "Gradiens"
+
+msgctxt "#31233"
+msgid "Seek to"
+msgstr "Ugrás ide"
+
+msgctxt "#31234"
+msgid "Customise indicators"
+msgstr "Indikátorok testreszabása"
+
+msgctxt "#31235"
+msgid "Indicators"
+msgstr "Indikátorok"
+
+msgctxt "#31236"
+msgid "Collection"
+msgstr "Gyűjtemény"
+
+msgctxt "#31237"
+msgid "Progress"
+msgstr "Folyamatban"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31238"
+msgid "Coral"
+msgstr "Korallvörös"
+
+msgctxt "#31239"
+msgid "Footer"
+msgstr "Lábléc"
+
+#: /1080i/Custom_1115_Dialog_ColourPresets.xml
+msgctxt "#31240"
+msgid "Tropical"
+msgstr "Trópusi"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31241"
+msgid "Colour scheme"
+msgstr "Színséma"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31242"
+msgid "Blue Slate"
+msgstr "Palakék"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31243"
+msgid "Midnight Purple"
+msgstr "Éjféli lila"
+
+msgctxt "#31244"
+msgid "Now playing"
+msgstr "Most játszott"
+
+msgctxt "#31245"
+msgid "Scroll labels"
+msgstr "Címkék görgetése"
+
+msgctxt "#31246"
+msgid "Scroll textboxes"
+msgstr "Szövegdobozok görgetése"
+
+#: /1080i/Includes_Settings.xml
+msgctxt "#31247"
+msgid "Networks"
+msgstr "Hálózatok"
+
+#: /1080i/Includes_Settings.xml
+msgctxt "#31248"
+msgid "Certifications"
+msgstr "Korhatár-besorolások"
+
+msgctxt "#31249"
+msgid "Waiting for PVR"
+msgstr "PVR-re várakozás"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31250"
+msgid "Highlight"
+msgstr "Kiemelt"
+
+#: /1080i/Settings.xml
+msgctxt "#31251"
+msgid "Statistics"
+msgstr "Statisztika"
+
+msgctxt "#31252"
+msgid "Catch-up"
+msgstr "Felzárkóztatás"
+
+#: /1080i/Settings.xml
+msgctxt "#31253"
+msgid "Daily"
+msgstr "Napi"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31254"
+msgid "Performance"
+msgstr "Teljesítmény"
+
+msgctxt "#31255"
+msgid "Startup image"
+msgstr "Indítókép"
+
+msgctxt "#31256"
+msgid "Resource Usage"
+msgstr "Erőforrás-felhasználás"
+
+msgctxt "#31257"
+msgid "Memory"
+msgstr "Memória"
+
+msgctxt "#31258"
+msgid "CPU"
+msgstr "CPU"
+
+msgctxt "#31259"
+msgid "FPS"
+msgstr "FPS"
+
+msgctxt "#31260"
+msgid "AR"
+msgstr "AR"
+
+msgctxt "#31261"
+msgid "px"
+msgstr "px"
+
+msgctxt "#31262"
+msgid "Hz"
+msgstr "Hz"
+
+msgctxt "#31263"
+msgid "bits"
+msgstr "bit"
+
+msgctxt "#31264"
+msgid "Revenue"
+msgstr "Bevétel"
+
+msgctxt "#31265"
+msgid "Budget"
+msgstr "Költségek"
+
+#: /1080i/Settings.xml
+msgctxt "#31266"
+msgid "Monthly"
+msgstr "Havi"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31267"
+msgid "Last"
+msgstr "Utolsó"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31268"
+msgid "Fallback"
+msgstr "Tartalék"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31269"
+msgid "days"
+msgstr "nap"
+
+msgctxt "#31270"
+msgid "Single image"
+msgstr "Egy kép"
+
+msgctxt "#31271"
+msgid "Image folder"
+msgstr "Kép mappa"
+
+msgctxt "#31273"
+msgid "Label"
+msgstr "Felirat"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31274"
+msgid "Icon"
+msgstr "Ikon"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31275"
+msgid "Customise search"
+msgstr "Keresési beállítások"
+
+msgctxt "#31279"
+msgid "Studio icons"
+msgstr "Stúdió ikonok"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31281"
+msgid "Welcome"
+msgstr "Üdvözlet"
+
+#: /1080i/Includes_Shortcuts_Pallette.xml
+msgctxt "#31282"
+msgid "Widget"
+msgstr "Widget"
+
+#: /1080i/Includes_Info.xml
+msgctxt "#31283"
+msgid "Played"
+msgstr "Lejátszva"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31284"
+msgid "Discover movies and tvshows on TMDb."
+msgstr "Fedezz fel filmeket és sorozatokat a TMDb-n."
+
+msgctxt "#31285"
+msgid "Classification (MPAA)"
+msgstr "Minősítés (MPAA)"
+
+msgctxt "#31286"
+msgid "Won"
+msgstr "Győztes"
+
+msgctxt "#31287"
+msgid "Nominated for"
+msgstr "Jelölve"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31288"
+msgid "Explore now."
+msgstr "Felfedezés"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31289"
+msgid "Touch mode"
+msgstr "Érintős mód"
+
+#: /1080i/script-wikipedia.xml
+msgctxt "#31290"
+msgid "Attribution"
+msgstr "Tulajdonság"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31291"
+msgid "Search for movies$COMMA tvshows$COMMA and more."
+msgstr "Filmek keresése$COMMA sorozatok$COMMA és egyebek."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31292"
+msgid "Text labels"
+msgstr "Szövegcímkék"
+
+msgctxt "#31293"
+msgid "Cast and more info"
+msgstr "Szereplők és még több infó"
+
+msgctxt "#31294"
+msgid "Bookmarks and chapters"
+msgstr "Könyvjelzők és fejezetek"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31297"
+msgid "Extra fanart"
+msgstr "Extra fanart"
+
+msgctxt "#31298"
+msgid "Movies and tv shows starring this actor"
+msgstr "Filmek és sorozatok, amelyekben ez a színész szerepel"
+
+msgctxt "#31299"
+msgid "Information is loading"
+msgstr "Információ betöltése"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31300"
+msgid "Window"
+msgstr "Ablak"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31303"
+msgid "Customise fallback image folder"
+msgstr "Háttérkép mappa beállítása"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31304"
+msgid "lists"
+msgstr "listák"
+
+#: /1080i/Includes_DialogInfo.xml
+msgctxt "#31307"
+msgid "Instrument"
+msgstr "Hangszerek"
+
+#: /1080i/Includes_DialogInfo.xml
+msgctxt "#31308"
+msgid "Mood"
+msgstr "Hangulat"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31309"
+msgid "Glass"
+msgstr "Üveg"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31310"
+msgid "Expand"
+msgstr "Kiterjesztés"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31311"
+msgid "Weekly"
+msgstr "Heti"
+
+#: /1080i/Includes_Views.xml
+msgctxt "#31320"
+msgid "Square"
+msgstr "Négyzetes"
+
+#: /1080i/Includes_SkinSettings.xml /1080i/Settings.xml
+msgctxt "#31321"
+msgid "Customise viewtypes"
+msgstr "Nézettípusok testreszabása"
+
+#: /1080i/SkinSettings.xml /1080i/Includes_Labels.xml
+msgctxt "#31322"
+msgid "Age"
+msgstr "Kor"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31324"
+msgid "Content"
+msgstr "Tartalom"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31328"
+msgid "Edit widgets"
+msgstr "Widgetek beállítása"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31329"
+msgid "Text"
+msgstr "Szöveg"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31330"
+msgid "Crop"
+msgstr "Levágás"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31331"
+msgid "Background style"
+msgstr "Háttér stílus"
+
+msgctxt "#31334"
+msgid "Comments"
+msgstr "Hozzászólások"
+
+#: /1080i/GameOSD.xml
+msgctxt "#31335"
+msgid "Game menu"
+msgstr "Játék menü"
+
+#: /1080i/GameOSD.xml
+msgctxt "#31336"
+msgid "Select + X"
+msgstr "Select + X"
+
+#: /1080i/GameOSD.xml
+msgctxt "#31337"
+msgid "Select + Start"
+msgstr "Select + Start"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31338"
+msgid "Select + Right Stick"
+msgstr "Select + jobb kar"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31340"
+msgid "Reset skin to defaults"
+msgstr "Felszín visszaállítás alapértelmezettre"
+
+msgctxt "#31346"
+msgid "More by this artist"
+msgstr "Több ettől az előadótól"
+
+#: /1080i/Includes_Labels.xml For Spotlight to allow shorter labels which fit
+msgctxt "#31144"
+msgid "Play"
+msgstr "Lejátszás"
+
+#: /1080i/Includes_DialogInfo.xml
+msgctxt "#31347"
+msgid "Photography"
+msgstr "Fényképezés"
+
+msgctxt "#31348"
+msgid "Channel EPG"
+msgstr "Csatorna EPG"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31349"
+msgid "Up action"
+msgstr "Fel művelet"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31353"
+msgid "Elapsed"
+msgstr "Eltelt idő"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31354"
+msgid "Remaining"
+msgstr "Hátralevő idő"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31355"
+msgid "Time display"
+msgstr "Idők megjelenítése"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31356"
+msgid "Use online cast"
+msgstr "Online szereplő lista használata"
+
+#: /1080i/SkinSettings.xml /1080i/Includes_Items.xml
+msgctxt "#31357"
+msgid "Artwork Overlay"
+msgstr "Kép fedvény"
+
+msgctxt "#31358"
+msgid "Waiting for plugins"
+msgstr "Pluginek betöltése"
+
+#: /shortcuts/generator/data/setup/powermenu_item.xml
+msgctxt "#31359"
+msgid "Switch user"
+msgstr "Felhasználóváltás"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31362"
+msgid "Side items"
+msgstr "Oldalsó elemek"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31363"
+msgid "Menu items"
+msgstr "Menü elemek"
+
+#: /shortcuts/powersubmenu.DATA.xml
+msgctxt "#31364"
+msgid "Reload"
+msgstr "Újratöltés"
+
+#: /1080i/DialogContextMenu.xml
+msgctxt "#31365"
+msgid "Node"
+msgstr "Csomópont"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31366"
+msgid "Uncropped"
+msgstr "Levágás nélkül"
+
+#: /1080i/Includes_Search_View.xml
+msgctxt "#31368"
+msgid "Searching for"
+msgstr "Keresés erre"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31369"
+msgid "Video file"
+msgstr "Videó fájl"
+
+#: /1080i/Custom_1172_Dialog_SideMenu.xml
+msgctxt "#31370"
+msgid "Switch profile"
+msgstr "Profilváltás"
+
+msgctxt "#31371"
+msgid "Sorted by"
+msgstr "Rendezési elv"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31372"
+msgid "Options tray"
+msgstr "Tálca opciók"
+
+#: /1080i/Includes_DialogInfo.xml
+msgctxt "#31373"
+msgid "from"
+msgstr "innen"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31374"
+msgid "Reset settings"
+msgstr "Beállítások visszaállítása"
+
+msgctxt "#31375"
+msgid "Install zip"
+msgstr "Telepítés zip-ből"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31376"
+msgid "Reset discover search history"
+msgstr "A Felfedezés keresési előzményeinek visszaállítása"
+
+#: /1080i/Includes_Shortcuts_Window.xml
+msgctxt "#31377"
+msgid "Next window"
+msgstr "Következő ablak"
+
+msgctxt "#31378"
+msgid "Foreign"
+msgstr "Idegen"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31379"
+msgid "Edit categories"
+msgstr "Kategóriák beállítása"
+
+msgctxt "#31380"
+msgid "Forecast"
+msgstr "Időjárás"
+
+msgctxt "#31381"
+msgid "Returning"
+msgstr "Viszatérő"
+
+msgctxt "#31382"
+msgid "All items"
+msgstr "Minden elem"
+
+msgctxt "#31383"
+msgid "Production"
+msgstr "Gyártás"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31384"
+msgid "Tray labels"
+msgstr "Tálca címkék"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31385"
+msgid "Secondary"
+msgstr "Másodlagos"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31386"
+msgid "Primary"
+msgstr "Elsődleges"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31387"
+msgid "Contextual"
+msgstr "Szövegfüggő"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31388"
+msgid "Seed"
+msgstr "Seed"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31389"
+msgid "Parent widget"
+msgstr "Szülő widget"
+
+msgctxt "#31390"
+msgid "Release Year"
+msgstr "Bemutatás éve"
+
+#: /1080i/Includes_Items.xml Shorter label for use in info dialog buttons
+msgctxt "#31393"
+msgid "Trailer"
+msgstr "Bemutató"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31394"
+msgid "Picture-in-picture video"
+msgstr "PIP videó"
+
+msgctxt "#31396"
+msgid "Recent Movies"
+msgstr "Legutóbbi filmek"
+
+msgctxt "#31397"
+msgid "Recent Tv Shows"
+msgstr "Legutóbbi sorozatok"
+
+msgctxt "#31398"
+msgid "New Movies"
+msgstr "Új filmek"
+
+msgctxt "#31399"
+msgid "New TV Shows"
+msgstr "Új sorozatok"
+
+msgctxt "#31400"
+msgid "New Episodes"
+msgstr "Új epizódok"
+
+msgctxt "#31401"
+msgid "New Artists"
+msgstr "Új színészek"
+
+msgctxt "#31402"
+msgid "New Albums"
+msgstr "Új albumok"
+
+msgctxt "#31403"
+msgid "In-Progress TV Shows"
+msgstr "Folyamatban levő sorozatok"
+
+msgctxt "#31404"
+msgid "In-Progress Movies"
+msgstr "Folyamatban levő filmek"
+
+msgctxt "#31405"
+msgid "Top Albums"
+msgstr "Top albumok"
+
+msgctxt "#31406"
+msgid "Top Rated Movies"
+msgstr "Legjobbra értékelt filmek"
+
+msgctxt "#31407"
+msgid "Top Rated TV Shows"
+msgstr "Legjobbra értékelt sorozatok"
+
+msgctxt "#31408"
+msgid "Random Movies"
+msgstr "Véletlenszerű filmek"
+
+msgctxt "#31409"
+msgid "Random TV Shows"
+msgstr "Véletlenszerű sorozatok"
+
+msgctxt "#31410"
+msgid "Random Episodes"
+msgstr "Véletlenszerű epizódok"
+
+msgctxt "#31411"
+msgid "Random Songs"
+msgstr "Véletlenszerű dalok"
+
+msgctxt "#31412"
+msgid "Random Albums"
+msgstr "Véletlenszerű albumok"
+
+msgctxt "#31413"
+msgid "All Movies"
+msgstr "Minden film"
+
+msgctxt "#31414"
+msgid "All TV Shows"
+msgstr "Minden sorozat"
+
+msgctxt "#31415"
+msgid "Movies and TV Shows"
+msgstr "Filmek és sorozatok"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31416"
+msgid "Secondary button"
+msgstr "Másodlagos gomb"
+
+msgctxt "#31417"
+msgid "Random Artists"
+msgstr "Véletlenszerű előadók"
+
+#: /1080i/Includes_Views_Row.xml
+msgctxt "#31418"
+msgid "Row Circle"
+msgstr "Sor köralakú"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31419"
+msgid "Overview"
+msgstr "Nézet"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31420"
+msgid "Apps"
+msgstr "Appok"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31423"
+msgid "Card"
+msgstr "Kártya"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31424"
+msgid "Board"
+msgstr "Tabló"
+
+#: /1080i/Home.xml
+msgctxt "#31427"
+msgid "Initialising"
+msgstr "Betöltés"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31428"
+msgid "Wait for widgets"
+msgstr "Várakozás a widgetekre"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31429"
+msgid "Chapters"
+msgstr "Fejezetek"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31430"
+msgid "Customise style"
+msgstr "Stílus beállítása"
+
+#: /1080i/SkinSettings.xml /1080i/Includes_Views_Row.xml
+msgctxt "#31431"
+msgid "Circle"
+msgstr "Köralakú"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31432"
+msgid "Adaptive"
+msgstr "Alkalmazkodó"
+
+#: /1080i/Includes_SkinSettings.xml /1080i/Settings.xml
+msgctxt "#31434"
+msgid "Customise video OSD"
+msgstr "Videó OSD testreszabása"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31435"
+msgid "PVR lookups"
+msgstr "PVR keresések"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31438"
+msgid "Simple"
+msgstr "Egyszerű"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31439"
+msgid "Large"
+msgstr "Nagy"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31440"
+msgid "Extra Large"
+msgstr "Extra nagy"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31441"
+msgid "FlixArt Size"
+msgstr "Flixart méret"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31442"
+msgid "Parent"
+msgstr "Szülő elem"
+
+#: /1080i/Settings.xml
+msgctxt "#31444"
+msgid "Customisation"
+msgstr "Testreszabás"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31448"
+msgid "This category contains customisation options for"
+msgstr "Ez a kategória testreszabási lehetőségeket tartalmaz a következőkhöz"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31450"
+msgid "Text only"
+msgstr "Csak szöveg"
+
+#: /1080i/Custom_1180_Wizard.xml
+msgctxt "#31451"
+msgid "Compound"
+msgstr "Összetett"
+
+#: /1080i/Custom_1180_Wizard.xml
+msgctxt "#31452"
+msgid "Composite"
+msgstr "Összetett"
+
+#: /1080i/Custom_1115_Dialog_WideSettings.xml
+msgctxt "#31456"
+msgid "Prebuilt"
+msgstr "Előre telepített"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31457"
+msgid "Scrollbar"
+msgstr "Görgetősáv"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31458"
+msgid "Monochrome"
+msgstr "Fekete-fehér"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31459"
+msgid "Letter"
+msgstr "Téglalap"
+
+#: /1080i/SkinSettings.xml /1080i/MusicOSD.xml
+msgctxt "#31460"
+msgid "Customise visualisation"
+msgstr "Vizualizáció testreszabása"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31461"
+msgid "Choose preset"
+msgstr "Válassz előre beállítottat"
+
+#: /1080i/Includes_Views_Wall.xml
+msgctxt "#31462"
+msgid "Wall Banner"
+msgstr "Banner fal"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31465"
+msgid "Rain chance"
+msgstr "Csapadék esélye"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31467"
+msgid "Tiles configuration"
+msgstr "Csempék konfigurációja"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31468"
+msgid "Tile layout"
+msgstr "Csempe kinézet"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31469"
+msgid "Choose shortcut"
+msgstr "Parancsikon kiválasztás"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31470"
+msgid "Wind gusts"
+msgstr "Széllökések"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31471"
+msgid "Fire danger"
+msgstr "Tűzveszély"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31472"
+msgid "Rain since 9am"
+msgstr "Eső 9 óta"
+
+#: /1080i/Custom_1161_Dialog_Weather.xml
+msgctxt "#31473"
+msgid "Radar"
+msgstr "Radar"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31476"
+msgid "This category contains acknowledgements, contributions, and thanks."
+msgstr "Ez a kategória köszönetnyilvánításokat, elismeréseket és hozzájárulásokat tartalmaz."
+
+#: /1080i/SkinSettings.xml /1080i/Includes_Items.xml
+msgctxt "#31477"
+msgid "Progress percentage"
+msgstr "Folyamatjelző"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31478"
+msgid "by"
+msgstr "tóle"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31479"
+msgid "List Media"
+msgstr "Média lista"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31480"
+msgid "List Flixart"
+msgstr "Flixart lista"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31482"
+msgid "Trailers"
+msgstr "Bemutatók"
+
+#: /1080i/Custom_1123_Dialog_Trailer.xml
+msgctxt "#31483"
+msgid "Replay"
+msgstr "Ismétlés"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31484"
+msgid "Pause"
+msgstr "Szünet"
+
+#: /1080i/Custom_1123_Dialog_Trailer.xml
+msgctxt "#31485"
+msgid "Stop"
+msgstr "Állj"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31486"
+msgid "Dialog"
+msgstr "Párbeszédablak"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31490"
+msgid "Cancelled"
+msgstr "Törölve"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31491"
+msgid "Miscellaneous"
+msgstr "Egyebek"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31492"
+msgid "Add-ons hub"
+msgstr "Kiegészítő csomópont"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31493"
+msgid "Ended"
+msgstr "Befejezve"
+
+#: /1080i/Custom_1115_Dialog_Shortcuts.xml
+msgctxt "#31494"
+msgid "Rebuild"
+msgstr "Újraépítés"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31495"
+msgid "Unlocked"
+msgstr "Feloldva"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31496"
+msgid "Customise widgets"
+msgstr "Widgetek testreszabása"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31497"
+msgid "Minimise menu"
+msgstr "Menü minimalizálása"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31498"
+msgid "Released"
+msgstr "Bemutatva"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31499"
+msgid "In-Production"
+msgstr "Gyártás alatt"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31500"
+msgid "There were no search results found"
+msgstr "Nincs találat"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31501"
+msgid "Please try another search"
+msgstr "Próbálj másik keresést"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31502"
+msgid "More Options"
+msgstr "Még több lehetőség"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31504"
+msgid "Planned"
+msgstr "Tervben"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31506"
+msgid "Skin users"
+msgstr "Felszín felhasználók"
+
+#: /1080i/Custom_1195_SkinUserLoginScreen.xml
+msgctxt "#31508"
+msgid "Loading skin user profiles"
+msgstr "Felszín felhasználói profilok betöltése"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31509"
+msgid "Holiday"
+msgstr "Ünnepek"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31510"
+msgid "Holiday themes"
+msgstr "Ünnepi témák"
+
+#: /1080i/Custom_1115_Dialog_Shortcuts.xml
+msgctxt "#31511"
+msgid "Shortcut"
+msgstr "Parancsikon"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31515"
+msgid "Main Items"
+msgstr "Fő elemek"
+
+#: /1080i/Custom_1115_Dialog_Shortcuts.xml
+msgctxt "#31516"
+msgid "Edit items"
+msgstr "Elemek beállítása"
+
+#: /1080i/Custom_1115_Dialog_Shortcuts.xml
+msgctxt "#31517"
+msgid "Reverse order"
+msgstr "Visszafelé"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31519"
+msgid "Empty widgets"
+msgstr "Üres widgetek"
+
+#: /1080i/Includes_Weather_Radar.xml
+msgctxt "#31520"
+msgid "Cloudiness"
+msgstr "Felhős"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31522"
+msgid "Hiding empty widgets may cause positioning issues after video playback."
+msgstr "Az üres widgetek elrejtése pozicionálási problémákat okozhat a videó lejátszása után."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31523"
+msgid "It is recommended to delete any unused widgets from your configuration instead of hiding them."
+msgstr "Ajánlott, hogy a nem használt widgeteket az elrejtésük helyett töröld a konfigurációdból."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31524"
+msgid "There is also an overhead refresh cost to performance associated with hiding empty widgets."
+msgstr "Az üres widgetek elrejtése a frissítés teljesítmények csökkenésével is jár."
+
+#: /1080i/Includes_Weather_Radar.xml
+msgctxt "#31525"
+msgid "Visibility"
+msgstr "Látótávolság"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31526"
+msgid "Hour"
+msgstr "Óra"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31527"
+msgid "Later"
+msgstr "Később"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31528"
+msgid "Particulate"
+msgstr "Részecske"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31529"
+msgid "Ozone"
+msgstr "Ózon"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31530"
+msgid "Solar radiation"
+msgstr "Napsugárzás"
+
+#: /1080i/Includes_Weather_Forecast.xml
+msgctxt "#31531"
+msgid "Carbon monoxide"
+msgstr "Szén monoxid"
+
+#: /1080i/Custom_1115_Dialog_Shortcuts.xml
+msgctxt "#31533"
+msgid "Add list"
+msgstr "Lista hozzáadása"
+
+#: /1080i/Custom_1115_Dialog_Shortcuts.xml
+msgctxt "#31535"
+msgid "Restore"
+msgstr "Visszaállítás"
+
+#: /1080i/Custom_1115_Dialog_Shortcuts.xml
+msgctxt "#31536"
+msgid "Choose fallback image folder"
+msgstr "Képmappa kiválasztása"
+
+#: /1080i/Custom_1115_Dialog_Shortcuts.xml
+msgctxt "#31537"
+msgid "Edit submenu items"
+msgstr "Almenü elemek beállítása"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31539"
+msgid "Use online gallery"
+msgstr "Online galéria hsználata"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31540"
+msgid "Use online collection"
+msgstr "Online gyűjtemény használata"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31541"
+msgid "Next episode"
+msgstr "Következő epizód"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31542"
+msgid "Last episode"
+msgstr "Utolsó epizód"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31543"
+msgid "Anticipated"
+msgstr "Várható"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31544"
+msgid "Airing"
+msgstr "Sugárzott"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31545"
+msgid "Premiering"
+msgstr "Bemutatva"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31554"
+msgid "Wall Poster"
+msgstr "Fal poszter"
+
+#: /1080i/Includes_Views_Wall.xml
+msgctxt "#31555"
+msgid "Wall Landscape"
+msgstr "Fal tájkép"
+
+#: /1080i/Includes_Views_Wall.xml
+msgctxt "#31556"
+msgid "Wall Square"
+msgstr "Fal nyégyzetes"
+
+#: /1080i/Includes_Views_Wall.xml
+msgctxt "#31557"
+msgid "Wall Circle"
+msgstr "Fal köralakú"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31560"
+msgid "Bright White"
+msgstr "Fényes fehér"
+
+#: /1080i/Includes_Views_Row.xml
+msgctxt "#31563"
+msgid "Row Card"
+msgstr "Sor kártya"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31567"
+msgid "Add a single item or a list of several items?"
+msgstr "Egyetlen elemet vagy több elemből álló listát adsz hozzá?"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31568"
+msgid "Add new item(s)"
+msgstr "Új elemek hozzáadása"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31569"
+msgid "Add item"
+msgstr "Elem hozzáadása"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31570"
+msgid "Delete item(s)"
+msgstr "Elemek törlése"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31571"
+msgid "Delete a single item or a list of several items?"
+msgstr "Egyetlen elemet vagy több elemből álló listát törölsz?"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31572"
+msgid "Delete item"
+msgstr "Elem törlése"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31573"
+msgid "Delete list"
+msgstr "Lista törlése"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31576"
+msgid "Pause delay"
+msgstr "Szüneteltetés késleltetése"
+
+#: /1080i/Includes_ButtonMenu.xml
+msgctxt "#31579"
+msgid "Prev"
+msgstr "Előző"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31580"
+msgid "Combined List"
+msgstr "Kombinált lista"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31581"
+msgid "List Expanded"
+msgstr "Kiterjesztett lista"
+
+#: /1080i/Custom_1116_Dialog_Shortcuts.xml
+msgctxt "#31583"
+msgid "Prevent reload"
+msgstr "Újratöltés megakadályozása"
+
+#: /1080i/Includes_Items.xml
+msgctxt "#31585"
+msgid "Overlay"
+msgstr "Fedvény"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31586"
+msgid "Customise shortcuts"
+msgstr "Parancsikonok testreszabása"
+
+#: /1080i/Includes_OSD.xml
+msgctxt "#31594"
+msgid "Press down"
+msgstr "Nyomd lefelé"
+
+#: /1080i/Includes_OSD.xml
+msgctxt "#31595"
+msgid "Press right"
+msgstr "Nyomd jobbra"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31596"
+msgid "Additional icons"
+msgstr "Kiegészítő ikonok"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31597"
+msgid "Confirmation"
+msgstr "Megerősítés"
+
+#: /1080i/Dialogs_DialogGameControllers.xml
+msgctxt "#31598"
+msgid "Controllers"
+msgstr "Kontrollerek"
+
+#: /1080i/Dialogs_DialogPVRGroupManager.xml
+msgctxt "#31599"
+msgid "Ungrouped"
+msgstr "Csoport bontás"
+
+#: /1080i/Includes_Info.xml
+msgctxt "#31600"
+msgid "Ends at"
+msgstr "Befejezés:"
+
+#: /1080i/Custom_1115_Window_Shortcuts.xml
+msgctxt "#31601"
+msgid "Edit tray"
+msgstr "Tálca beállítás"
+
+#: /1080i/Dialog_DialogContextMenu.xml
+msgctxt "#31602"
+msgid "Add shortcut"
+msgstr "Parancsikon hozzáadása"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31604"
+msgid "Additional"
+msgstr "Kiegészítő"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31605"
+msgid "Next aired"
+msgstr "Következő sugárzott"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31610"
+msgid "Seasonal Themes"
+msgstr "Szezonális témák"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31611"
+msgid "Christmas"
+msgstr "Karácsony"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31613"
+msgid "Winter Frost"
+msgstr "Téli fagy"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31614"
+msgid "Aussie Christmas"
+msgstr "Ausztrál karácsony"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31615"
+msgid "Summer"
+msgstr "Nyár"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31617"
+msgid "Halloween"
+msgstr "Halloween"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31620"
+msgid "Atmosphere"
+msgstr "Hangulat"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31621"
+msgid "Fly-bys"
+msgstr "Elrepülő figurák"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31622"
+msgid "Falling props"
+msgstr "Hulló díszek"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31623"
+msgid "Off"
+msgstr "Ki"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31624"
+msgid "Normal"
+msgstr "Normál"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31625"
+msgid "High"
+msgstr "Magas"
+
+#: /shortcuts/skinviewtypes.json
+msgctxt "#31626"
+msgid "Combined Wall"
+msgstr "Kombinált fal"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31627"
+msgid "Combined Wall Square"
+msgstr "Kombinált fal négyzet"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31628"
+msgid "Combined Wall Landscape"
+msgstr "Kombinált fal fekvő"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31629"
+msgid "Combined Wall Poster"
+msgstr "Kombinált fal poszter"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31630"
+msgid "Combined Wall Circle"
+msgstr "Kombinált fal kör"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31631"
+msgid "Combined Wall Board"
+msgstr "Kombinált fal tabló"
+
+#: /1080i/Includes_Views_Combined_Wall.xml
+msgctxt "#31632"
+msgid "Combined Wall Flyer"
+msgstr "Kombinált fal szórólap"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31633"
+msgid "Fallback style"
+msgstr "Tartalék háttér stílus"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31635"
+msgid "List Poster"
+msgstr "Lista poszter"
+
+#: /1080i/Includes_Views_List.xml
+msgctxt "#31636"
+msgid "List Square"
+msgstr "Lista négyzet"
+
+#: /1080i/Dialog_DialogCustom.xml
+msgctxt "#31637"
+msgid "Trailer source"
+msgstr "Előzetes forrása"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31638"
+msgid "Hub type"
+msgstr "Csomópont típusa"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31639"
+msgid "Custom"
+msgstr "Egyéni"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31640"
+msgid "Calendar source"
+msgstr "Naptár forrása"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31642"
+msgid "Outlined"
+msgstr "Körvonalas"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31643"
+msgid "Solid"
+msgstr "Egyszínű"
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31644"
+msgid "This category contains the settings for the home menu, spotlight, startup and skin users."
+msgstr "Ez a kategória a főmenü, a kiemelt elem, az indítás és a felszín felhasználók beállításait tartalmazza."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31645"
+msgid "This category contains the settings for the colour scheme and backgrounds."
+msgstr "Ez a kategória a színséma és a hátterek beállításait tartalmazza."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31646"
+msgid "This category contains the settings for the header, footer, context menu, text and mouse pointer."
+msgstr "Ez a kategória a fejléc, a lábléc, a helyi menü, a szöveg és az egérmutató beállításait tartalmazza."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31647"
+msgid "This category contains the settings for viewtypes, indicators, navigation and Live TV."
+msgstr "Ez a kategória a nézettípusok, a jelzők, a navigáció és az élő TV beállításait tartalmazza."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31648"
+msgid "This category contains the settings for widget behaviour and the information dialog widgets and buttons."
+msgstr "Ez a kategória a widgetek viselkedésének, valamint az információs ablak widgetjeinek és gombjainak beállításait tartalmazza."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31649"
+msgid "This category contains the settings for TMDbHelper, ratings, plotlines and other media details."
+msgstr "Ez a kategória a TMDbHelper, az értékelések, a cselekménysorok és egyéb médiaadatok beállításait tartalmazza."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31650"
+msgid "This category contains the settings for the video OSD, seekbar and background video."
+msgstr "Ez a kategória a videó OSD, a keresősáv és a háttérvideó beállításait tartalmazza."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31651"
+msgid "This category contains the settings for seasonal themes and their effects."
+msgstr "Ez a kategória a szezonális témák és hatásaik beállításait tartalmazza."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31653"
+msgid "Open the editor to customise the home menu shortcuts and the widgets shown for each item."
+msgstr "Megnyitja a szerkesztőt a főmenü parancsikonjainak és az egyes elemekhez megjelenő widgeteknek a testreszabásához."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31654"
+msgid "When enabled, the first widget is focused when the home screen loads instead of the menu."
+msgstr "Ha engedélyezve van, a főképernyő betöltésekor a menü helyett az első widget kap fókuszt."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31655"
+msgid "Select whether the home menu is shown along the top of the screen or down the side."
+msgstr "Válaszd ki, hogy a főmenü a képernyő tetején vagy oldalán jelenjen meg."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31656"
+msgid "Select whether the items in the top menu are shown as text or icons."
+msgstr "Válaszd ki, hogy a felső menü elemei szövegként vagy ikonként jelenjenek meg."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31657"
+msgid "Select what is shown in the header above the top menu: the date, the profile, or nothing."
+msgstr "Válaszd ki, mi látszik a felső menü feletti fejlécben: a dátum, a profil, vagy semmi."
+
+#: /1080i/SkinSettings.xml
+msgctxt "#31658"
+msgid "Select whether pressing up on the top menu opens the submenu or the options menu."
+msgstr "Válaszd ki, hogy a felső menün a fel gomb az almenüt vagy a beállítások menüt nyissa meg."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31659"
+msgid "When enabled, the spotlight slides down and dims while the top menu is shown."
+msgstr "Ha engedélyezve van, a kiemelt elem lecsúszik és elhalványul, amíg a felső menü látszik."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31660"
+msgid "Select whether the spotlight button opens the information dialog or the spotlight menu."
+msgstr "Válaszd ki, hogy a kiemelt gomb az információs ablakot vagy a kiemelt menüt nyissa meg."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31661"
+msgid "Select a preset colour scheme for highlights, backgrounds and dialogs."
+msgstr "Válassz előre beállított színsémát a kiemelésekhez, hátterekhez és párbeszédablakokhoz."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31665"
+msgid "Choose the image shown on the splash screen while the skin starts."
+msgstr "Válaszd ki a felszín indulásakor megjelenő nyitókép hátterét."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31667"
+msgid "Select the background shown for genres, studios and people that have no artwork of their own."
+msgstr "Válaszd ki a saját képpel nem rendelkező műfajok, stúdiók és személyek háttérképét."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31669"
+msgid "Select whether rating icons are shown in colour or monochrome."
+msgstr "Válaszd ki, hogy az értékelés ikonjai színesek vagy egyszínűek legyenek."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31670"
+msgid "Choose which viewtypes are available for each type of content."
+msgstr "Válaszd ki, mely nézettípusok legyenek elérhetők az egyes tartalomtípusokhoz."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31671"
+msgid "Select whether list views show simple or detailed text labels."
+msgstr "Válaszd ki, hogy a listanézetek egyszerű vagy részletes szövegcímkéket mutassanak."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31672"
+msgid "Choose which status indicators are shown on items."
+msgstr "Válaszd ki, mely állapotjelzők jelenjenek meg az elemeken."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31673"
+msgid "Choose the widgets shown in the video OSD."
+msgstr "Válaszd ki, mely widgetek jelenjenek meg a videó OSD-n."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31674"
+msgid "Choose the widgets shown in the information dialog."
+msgstr "Válaszd ki, mely widgetek jelenjenek meg az információs ablakban."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31675"
+msgid "Choose the buttons shown in the information dialog."
+msgstr "Válaszd ki, mely gombok jelenjenek meg az információs ablakban."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31676"
+msgid "Show the currently playing item in the footer."
+msgstr "A jelenleg lejátszott elem megjelenítése a láblécben."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31677"
+msgid "Show the studio logo of the focused item in the footer."
+msgstr "A fókuszban lévő elem stúdiólogójának megjelenítése a láblécben."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31678"
+msgid "Show the current weather conditions in the header."
+msgstr "Az aktuális időjárás megjelenítése a fejlécben."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31679"
+msgid "Show the tray of quick action buttons in the context menu."
+msgstr "A gyorsműveleti gombok sávjának megjelenítése a helyi menüben."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31680"
+msgid "Show the artwork of the focused item in the context menu."
+msgstr "A fókuszban lévő elem képének megjelenítése a helyi menüben."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31681"
+msgid "Set how often widgets with autoscroll enabled move to the next item."
+msgstr "Megadja, milyen gyakran lépnek a következő elemre az automatikus görgetésű widgetek."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31682"
+msgid "When enabled, widgets with a limited number of items end with a Show more item that opens the full folder."
+msgstr "Ha engedélyezve van, a korlátozott elemszámú widgetek végén egy Továbbiak elem nyitja meg a teljes mappát."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31683"
+msgid "Select whether widgets with no items show a placeholder or are hidden. Hiding empty widgets can cause positioning issues and reduce performance."
+msgstr "Válaszd ki, hogy az elemek nélküli widgetek helyőrzőt mutassanak vagy el legyenek rejtve. Az üres widgetek elrejtése elhelyezési problémákat és teljesítménycsökkenést okozhat."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31684"
+msgid "Cycle through the extra fanart of the focused item in the background."
+msgstr "A fókuszban lévő elem további háttérképeinek váltogatása a háttérben."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31685"
+msgid "Select whether pressing back in a media window returns to the previous window or to the parent folder."
+msgstr "Válaszd ki, hogy a vissza gomb a médiaablakban az előző ablakra vagy a szülőmappába lépjen."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31686"
+msgid "Select whether the scrollbar jumps by letter when content is sorted alphabetically, or by page."
+msgstr "Válaszd ki, hogy a görgetősáv betűnként ugorjon, ha a tartalom ábécé szerint rendezett, vagy oldalanként."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31687"
+msgid "Use labels in place of textboxes for long text. This improves performance on Omega but the text will not scroll."
+msgstr "Hosszú szövegeknél szövegdoboz helyett címkék használata. Ez Omegán javítja a teljesítményt, de a szöveg nem görgethető."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31688"
+msgid "Automatically scroll long text in textboxes, such as plots."
+msgstr "A hosszú szövegek, például a tartalom automatikus görgetése a szövegdobozokban."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31689"
+msgid "Automatically scroll labels that are too long to fit."
+msgstr "A túl hosszú címkék automatikus görgetése."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31690"
+msgid "Set the number of seconds before the video OSD closes automatically."
+msgstr "Megadja, hány másodperc után záródjon be automatikusan a videó OSD."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31691"
+msgid "Select whether the seekbar stays visible, shows information, or hides after playback has been paused for a while."
+msgstr "Válaszd ki, hogy a keresősáv látható maradjon, információt mutasson, vagy elrejtőzzön a lejátszás szüneteltetése után egy idővel."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31692"
+msgid "Set how long playback must be paused before the seekbar behaviour is applied."
+msgstr "Megadja, mennyi ideig kell szünetelnie a lejátszásnak, hogy a keresősáv beállítása érvénybe lépjen."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31693"
+msgid "Select which times are shown on either side of the seekbar."
+msgstr "Válaszd ki, mely időpontok jelenjenek meg a keresősáv két oldalán."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31694"
+msgid "Show the currently playing video in the background of the interface."
+msgstr "A jelenleg lejátszott videó megjelenítése a felszín hátterében."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31695"
+msgid "Enable the TMDbHelper service, which provides extra details, ratings and artwork for the focused item."
+msgstr "A TMDbHelper szolgáltatás engedélyezése, amely extra adatokat, értékeléseket és képeket biztosít a fókuszban lévő elemhez."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31696"
+msgid "Choose which ratings are shown for movies."
+msgstr "Válaszd ki, mely értékelések jelenjenek meg a filmeknél."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31697"
+msgid "Choose which ratings are shown for TV shows."
+msgstr "Válaszd ki, mely értékelések jelenjenek meg a sorozatoknál."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31698"
+msgid "Select the detail shown above the plot for movies: tagline, genre, director, or nothing."
+msgstr "Válaszd ki a filmeknél a tartalom felett megjelenő adatot: jelmondat, műfaj, rendező, vagy semmi."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31699"
+msgid "Select the detail shown above the plot for TV shows: tagline, genre, episodes, or nothing."
+msgstr "Válaszd ki a sorozatoknál a cselekmény felett megjelenő adatot: jelmondat műfaj, epizódok, vagy semmi."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31700"
+msgid "Show the rating as stars in the item information."
+msgstr "Az értékelés megjelenítése csillagokkal az elem adatai között."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31701"
+msgid "Show the number of audio channels in the item information."
+msgstr "A hangcsatornák számának megjelenítése az elem adatai között."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31702"
+msgid "Show the HDR type in the item information."
+msgstr "A HDR típus megjelenítése az elem adatai között."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31703"
+msgid "Select the size of the mouse pointer. The skin reloads to apply the change."
+msgstr "Válaszd ki az egérmutató méretét. A módosítás érvényesítéséhez a felszín újratölt."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31704"
+msgid "Keep the splash screen visible until the home screen widgets have loaded."
+msgstr "A nyitókép látható marad, amíg a főképernyő widgetjei be nem töltődnek."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31705"
+msgid "Load hub widgets in the background during startup so that hubs open faster."
+msgstr "A csomópont widgetek betöltése a háttérben indításkor, hogy a csomópontok gyorsabban nyíljanak meg."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31706"
+msgid "Allow each skin user to have their own shortcut and widget configuration, like a lightweight profile."
+msgstr "Lehetővé teszi, hogy minden felszínfelhasználónak saját parancsikon- és widget-beállítása legyen, mint egy könnyű profilnál."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31707"
+msgid "Show the skin user selection screen each time the skin starts."
+msgstr "A felszínfelhasználó-választó képernyő megjelenítése a felszín minden indításakor."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31708"
+msgid "Colour the programmes in the EPG grid by genre."
+msgstr "Az EPG rács műsorainak színezése műfaj szerint."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31709"
+msgid "Use TMDbHelper to look up extra details and artwork for PVR programmes."
+msgstr "A TMDbHelper használata extra adatok és képek lekéréséhez a PVR műsorokhoz."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31710"
+msgid "Decorate the interface with seasonal themes during the dates listed for each theme."
+msgstr "A felület díszítése szezonális témákkal az egyes témáknál megadott időszakokban."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31711"
+msgid "Select the style of the Christmas theme, shown from Dec 7 to Jan 7, or turn it off."
+msgstr "Válaszd ki a karácsonyi téma stílusát, amely dec. 7. és jan. 7. között látszik, vagy kapcsold ki."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31712"
+msgid "Show the Summer Breeze theme from Jun 21 to Aug 15."
+msgstr "A Nyári szellő téma megjelenítése jún. 21. és aug. 15. között."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31713"
+msgid "Show the Halloween Spook theme from Oct 1 to Nov 1."
+msgstr "A Halloween téma megjelenítése okt. 1. és nov. 1. között."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31714"
+msgid "Show the seasonal overlay on top of the background."
+msgstr "A szezonális réteg megjelenítése a háttér felett."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31715"
+msgid "Show the looping seasonal animation in the background."
+msgstr "A szezonális ismétlődő animáció megjelenítése a háttérben."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31716"
+msgid "Show seasonal animations that occasionally fly across the screen."
+msgstr "Időnként átrepülő szezonális animációk megjelenítése a képernyőn."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31717"
+msgid "Select how many seasonal props fall down the screen."
+msgstr "Válaszd ki, hány szezonális dísz hulljon le a képernyőn."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31718"
+msgid "Reset all skin settings to their default values. This cannot be undone."
+msgstr "Az összes felszínbeállítás visszaállítása az alapértelmezett értékre. Ez nem vonható vissza."
+
+#: /1080i/Custom_1115_Window_Shortcuts.xml
+msgctxt "#31719"
+msgid "This category contains the settings for the search hub layout, widgets and discover lists."
+msgstr "Ez a kategória a keresési csomópont elrendezésének, widgetjeinek és a felfedezés listáinak beállításait tartalmazza."
+
+#: /1080i/Custom_1115_Window_Shortcuts.xml
+msgctxt "#31720"
+msgid "This category contains the settings for the shortcut, submenu and widgets of this hub."
+msgstr "Ez a kategória ennek a csomópontnak a parancsikon-, almenü- és widget-beállításait tartalmazza."
+
+#: /1080i/Custom_1115_Window_Shortcuts.xml
+msgctxt "#31721"
+msgid "This category contains the settings for the options menu tiles, power menu and tray."
+msgstr "Ez a kategória a beállítások menü csempéinek, a kikapcsolás menünek és a sávnak a beállításait tartalmazza."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31722"
+msgid "Select how the widgets in the search hub are laid out."
+msgstr "Válaszd ki, hogyan legyenek elrendezve a keresési csomópont widgetjei."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31723"
+msgid "Choose the widgets shown in the search hub."
+msgstr "Válaszd ki, mely widgetek jelenjenek meg a keresési csomópontban."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31724"
+msgid "Show the discover lists in the search hub."
+msgstr "A felfedezés listáinak megjelenítése a keresési csomópontban."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31725"
+msgid "Include the movie decades list in discover."
+msgstr "A filmes évtizedek listájának felvétele a felfedezésbe."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31726"
+msgid "Include the movie keywords list in discover."
+msgstr "A filmes kulcsszavak listájának felvétele a felfedezésbe."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31727"
+msgid "Include MDbList lists in discover."
+msgstr "Az MDbList listák felvétele a felfedezésbe."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31728"
+msgid "Select the type of hub: custom, next aired, Live TV, or add-ons."
+msgstr "Válaszd ki a csomópont típusát: egyéni, következő adás, élő TV, vagy kiegészítők."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31730"
+msgid "Customise the submenu items shown for this hub."
+msgstr "A csomópont almenüelemeinek testreszabása."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31731"
+msgid "Select how the widgets in this hub are laid out."
+msgstr "Válaszd ki, hogyan legyenek elrendezve a csomópont widgetjei."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31732"
+msgid "Configure the spotlight shown at the top of this hub."
+msgstr "A csomópont tetején megjelenő kiemelt elem beállítása."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31733"
+msgid "Choose the widgets shown in this hub."
+msgstr "Válaszd ki, mely widgetek jelenjenek meg ebben a csomópontban."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31734"
+msgid "Select whether the next aired calendar uses your library or Trakt."
+msgstr "Válaszd ki, hogy a következő adások naptára a könyvtáradat vagy a Trakt-ot használja."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31735"
+msgid "Select whether channels in this hub are shown as square or landscape tiles."
+msgstr "Válaszd ki, hogy a csomópont csatornái négyzet vagy fekvő csempeként jelenjenek meg."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31736"
+msgid "Show the search or last played section in this hub, depending on the layout."
+msgstr "A keresés vagy az utoljára lejátszott rész megjelenítése ebben a csomópontban, az elrendezéstől függően."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31737"
+msgid "Show the channels section in this hub."
+msgstr "A csatornák szakaszának megjelenítése ebben a csomópontban."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31738"
+msgid "Show the channel groups section in this hub."
+msgstr "A csatornacsoportok szakaszának megjelenítése ebben a csomópontban."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31739"
+msgid "Show the recordings section in this hub."
+msgstr "A felvételek szakaszának megjelenítése ebben a csomópontban."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31740"
+msgid "Show video add-ons in this hub."
+msgstr "A videó kiegészítők megjelenítése ebben a csomópontban."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31741"
+msgid "Show music add-ons in this hub."
+msgstr "A zenei kiegészítők megjelenítése ebben a csomópontban."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31742"
+msgid "Show picture add-ons in this hub."
+msgstr "A képkiegészítők megjelenítése ebben a csomópontban."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31743"
+msgid "Show program add-ons in this hub."
+msgstr "A program kiegészítők megjelenítése ebben a csomópontban."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31744"
+msgid "Show game add-ons in this hub."
+msgstr "A játék kiegészítők megjelenítése ebben a csomópontban."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31745"
+msgid "Select how many tiles are shown in the options menu."
+msgstr "Válaszd ki, hány csempe jelenjen meg a beállítások menüben."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31746"
+msgid "Select what this tile shows. Choose Custom to set your own shortcut."
+msgstr "Válaszd ki, mit mutat ez a csempe. Egyéni parancsikonhoz válaszd az Egyénit."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31747"
+msgid "Choose the shortcut opened by this custom tile."
+msgstr "Válaszd ki az egyéni csempe által megnyitott parancsikont."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31748"
+msgid "Set the label shown on this custom tile."
+msgstr "Add meg az egyéni csempén megjelenő címkét."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31749"
+msgid "Choose the icon shown on this custom tile."
+msgstr "Válaszd ki az egyéni csempén megjelenő ikont."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31750"
+msgid "Customise the items in the power menu."
+msgstr "A kikapcsolás menü elemeinek testreszabása."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31751"
+msgid "Customise the buttons in the tray of the options menu."
+msgstr "A beállítások menü sávjában lévő gombok testreszabása."
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31752"
+msgid "Setup wizard"
+msgstr "Beállítási varázsló"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31753"
+msgid "Run the setup wizard to choose the home layout, widgets, colours and backgrounds."
+msgstr "A beállítási varázsló futtatása a főképernyő elrendezésének, a widgetek, a színek és a hátterek kiválasztásához."
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31754"
+msgid "Welcome to Arctic Fuse 3"
+msgstr "Üdvözöl az Arctic Fuse 3"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31755"
+msgid "Choose a recommended setup to get started straight away, or use the steps on the left to set things up yourself. You can change any of these later in Skin settings."
+msgstr "Válassz ajánlott beállítást az azonnali induláshoz, vagy a bal oldali lépésekkel állítsd be magad. Később bármelyiket módosíthatod a Felszín beállításaiban."
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31756"
+msgid "Use recommended defaults (library)"
+msgstr "Ajánlott alapértékek használata (könyvtár)"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31757"
+msgid "Skip setup"
+msgstr "Beállítás kihagyása"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31758"
+msgid "Home layout"
+msgstr "Főképernyő elrendezése"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31759"
+msgid "Choose how the main menu is arranged and what is shown at the top of Home."
+msgstr "Válaszd ki a főmenü elrendezését és azt, hogy mi látszik a Főoldal tetején."
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31760"
+msgid "Replace the Home widgets with a ready-made set. Kodi asks before your current widgets are overwritten. Customise them later in Skin settings."
+msgstr "A Főoldal widgetjeinek cseréje egy kész készletre. A Kodi rákérdez, mielőtt felülírná a jelenlegi widgeteket. Később a Felszín beállításaiban testreszabhatod őket."
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31761"
+msgid "My library"
+msgstr "Saját könyvtár"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31762"
+msgid "Discover"
+msgstr "Felfedezés"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31763"
+msgid "Minimal"
+msgstr "Minimális"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31764"
+msgid "Movies, TV and music hubs with in progress, new and recent items from your library"
+msgstr "Filmes, sorozat és zenei csomópontok folyamatban lévő, új és friss elemekkel a könyvtáradból"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31765"
+msgid "Library hubs plus trending items and next aired from TMDb"
+msgstr "Könyvtári csomópontok, valamint a TMDb népszerű elemei és következő adásai"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31766"
+msgid "Continue watching on home with only the add-ons hub"
+msgstr "Folytatás a főoldalon, csak a kiegészítők csomóponttal"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31767"
+msgid "Colours"
+msgstr "Színek"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31768"
+msgid "A colour scheme sets the highlight colour, window background and dialog background together. Adjust each one afterwards if you like."
+msgstr "A színséma egyszerre állítja be a kiemelés színét, az ablak hátterét és a párbeszédablak hátterét. Utána mindegyiket külön is módosíthatod."
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31769"
+msgid "Backgrounds"
+msgstr "Hátterek"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31770"
+msgid "Choose the window and dialog backgrounds and how artwork backgrounds are blurred."
+msgstr "Válaszd ki az ablak- és párbeszédablak-hátteret, valamint a képháttérek elmosását."
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31771"
+msgid "Finish"
+msgstr "Befejezés"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31772"
+msgid "Select a choice to go back to that step. Select Finish on the left to save, rebuild the widgets and reload the skin."
+msgstr "Válassz egy lehetőséget, hogy visszalépj arra a lépésre. A mentéshez, a widgetek újraépítéséhez és a felszín újratöltéséhez válaszd a bal oldali Befejezést."
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31773"
+msgid "Hide parent folder items"
+msgstr "Szülőmappa elemeinek elrejtése"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31774"
+msgid "Next"
+msgstr "Következő"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31775"
+msgid "Back"
+msgstr "Vissza"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31776"
+msgid "Exit setup"
+msgstr "Kilépés a varázslóból"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31777"
+msgid "Step"
+msgstr "Lépés"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31779"
+msgid "Welcome"
+msgstr "Üdvözöljük"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31780"
+msgid "Choose how to get started"
+msgstr "Válaszd ki, hogyan kezdjünk"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31781"
+msgid "How the main menu is arranged"
+msgstr "A főmenü elrendezése"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31782"
+msgid "A starting set of widgets for Home"
+msgstr "Kiinduló widgetkészlet a Főoldalhoz"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31783"
+msgid "Colour scheme and highlight colour"
+msgstr "Színséma és kiemelés színe"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31784"
+msgid "Window and dialog backgrounds"
+msgstr "Ablak- és párbeszédablak-hátterek"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31785"
+msgid "Review your choices"
+msgstr "A választások áttekintése"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31786"
+msgid "Top menu"
+msgstr "Felső menü"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31787"
+msgid "Top menu with icons"
+msgstr "Felső menü ikonokkal"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31788"
+msgid "Side menu"
+msgstr "Oldalmenü"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31789"
+msgid "Text menu across the top"
+msgstr "Szöveges menü felül"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31790"
+msgid "Icon buttons across the top"
+msgstr "Ikongombok felül"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31791"
+msgid "Vertical menu on the left"
+msgstr "Függőleges menü balra"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31792"
+msgid "Highlight colour"
+msgstr "Kiemelés színe"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31793"
+msgid "Window background"
+msgstr "Ablak háttere"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31794"
+msgid "Menu style"
+msgstr "Menü stílusa"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31796"
+msgid "Use recommended defaults (TMDb Helper)"
+msgstr "Ajánlott alapértékek használata (TMDb Helper)"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31797"
+msgid "Default settings with movies, TV and music hubs and widgets from your library"
+msgstr "Alapbeállítások filmes, sorozat és zenei csomópontokkal és widgetekkel a könyvtáradból"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31798"
+msgid "Default settings with movies, TV and next aired hubs and widgets from TMDb"
+msgstr "Alapbeállítások filmes, sorozat és következő adás csomópontokkal és widgetekkel a TMDb-ből"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31799"
+msgid "Keep the current settings. Run this wizard again from Skin settings."
+msgstr "A jelenlegi beállítások megtartása. A varázslót később újra futtathatod a Felszín beállításaiból."
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31800"
+msgid "TMDb Helper"
+msgstr "TMDb Helper"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31801"
+msgid "Movies, TV and next aired hubs with trending, popular and new items from TMDb"
+msgstr "Filmes, sorozat és következő adás csomópontok a TMDb népszerű, felkapott és új elemeivel"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31803"
+msgid "Review"
+msgstr "Áttekintés"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31802"
+msgid "Home screen preset"
+msgstr "Főképernyő előbeállítás"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31804"
+msgid "A row for each widget"
+msgstr "Minden widgethez egy sor"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31805"
+msgid "One row with a selector to switch widgets"
+msgstr "Egy sor, választóval a widgetek váltásához"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31806"
+msgid "A grid of items with a selector to switch widgets"
+msgstr "Elemrács, választóval a widgetek váltásához"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31807"
+msgid "Home"
+msgstr "Főoldal"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31808"
+msgid "Views"
+msgstr "Nézetek"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31809"
+msgid "Seasonal"
+msgstr "Szezonális"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31810"
+msgid "Tools"
+msgstr "Eszközök"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31811"
+msgid "Style"
+msgstr "Stílus"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31813"
+msgid "Users"
+msgstr "Felhasználók"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31814"
+msgid "Button action"
+msgstr "Gomb művelete"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31815"
+msgid "Services"
+msgstr "Szolgáltatások"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31816"
+msgid "OSD"
+msgstr "OSD"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31817"
+msgid "Seekbar"
+msgstr "Keresősáv"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31818"
+msgid "Effects"
+msgstr "Effektek"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31819"
+msgid "Enabled"
+msgstr "Engedélyezve"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31820"
+msgid "Reset"
+msgstr "Visszaállítás"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31821"
+msgid "Focus widgets"
+msgstr "Widgetek fókusza"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31822"
+msgid "This category contains the seasonal themes and their effects, the add-ons the skin depends on, the debugging tools and the option to reset skin settings."
+msgstr "Ez a kategória a felszín által igényelt kiegészítőket, az évszakhoz tartozó témákat, a hibakereső eszközöket és a felszínbeállítások visszaállítását tartalmazza."
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31823"
+msgid "Install the add-on, enable it, or open its settings."
+msgstr "A kiegészítő telepítése, engedélyezése vagy beállításainak megnyitása."
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31825"
+msgid "Use recommended defaults (discover)"
+msgstr "Ajánlott alapértékek használata (felfedezés)"
+
+#: /1080i/Dialog_DialogSetupWizard.xml
+msgctxt "#31826"
+msgid "Default settings with library hubs and widgets plus trending items from TMDb"
+msgstr "Alapbeállítások könyvtári csomópontokkal és widgetekkel, valamint a TMDb népszerű elemeivel"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31827"
+msgid "Ranked"
+msgstr "Rangsorolt"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31828"
+msgid "Stack"
+msgstr "Köteg"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31829"
+msgid "Disc"
+msgstr "Lemez"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31830"
+msgid "Shelf"
+msgstr "Polc"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31831"
+msgid "Timeline"
+msgstr "Idővonal"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31832"
+msgid "Gatefold"
+msgstr "Kihajtható"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31833"
+msgid "Show or hide this item in the hubs menu."
+msgstr "Az elem megjelenítése vagy elrejtése a csomópontok menüjében."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31834"
+msgid "Choose the shortcut opened by this item."
+msgstr "Válaszd ki az elem által megnyitott parancsikont."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31835"
+msgid "Enter the path or action opened by this item directly."
+msgstr "Add meg közvetlenül az elem által megnyitott útvonalat vagy műveletet."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31836"
+msgid "Set the label shown for this item."
+msgstr "Add meg az elemhez megjelenő címkét."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31837"
+msgid "Choose the icon shown for this item."
+msgstr "Válaszd ki az elemhez megjelenő ikont."
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31843"
+msgid "Left"
+msgstr "Bal"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31844"
+msgid "Right"
+msgstr "Jobb"
+
+#: /1080i/Includes_Labels.xml
+msgctxt "#31845"
+msgid "Combined"
+msgstr "Kombinált"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31846"
+msgid "Add hub"
+msgstr "Csomópont hozzáadása"
+
+#: /1080i/Includes_SkinSettings.xml
+msgctxt "#31847"
+msgid "Window and dialog"
+msgstr "Ablak és párbeszédablak"
+
+#: /1080i/Includes_Actions.xml
+msgctxt "#31848"
+msgid "This replaces your home screen hubs, menus, widgets and spotlights with this preset. Any changes you have made to them will be lost. Continue?"
+msgstr "Ez lecseréli a főképernyő csomópontjait, menüit, widgetjeit és kiemeléseit az előbeállításra. A rajtuk végzett módosítások elvesznek. Folytatod?"
+
+#: /shortcuts/skinvariables-skinsettings.json
+msgctxt "#31849"
+msgid "Search all skin settings by name, section or description."
+msgstr "Keresés a felszín beállításokban név, szakasz vagy leírás alapján"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31850"
+msgid "Results"
+msgstr "Eredmények"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31851"
+msgid "Sources"
+msgstr "Források"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31852"
+msgid "Decade"
+msgstr "Évtized"
+
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31853"
+msgid "Bauhaus"
+msgstr "Bauhaus"
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31854"
+msgid "Golden Age"
+msgstr "Aranykor"
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31855"
+msgid "Expressionist"
+msgstr "Expresszionista"
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31856"
+msgid "Faceted"
+msgstr "Csiszolt"
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31857"
+msgid "Mosaic"
+msgstr "Mozaik"
+
+#: /1080i/Dialog_DialogShortcuts.xml
+msgctxt "#31858"
+msgid "Also search TMDb discover results for movies and tvshows alongside the search widgets."
+msgstr "A keresési widgetek mellett a TMDb-n is kereshet filmeket és sorozatokat."
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31859"
+msgid "Japanese Watercolour"
+msgstr "Japán akvarell"
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31860"
+msgid "Surrealist"
+msgstr "Szürrealista"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31861"
+msgid "No results"
+msgstr "Nincs eredmény"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31863"
+msgid "Search for"
+msgstr "Keresés erre"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31864"
+msgid "movies, TV shows, people and more"
+msgstr "filmek, sorozatok, emberek és egyebek"
+
+#: /1080i/Includes_Search.xml
+msgctxt "#31865"
+msgid "Enter a search term to begin."
+msgstr "Írj be egy keresési kifejezést a kezdéshez."
+
+msgctxt "#31866"
+msgid "Selector"
+msgstr "Kiválasztó"
+
+msgctxt "#31867"
+msgid "Standard shows the results of each content type in its own row. Combined shows a single results row with a selector to choose all results or a content type or source."
+msgstr "Az alapértelmezett érték minden tartalomtípus eredményét külön sorban jeleníti meg. Az Összetett érték egyetlen eredménysort jelenít meg, amelyen kiválaszthatod az összes eredményt, egy tartalomtípust vagy forrást."
+
+msgctxt "#31868"
+msgid "Choose whether the combined selector lists each content type or each source alongside all results."
+msgstr "Válaszd ki, hogy a kombinált kiválasztó az összes találat mellett az egyes tartalomtípusokat vagy az egyes forrásokat jelenítse-e meg."
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31869"
+msgid "Couture"
+msgstr "Divat"
+
+#: /1080i/Dialog_DialogSelect.xml
+msgctxt "#31870"
+msgid "Masquerade"
+msgstr "Álarcosbál"
+
+msgctxt "#31872"
+msgid "Logo position"
+msgstr "Logó helyzete"
+
+msgctxt "#31873"
+msgid "Move the logo, text and profile selector on the splash and login screens upwards."
+msgstr "Mozgasd felfelé a logót, a szöveget és a profilválasztót a kezdőképernyőn és a bejelentkezési képernyőn."
+
+msgctxt "#31875"
+msgid "Show the splash screen with the current position. Press any button, click or move the mouse to close the preview."
+msgstr "A nyitóképernyő megjelenítése az aktuális pozícióval. Az előnézet bezárásához nyomj meg egy gombot, kattints vagy mozgasd az egeret."
