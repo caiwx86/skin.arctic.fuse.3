@@ -520,7 +520,7 @@
     </variable>
 
     <variable name="Image_OSD_Clearlogo">
-        <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.Player.CropImage))">$INFO[Window(Home).Property(TMDbHelper.Player.CropImage)]</value>
+        <!-- TMDbHelper CropImage is a raster crop with an opaque black matte; never use it for the playback OSD. -->
         <value condition="!String.IsEmpty(Player.Art(clearlogo))">$INFO[Player.Art(clearlogo)]</value>
         <value condition="!String.IsEmpty(Player.Art(tvshow.clearlogo))">$INFO[Player.Art(tvshow.clearlogo)]</value>
         <value condition="!String.IsEmpty(Player.Art(artist.clearlogo))">$INFO[Player.Art(artist.clearlogo)]</value>

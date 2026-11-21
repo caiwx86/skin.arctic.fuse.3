@@ -589,7 +589,7 @@
                     <param name="service">Player</param>
                     <!-- CropImage is a raster crop that can include an opaque black matte.
                          The playback OSD must use Kodi's transparent clearlogo artwork. -->
-                    <param name="croplogo"></param>
+                    <param name="croplogo">Window(Home).Property(AF3.NoCropLogo)</param>
                 </include>
 
                 <include content="Info_Line">
@@ -1130,8 +1130,8 @@
                 <param name="listitem">$PARAM[listitem]</param>
                 <param name="left">0</param>
                 <param name="width">$PARAM[top_logo_width]</param>
-                <!-- Preserve alpha by bypassing TMDbHelper's cropped logo in the OSD. -->
-                <param name="croplogo"></param>
+                <!-- Preserve alpha by bypassing TMDbHelper's cropped logo in the OSD. An empty param may fall back to Info_Title's default (the CropImage property), so point at a property that is never set. -->
+                <param name="croplogo">Window(Home).Property(AF3.NoCropLogo)</param>
             </include>
             <control type="group">
                 <top>-10</top>
