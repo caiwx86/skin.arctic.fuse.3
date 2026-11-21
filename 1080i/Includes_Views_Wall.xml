@@ -25,6 +25,8 @@
     <include name="View_512_Poster_Wall">
         <include content="View_Wall_Include">
             <param name="id">512</param>
+            <param name="offset_y">0</param>
+            <param name="itemlayout_h">360</param>
             <param name="include">List_Poster_Row</param>
             <param name="viewtype_label">$LOCALIZE[31554]</param>
             <param name="visible">$EXP[Exp_View_512]</param>
@@ -65,6 +67,11 @@
     <!-- Wall Template View -->
     <include name="View_Wall_Include">
         <param name="overlay">true</param>
+        <param name="offset_y">40</param>
+        <param name="item_w">view_poster_item_w</param>
+        <param name="item_h">view_poster_item_h</param>
+        <param name="itemlayout_w">view_poster_itemlayout_w</param>
+        <param name="itemlayout_h">view_poster_itemlayout_h</param>
         <definition>
             <control type="group">
                 <visible>Control.IsVisible($PARAM[id])</visible>
@@ -73,8 +80,12 @@
                         <param name="id">$PARAM[id]</param>
                         <param name="control">panel</param>
                         <param name="orientation">vertical</param>
-                        <param name="offset_y">40</param>
-                        <preloaditems>0</preloaditems>
+                        <param name="offset_y">$PARAM[offset_y]</param>
+                        <param name="item_w">$PARAM[item_w]</param>
+                        <param name="item_h">$PARAM[item_h]</param>
+                        <param name="itemlayout_w">$PARAM[itemlayout_w]</param>
+                        <param name="itemlayout_h">$PARAM[itemlayout_h]</param>
+                        <preloaditems>2</preloaditems>
                         <top>290</top>
                         <bottom>-40</bottom>
                         <onright>611</onright>
@@ -90,6 +101,7 @@
                         <onfocus condition="![$PARAM[overlay]]">ClearProperty(Background.ShowOverlay,Home)</onfocus>
                         <onfocus condition="$PARAM[overlay]">SetProperty(Background.ShowOverlay,True,Home)</onfocus>
                         <onfocus>SetProperty(InfoPanel.FullSwitch,Wall,Home)</onfocus>
+                        <onfocus condition="System.HasAddon(script.arcticfuse.focus)">RunScript(script.arcticfuse.focus,wall,$PARAM[id])</onfocus>
                     </include>
                 </control>
             </control>
