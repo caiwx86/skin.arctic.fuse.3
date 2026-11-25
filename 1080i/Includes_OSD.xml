@@ -572,7 +572,6 @@
                     <param name="container" />
                     <param name="listitem">VideoPlayer</param>
                     <param name="service">Player</param>
-                    <param name="croplogo">Window(Home).Property(TMDbHelper.Player.CropImage)</param>
                 </include>
 
                 <include content="Info_Line">
@@ -814,6 +813,9 @@
                 <include content="Object_InfoCircle_VS10">
                     <param name="name">Original</param>
                     <param name="icon">special://skin/extras/icons/o.png</param>
+                    <param name="diffuse"></param>
+                    <param name="colordiffuse">ffffffff</param>
+                    <param name="backing_visible">false</param>
                     <param name="fallback_role">Original</param>
                     <param name="textcolor">$PARAM[textcolor]</param>
                 </include>
@@ -833,7 +835,10 @@
                 <include content="Object_InfoCircle">
                     <param name="name">$INFO[Player.Process(video.source.hdr.type)] -> SDR</param>
                     <param name="role">SDR</param>
-                    <param name="icon">special://skin/extras/icons/convert.png</param>
+                    <param name="icon">special://skin/extras/icons/sdr.png</param>
+                    <param name="diffuse"></param>
+                    <param name="colordiffuse">ffffffff</param>
+                    <param name="backing_visible">false</param>
                     <param name="fallback_role">SDR</param>
                     <param name="textcolor_top">$PARAM[textcolor_top]</param>
                     <param name="textcolor_sub">$PARAM[textcolor_sub]</param>
@@ -854,7 +859,10 @@
                 <include content="Object_InfoCircle">
                     <param name="name">$INFO[Player.Process(video.source.hdr.type)] -> HDR10</param>
                     <param name="role">HDR10</param>
-                    <param name="icon">special://skin/extras/icons/convert.png</param>
+                    <param name="icon">special://skin/extras/icons/hdr100.png</param>
+                    <param name="diffuse"></param>
+                    <param name="colordiffuse">ffffffff</param>
+                    <param name="backing_visible">false</param>
                     <param name="fallback_role">HDR10</param>
                     <param name="textcolor_top">$PARAM[textcolor_top]</param>
                     <param name="textcolor_sub">$PARAM[textcolor_sub]</param>
@@ -875,7 +883,10 @@
                 <include content="Object_InfoCircle">
                     <param name="name">$INFO[Player.Process(video.source.hdr.type)] -> Dolby Vision</param>
                     <param name="role">Dolby Vision</param>
-                    <param name="icon">special://skin/extras/icons/convert.png</param>
+                    <param name="icon">special://skin/extras/icons/dolbyvision.png</param>
+                    <param name="diffuse"></param>
+                    <param name="colordiffuse">ffffffff</param>
+                    <param name="backing_visible">false</param>
                     <param name="fallback_role">Dolby Vision</param>
                     <param name="textcolor_top">$PARAM[textcolor_top]</param>
                     <param name="textcolor_sub">$PARAM[textcolor_sub]</param>
@@ -1110,8 +1121,7 @@
                 <param name="listitem">$PARAM[listitem]</param>
                 <param name="left">0</param>
                 <param name="width">$PARAM[top_logo_width]</param>
-                <param name="croplogo">Window.Property(TMDbHelper.Player.CropImage)</param>
-            </include>
+                            </include>
             <control type="group">
                 <top>-10</top>
                 <height>50</height>
@@ -1149,7 +1159,7 @@
                 <onclick condition="$PARAM[onclick_condition]">$PARAM[onclick]</onclick>
                 <onup>$PARAM[onup]</onup>
                 <onup>$PARAM[onup_02]</onup>
-                <ondown>ActivateWindow($VAR[Action_OSD_Main_OnDown])</ondown>
+                <ondown>$VAR[Action_OSD_Main_OnDown_Command]</ondown>
                 <label>$PARAM[label]</label>
             </control>
             <include content="OSD_Button_Icon_Overlay">
